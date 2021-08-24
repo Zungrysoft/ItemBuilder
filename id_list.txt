@@ -36,7 +36,7 @@ Effects
 32:	*Item Regains Full Durability
 33:	*Set Trigger (See Condition #33)
 34:	*Item becomes Primed - Value sets number of ticks it will stay primed for (See Condition #34)
-35:	 Item becomes Activated (See Condition #35)
+35:	*Item becomes Activated (See Condition #35)
 36:	*Set Fire to Ground Below Player - Value sets radius (max 5)
 37:	*Player loses all experience points
 38:	*Item Loses a Fraction of its Durability - Value: (1: 1%, 2: 5%, 3: 25%)

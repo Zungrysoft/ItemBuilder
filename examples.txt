@@ -13,7 +13,7 @@ Sword That Grants +15% Speed When Held
 # Inline
 /give @s stone_sword{ItemBuilderMainhand: {Effects: [{Id: 2, Value: 15}]}}
 
-# Notes: The Id key determines which effect you will get. (See id_list.txt for a list of ids). The Value key determines certain qualities of the item. For this effect, it sets the percent increase of the player's speed. The base-level keys for the different slots are ItemBuilderMainhand, ItemBuilderOffhand, ItemBuilderHead, ItemBuilderChest, ItemBuilderLegs, and ItemBuilderFeet.
+# Notes: The Id key determines which effect you will get. (See id_list.txt for a list of available ids). The Value key determines certain qualities of the effect. For this effect, it sets the percent increase of the player's speed. The base-level keys for the different slots are ItemBuilderMainhand, ItemBuilderOffhand, ItemBuilderHead, ItemBuilderChest, ItemBuilderLegs, and ItemBuilderFeet.
 
 
 =========================================================
@@ -82,16 +82,16 @@ Axe That Grants +50 Attack Damage When NOT Underwater
 # Notes: Use the Inverted key to swap true and false for the condition. Aside from the Inverted key, this item is identical to the one above, but has the exact opposite effect.
 
 
-=====================================================================
-Offhand Item That Grants +2 Attack Damage When at 9 XP Levels or More
-=====================================================================
+======================================================================
+Offhand Item That Grants +2 Attack Damage When at 13 XP Levels or More
+======================================================================
 # Formatted
 /give @s raw_copper{
 	ItemBuilderOffhand: {
 		Conditions: [
 			{
 				Id: 8,
-				Value: 9,
+				Value: 13,
 				Effects: [
 					{Id: 1, Value: 2}
 				]
@@ -101,13 +101,13 @@ Offhand Item That Grants +2 Attack Damage When at 9 XP Levels or More
 }
 
 # Inline
-/give @s raw_copper{ItemBuilderOffhand: {Conditions: [{Id: 8,Value: 9,Effects: [{Id: 1, Value: 2}]}]}}
+/give @s raw_copper{ItemBuilderOffhand: {Conditions: [{Id: 8,Value: 13,Effects: [{Id: 1, Value: 2}]}]}}
 
 # Notes: Some conditions have Value keys. For this condition, it sets the number of levels required to satisfy the condition.
 
 
 =========================================================================
-Helmet That Grants +30% Speed When on Fire with 3 or More Monsters Nearby
+Helmet That Grants +30% Speed When on Fire With 3 or More Monsters Nearby
 =========================================================================
 # Formatted
 /give @s golden_helmet{
@@ -135,9 +135,55 @@ Helmet That Grants +30% Speed When on Fire with 3 or More Monsters Nearby
 # Notes: You can put conditions inside other conditions. This allows you to require multiple conditions to get an effect.
 
 
+====================================
+Sword That Grants Resistance on Kill
+====================================
+# Formatted
+/give @s stone_sword{
+	ItemBuilderMainhand: {
+		Conditions: [
+			{
+				Id: 11,
+				Effects: [
+					{Id: 53, Value: 3}
+				]
+			}
+		]
+	}
+}
+
+# Inline
+/give @s stone_sword{ItemBuilderMainhand: {Conditions: [{Id: 11,Effects: [{Id: 53, Value: 3}]}]}}
+
+# Notes: Some conditions and effects are "instantaneous". (Marked with an * in id_list.txt) For conditions, this means the condition will only be active for one frame. Things like "Player Killed a Mob". This will only be active the frame after you got the kill. Then there are instantaneous effects, which are designed to be used with instantaneous conditions. Things like "Gain Resistance for the next 10 seconds". There is nothing stopping you from using instantaneous conditions with passive effects and vice-versa, but the item may not make a lot of sense. Use your own judgement.
+
+
+=================================
+Bow Whose Arrows Inflict Slowness
+=================================
+# Formatted
+/give @s bow{
+	ItemBuilderMainhand: {
+		Conditions: [
+			{
+				Id: 38,
+				Effects: [
+					{Id: 60}
+				]
+			}
+		]
+	}
+}
+
+# Inline
+/give @s bow{ItemBuilderMainhand: {Conditions: [{Id: 38,Effects: [{Id: 60}]}]}}
+
+# Notes: This uses the instantaneous condition "Deal Damage With an Arrow" and the instantaneous effect "Inflict Slowness on Monsters That Just Took Damage". Combined together, this causes the mob you just hit with the arrow to inflict slowness. This can result in other mobs sometimes receiving the effect because they happened to take damage at the same time, but that doesn't happen very often.
+
+
 =========================================
 Sword That Activates Upon Killing a Witch
-Once Activated, Grants +30% Speed
+    Once Activated, Grants +30% Speed
 =========================================
 # Formatted
 /give @s diamond_sword{
@@ -162,7 +208,7 @@ Once Activated, Grants +30% Speed
 # Inline
 /give @s diamond_sword{ItemBuilderMainhand: {Conditions: [{Id: 19,Effects: [{Id: 35}]},{Id: 35,Effects: [{Id: 2, Value: 30}]}]}}
 
-# Notes: Activations allow you to make the player work for their custom effects! The first condition activates the sword upon killing the vex. The second condition grants speed, but only after the sword has been activated. Activating an item for the first time gives the item a special lore text, plays a sound effect, and prints a chat message to the player.
+# Notes: Activations allow you to make the player work for their custom effects! The first condition activates the sword upon killing the witch. The second condition grants speed, but only after the sword has been activated. Activating an item for the first time gives the item a special lore text, plays a sound effect, and prints a chat message to the player.
 
 
 ===============================================================
