@@ -82,9 +82,9 @@ Axe That Grants +50 Attack Damage When NOT Underwater
 # Notes: Use the Inverted key to swap true and false for the condition. Aside from the Inverted key, this item is identical to the one above, but has the exact opposite effect.
 
 
-======================================================================
-Offhand Item That Grants +2 Attack Damage When at 13 XP Levels or More
-======================================================================
+================================================================
+Offhand Item That Grants +10% Speed When at 13 XP Levels or More
+================================================================
 # Formatted
 /give @s raw_copper{
 	ItemBuilderOffhand: {
@@ -93,7 +93,7 @@ Offhand Item That Grants +2 Attack Damage When at 13 XP Levels or More
 				Id: 8,
 				Value: 13,
 				Effects: [
-					{Id: 1, Value: 2}
+					{Id: 2, Value: 10}
 				]
 			}
 		]
@@ -101,13 +101,13 @@ Offhand Item That Grants +2 Attack Damage When at 13 XP Levels or More
 }
 
 # Inline
-/give @s raw_copper{ItemBuilderOffhand: {Conditions: [{Id: 8,Value: 13,Effects: [{Id: 1, Value: 2}]}]}}
+/give @s raw_copper{ItemBuilderOffhand: {Conditions: [{Id: 8,Value: 13,Effects: [{Id: 2, Value: 10}]}]}}
 
 # Notes: Some conditions have Value keys. For this condition, it sets the number of levels required to satisfy the condition.
 
 
 =========================================================================
-Helmet That Grants +30% Speed When on Fire With 3 or More Monsters Nearby
+Helmet That Grants +80% Speed When on Fire With 2 or More Monsters Nearby
 =========================================================================
 # Formatted
 /give @s golden_helmet{
@@ -118,9 +118,9 @@ Helmet That Grants +30% Speed When on Fire With 3 or More Monsters Nearby
 				Conditions: [
 					{
 						Id: 9,
-						Value: 3,
+						Value: 2,
 						Effects: [
-							{Id: 2, Value: 30}
+							{Id: 2, Value: 80}
 						]
 					}
 				]
@@ -130,7 +130,7 @@ Helmet That Grants +30% Speed When on Fire With 3 or More Monsters Nearby
 }
 
 # Inline
-/give @s golden_helmet{ItemBuilderHead: {Conditions: [{Id: 3,Conditions: [{Id: 9,Value: 3,Effects: [{Id: 2, Value: 30}]}]}]}}
+/give @s golden_helmet{ItemBuilderHead: {Conditions: [{Id: 3,Conditions: [{Id: 9,Value: 2,Effects: [{Id: 2, Value: 80}]}]}]}}
 
 # Notes: You can put conditions inside other conditions. This allows you to require multiple conditions to get an effect.
 
@@ -238,6 +238,24 @@ Boots That Grant 50% Knockback Resistance For 3 Seconds on Kill
 /give @s diamond_boots{ItemBuilderFeet: {Conditions: [{Id: 11,Effects: [{Id: 34, Value: 60}]},{Id: 34,Effects: [{Id: 6, Value: 50}]}]}}
 
 # Notes: Priming an item allows you to grant a passive effect to the player for a controlled duration. The first condition on this item sets the item to be primed for 3 seconds on kill. The second condition grants knockback resistance while it is primed.
+
+
+============================
+Boots Set Fire to the Ground
+============================
+# Formatted
+/give @s stone_sword{
+	ItemBuilderMainhand: {
+		Effects: [
+			{Id: 36, Value: 1, NoSound: 1}
+		]
+	}
+}
+
+# Inline
+/give @s stone_sword{ItemBuilderMainhand: {Effects: [{Id: 36, Value: 1, NoSound: 1}]}}
+
+# Notes: There are built in Sound and Particle effects on many of these Effects. There may be situations where you want to disable them, however. You can use the NoSound tag on an effect to accomplish that.
 
 
 =======
