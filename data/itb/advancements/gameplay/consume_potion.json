@@ -1,0 +1,22 @@
+{
+	"rewards": {
+		"function": "itb:advancements/consume_potion"
+	},
+	"criteria": {
+		"consume": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:potion"
+					]
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"consume"
+		]
+	]
+}

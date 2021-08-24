@@ -34,17 +34,49 @@ Effects
 30:	*Item Drops on Ground
 31:	*Item Breaks
 32:	*Item Regains Full Durability
-33:	*Decides Randomly Between Multiple Effects - Value sets the number of possibilities. Put another Effects list inside this Effect to set the possible effects.
-34:	*Crossbow Reloads - See "Loadables" list below for use of Value key
-35:	*Set Fire to Ground Below Player - Value sets radius (max 5)
-36:	 Item becomes Activated (See Condition #7)
+33:	*Set Trigger (See Condition #33)
+34:	*Item becomes Primed - Value sets number of ticks it will stay primed for (See Condition #34)
+35:	 Item becomes Activated (See Condition #35)
+36:	*Set Fire to Ground Below Player - Value sets radius (max 5)
 37:	*Player loses all experience points
 38:	*Item Loses a Fraction of its Durability - Value: (1: 1%, 2: 5%, 3: 25%)
 39:	*Item Regains a Fraction of its Durability - Value: (1: 1%, 2: 5%, 3: 25%)
 40:	*Sound and Particle Effect - Value determines effect (max 5)
 41:	*Kills you Instantly (Please don't use this except in special situations.)
 42:	*Item is Removed from Armor Slot
-43:	*Item becomes Primed - Value sets number of ticks it will stay primed for (See Condition #35)
+43:	*Receive Item - See "Resources" list below for use of Value key, Value2 determines amount received (max 128)
+44:	*Lose Item - See "Resources" list below for use of Value key, Value2 determines amount lost (max 128)
+45:	*Reloads all Crossbows on Hotbar and Offhand - See "Loadables" list below for use of Value key
+46:	*Reloads this Crossbow - See "Loadables" list below for use of Value key
+47:	*Speed I Potion Effect - See "Durations" list below of use of Value key
+48:	*Speed II Potion Effect - See "Durations" list below of use of Value key
+49:	*Speed V Potion Effect - See "Durations" list below of use of Value key
+50:	*Strength I Potion Effect - See "Durations" list below of use of Value key
+51:	*Strength II Potion Effect - See "Durations" list below of use of Value key
+52:	*Strength X Potion Effect - See "Durations" list below of use of Value key
+53:	*Resistance I Potion Effect - See "Durations" list below of use of Value key
+54:	*Resistance II Potion Effect - See "Durations" list below of use of Value key
+55:	*Resistance V Potion Effect - See "Durations" list below of use of Value key
+56:	*Haste I Potion Effect - See "Durations" list below of use of Value key
+57:	*Haste III Potion Effect - See "Durations" list below of use of Value key
+58:	*Haste X Potion Effect - See "Durations" list below of use of Value key
+59:	*Fire Resistance Potion Effect - See "Durations" list below of use of Value key
+60:	*Inflict Slowness on Monsters That Just Took Damage
+61:	*Inflict Slowness on all Nearby Monsters
+62:	*Inflict Slowness on a Random Nearby Monster
+63:	*Inflict Weakness on Monsters That Just Took Damage
+64:	*Inflict Weakness on all Nearby Monsters
+65:	*Inflict Weakness on a Random Nearby Monster
+66:	*Inflict Wither on Monsters That Just Took Damage
+67:	*Inflict Wither on all Nearby Monsters
+68:	*Inflict Wither on a Random Nearby Monster
+69:	*Inflict Levitation on Monsters That Just Took Damage
+70:	*Inflict Levitation on all Nearby Monsters
+71:	*Inflict Levitation on a Random Nearby Monster
+72:	*Set Fire to Monsters That Just Took Damage
+73:	*Set Fire to all Nearby Monsters
+74:	*Set Fire to a Random Nearby Monster
+75:	*Regain Hunger - Value sets number of hunger points gained
 
 ==========
 Conditions
@@ -56,10 +88,10 @@ Conditions
 4:	 Standing in Light Level 8 or Greater
 5:	 Sprinting
 6:	 Sneaking
-7:	 Item has been Activated (See Effect #36)
+7:	 *Timer - Value determines how many ticks between each trigger
 8:	 Has a certain amount of xp - Value determines required level
 9:	 There are a certain number of monsters within 20 blocks - Value determines count
-10:	*Dealt Damage - Value is optional and sets minimum damage that must be dealt by the hit to trigger this condition
+10:	*Dealt Damage With a Melee Attack - Value is optional and sets minimum damage that must be dealt by the hit to trigger this condition
 11:	*Killed Mob or Player
 12:	*Killed Undead Mob
 13:	*Killed Zombie (Includes variants)
@@ -73,7 +105,7 @@ Conditions
 21:	*Killed Aquatic Monster
 22:	*Killed Nether Monster
 23:	*Killed Ender Monster
-24:	*Killed Pig-Based Mob
+24:	*Killed Pig-Based Monster
 25:	*Killed Flying Monster
 26:	*Killed Ravager
 27:	*Killed Husk
@@ -82,24 +114,69 @@ Conditions
 30:	*Took Damage - Value is optional and sets minimum damage that must be taken by the hit to trigger this condition
 31:	*Took Damage From a Monster
 32:	 Percentage Chance - Values: (1: 0.1%, 2: 1%, 3: 5%, 4: 10%, 5: 25%, 6: 33%, 7: 50%)
-33:	*Broke Monster Spawner
-34:	*Timer - Value determines how many ticks between each trigger
-35:	 Item is Primed (See Effect #43)
+33:	*Trigger was set earlier by this item (See Effect #33)
+34:	 Item is Primed (See Effect #34)
+35:	Item has been Activated (See Effect #35)
 36:	 Has a certain amount of health - Value sets minimum health
 37:	 Has a certain amount of armor - Value sets minimum armor
+38:	*Deal Damage With an Arrow or Spectral Arrow
+39:	*Deal Damage With a Firework Rocket
+40:	 Item has a certain amount of durability damage - Value sets minimum damage
+41:	*Ate Food
+42:	*Drank Potion
+43:	 Has Item - See "Resources" list below for use of Value key, Value2 determines the amount they must have
+44:	 [Currently Unused]
+45:	*Broke Monster Spawner
+46:	 An Undead Monster is within 15 blocks - Value sets minumum count in range
+47:	 A Zombie is within 15 blocks (Includes variants) - Value sets minumum count in range
+48:	 A Skeleton is within 15 blocks (Includes variants) - Value sets minumum count in range
+49:	 An Arthropod is within 15 blocks (Includes variants) - Value sets minumum count in range
+50:	 A Spider is within 15 blocks (Includes variants) - Value sets minumum count in range
+51:	 A Creeper is within 15 blocks - Value sets minumum count in range
+52:	 An Illager is within 15 blocks - Value sets minumum count in range
+53:	 A Witch is within 15 blocks - Value sets minumum count in range
+54:	 A Vex is within 15 blocks - Value sets minumum count in range
+
+=========
+Durations
+=========
+1:	 1 Second
+2:	 5 Seconds
+3:	 10 Seconds
+4:	 30 Seconds
+5:	 1 Minute
+6:	 3 Minutes
+7:	 5 Minutes
+8:	 10 Minutes
 
 =========
 Loadables
 =========
 1:	 Arrow
-2:	 Rocket
-3:	 Spectral Arrow
+2:	 Spectral Arrow
+3:	 Firework Rocket
 4:	 Arrow of Slowness
 5:	 Arrow of Weakness
 6:	 Arrow of Harming
 7:	 Arrow of Healing
-8:	 Arrow of Levitation
-9:	 Arrow of Poison
+8:	 Arrow of Poison
+9:	 Arrow of Levitation
+
+=========
+Resources
+=========
+1:	 Gold Ingot
+2:	 Gold Nugget
+3:	 Iron Ingot
+4:	 Iron Nugget
+5:	 Emerald
+6:	 Diamond
+7:	 Fire Charge
+8:	 Coal
+9:	 Gunpowder
+10:	 Bone
+11:	 Arrow
+12:	 Magic Scroll (Renamed mojang_banner_pattern)
 
 ============================
 Item Id's (Currently Unused)

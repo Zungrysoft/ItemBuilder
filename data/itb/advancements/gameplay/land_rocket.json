@@ -1,0 +1,24 @@
+{
+	"rewards": {
+		"function": "itb:advancements/land_rocket"
+	},
+	"criteria": {
+		"rocket": {
+			"trigger": "minecraft:player_hurt_entity",
+			"conditions": {
+				"damage": {
+					"type": {
+						"direct_entity": {
+							"type": "minecraft:firework_rocket"
+						}
+					}
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"rocket"
+		]
+	]
+}

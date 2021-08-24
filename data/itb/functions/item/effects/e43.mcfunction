@@ -1,27 +1,20 @@
-# Primes an item
+# Give the item
+execute if score effect_value value matches 1 run give @s minecraft:gold_ingot
+execute if score effect_value value matches 2 run give @s minecraft:gold_nugget
+execute if score effect_value value matches 3 run give @s minecraft:iron_ingot
+execute if score effect_value value matches 4 run give @s minecraft:iron_nugget
+execute if score effect_value value matches 5 run give @s minecraft:emerald
+execute if score effect_value value matches 6 run give @s minecraft:diamond
+execute if score effect_value value matches 7 run give @s minecraft:fire_charge
+execute if score effect_value value matches 8 run give @s minecraft:coal
+execute if score effect_value value matches 9 run give @s minecraft:gunpowder
+execute if score effect_value value matches 10 run give @s minecraft:bone
+execute if score effect_value value matches 11 run give @s minecraft:arrow
+execute if score effect_value value matches 12 run give @s mojang_banner_pattern{display:{Name:'[{"text":"Magic Scroll","italic":false,"color":"light_purple"}]'},MagicScroll:1,HideFlags:65535}
 
-# Get global timer
-scoreboard players operation prime_end value = global_timer value
+# Limit recursion so players can't crash the server with a stupidly high number
+execute if score effect_value2 value matches 128.. run scoreboard players set effect_value2 value 128
 
-# Add the value to it
-scoreboard players operation prime_end value += effect_value value
-
-# Store the timer into storage
-execute store result storage itb:temp PrimeEnd long 1 run scoreboard players get prime_end value
-
-# Write to the item
-# Mainhand
-execute if score cur_slot value matches 1 run item modify entity @s weapon.mainhand itb:set_prime_end
-# Offhand
-execute if score cur_slot value matches 2 run item modify entity @s weapon.offhand itb:set_prime_end
-# Head
-execute if score cur_slot value matches 3 run item modify entity @s armor.head itb:set_prime_end
-# Chest
-execute if score cur_slot value matches 4 run item modify entity @s armor.chest itb:set_prime_end
-# Legs
-execute if score cur_slot value matches 5 run item modify entity @s armor.legs itb:set_prime_end
-# Feet
-execute if score cur_slot value matches 6 run item modify entity @s armor.feet itb:set_prime_end
-
-# Store the timer into storage
-data remove storage itb:temp PrimeEnd
+# If there are still more items to give, recurse
+scoreboard players remove effect_value2 value 1
+execute if score effect_value2 value matches 1.. run function itb:item/effects/e43

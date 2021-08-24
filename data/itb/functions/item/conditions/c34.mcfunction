@@ -1,4 +1,13 @@
-scoreboard players operation mod value = global_timer value
-scoreboard players operation mod value %= condition_value value
-
-execute if score mod value matches 0 run scoreboard players set condition_result value 1
+# Check to see if the item is marked as primed before doing the expensive nbt check
+# Mainhand
+execute if score cur_slot value matches 1 if predicate itb:primed_mainhand run function itb:item/conditions/c34_check
+# Offhand
+execute if score cur_slot value matches 2 if predicate itb:primed_offhand run function itb:item/conditions/c34_check
+# Head
+execute if score cur_slot value matches 3 if predicate itb:primed_head run function itb:item/conditions/c34_check
+# Chest
+execute if score cur_slot value matches 4 if predicate itb:primed_chest run function itb:item/conditions/c34_check
+# Legs
+execute if score cur_slot value matches 5 if predicate itb:primed_legs run function itb:item/conditions/c34_check
+# Feet
+execute if score cur_slot value matches 6 if predicate itb:primed_feet run function itb:item/conditions/c34_check

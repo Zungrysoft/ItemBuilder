@@ -3,8 +3,10 @@
 # Pull the Condition's id number out of the list
 scoreboard players set condition_id value 0
 scoreboard players set condition_value value 0
+scoreboard players set condition_value2 value 0
 execute store result score condition_id value run data get storage itb:working item[0].Conditions[0].Id
 execute store result score condition_value value run data get storage itb:working item[0].Conditions[0].Value
+execute store result score condition_value2 value run data get storage itb:working item[0].Conditions[0].Value2
 
 # Use Id to determine which Condition function to run
 execute if score condition_id value matches 0 run function itb:item/conditions/c0
@@ -95,3 +97,15 @@ execute if score condition_id value matches 84 run function itb:item/conditions/
 execute if score condition_id value matches 85 run function itb:item/conditions/c85
 execute if score condition_id value matches 86 run function itb:item/conditions/c86
 execute if score condition_id value matches 87 run function itb:item/conditions/c87
+execute if score condition_id value matches 88 run function itb:item/conditions/c88
+execute if score condition_id value matches 89 run function itb:item/conditions/c89
+execute if score condition_id value matches 90 run function itb:item/conditions/c90
+execute if score condition_id value matches 91 run function itb:item/conditions/c91
+execute if score condition_id value matches 92 run function itb:item/conditions/c92
+execute if score condition_id value matches 93 run function itb:item/conditions/c93
+execute if score condition_id value matches 94 run function itb:item/conditions/c94
+execute if score condition_id value matches 95 run function itb:item/conditions/c95
+execute if score condition_id value matches 96 run function itb:item/conditions/c96
+execute if score condition_id value matches 97 run function itb:item/conditions/c97
+execute if score condition_id value matches 98 run function itb:item/conditions/c98
+execute if score condition_id value matches 99 run function itb:item/conditions/c99

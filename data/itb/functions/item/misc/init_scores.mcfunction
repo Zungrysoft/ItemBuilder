@@ -1,5 +1,6 @@
 # Utility
 scoreboard objectives add value dummy
+scoreboard objectives add item_mod_track dummy
 
 # Attributes
 scoreboard objectives add att_damage dummy
@@ -32,6 +33,14 @@ scoreboard objectives add deal_damage minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add take_damage minecraft.custom:minecraft.damage_taken
 scoreboard objectives add take_damage_mons dummy
 scoreboard objectives add break_spawner minecraft.mined:minecraft.spawner
+scoreboard objectives add land_arrow dummy
+scoreboard objectives add land_rocket dummy
+scoreboard objectives add consume_anything dummy
+scoreboard objectives add consume_potion dummy
+
+# Other Stuff
+scoreboard objectives add pending_hunger dummy
+scoreboard objectives add pending_hunger_s dummy
 
 # Mob Kills
 scoreboard objectives add kill_mob totalKillCount

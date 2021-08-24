@@ -3,6 +3,10 @@ scoreboard players reset @s deal_damage
 scoreboard players reset @s take_damage
 scoreboard players reset @s take_damage_mons
 scoreboard players reset @s break_spawner
+scoreboard players reset @s land_arrow
+scoreboard players reset @s land_rocket
+scoreboard players reset @s consume_anything
+scoreboard players reset @s consume_potion
 
 # These scores should be ticked down instead of reset so that multiple counts on one frame can receive multiple activations
 execute if score @s kill_mob matches 1.. run scoreboard players remove @s kill_mob 1

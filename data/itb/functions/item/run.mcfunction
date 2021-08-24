@@ -19,5 +19,8 @@ function itb:item/attributes/check
 # Handle passive potion effects
 function itb:item/misc/potion_effects
 
+# Hunger Restorating
+function itb:item/misc/pending_hunger
+
 # Reset per-frame scores
 function itb:item/misc/reset_scores

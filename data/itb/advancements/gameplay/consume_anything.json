@@ -1,0 +1,15 @@
+{
+	"rewards": {
+		"function": "itb:advancements/consume_anything"
+	},
+	"criteria": {
+		"consume": {
+			"trigger": "minecraft:consume_item"
+		}
+	},
+	"requirements": [
+		[
+			"consume"
+		]
+	]
+}

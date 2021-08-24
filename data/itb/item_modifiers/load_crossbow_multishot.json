@@ -1,0 +1,183 @@
+[
+	{
+		"function": "minecraft:set_nbt",
+		"tag": "{
+			Charged:1b,
+			ChargedProjectiles:[
+				{id:\"minecraft:arrow\",Count:1b},
+				{id:\"minecraft:arrow\",Count:1b},
+				{id:\"minecraft:arrow\",Count:1b}
+			]
+		}",
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"item_mod_track": 1
+				}
+			}
+		]
+	},
+	{
+		"function": "minecraft:set_nbt",
+		"tag": "{
+			Charged:1b,
+			ChargedProjectiles:[
+				{id:\"minecraft:spectral_arrow\",Count:1b},
+				{id:\"minecraft:spectral_arrow\",Count:1b},
+				{id:\"minecraft:spectral_arrow\",Count:1b}
+			]
+		}",
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"item_mod_track": 2
+				}
+			}
+		]
+	},
+	{
+		"function": "minecraft:set_nbt",
+		"tag": "{
+			Charged:1b,
+			ChargedProjectiles:[
+				{id:\"minecraft:firework_rocket\",tag:{display:{Name:'[{\"text\":\"The Doombringer\",\"italic\":false,\"bold\":true,\"color\":\"red\"}]',Lore:['[{\"text\":\"7 charges\",\"italic\":false,\"color\":\"gray\"}]']},HideFlags:65535,Fireworks: {Flight: 1b, Explosions: [{Type: 0b, Colors: [I; 6160478]}, {Type: 0b, Colors: [I; 6160478]}, {Type: 0b, Colors: [I; 16739950]}, {Type: 0b, Colors: [I; 6160478]}, {Type: 0b, Colors: [I; 6160478]}, {Type: 0b, Colors: [I; 16739950]}, {Type: 0b, Colors: [I; 6160478]}]}},Count:1b},
+				{id:\"minecraft:firework_rocket\",tag:{display:{Name:'[{\"text\":\"The Doombringer\",\"italic\":false,\"bold\":true,\"color\":\"red\"}]',Lore:['[{\"text\":\"7 charges\",\"italic\":false,\"color\":\"gray\"}]']},HideFlags:65535,Fireworks: {Flight: 1b, Explosions: [{Type: 0b, Colors: [I; 6160478]}, {Type: 0b, Colors: [I; 6160478]}, {Type: 0b, Colors: [I; 16739950]}, {Type: 0b, Colors: [I; 6160478]}, {Type: 0b, Colors: [I; 6160478]}, {Type: 0b, Colors: [I; 16739950]}, {Type: 0b, Colors: [I; 6160478]}]}},Count:1b},
+				{id:\"minecraft:firework_rocket\",tag:{display:{Name:'[{\"text\":\"The Doombringer\",\"italic\":false,\"bold\":true,\"color\":\"red\"}]',Lore:['[{\"text\":\"7 charges\",\"italic\":false,\"color\":\"gray\"}]']},HideFlags:65535,Fireworks: {Flight: 1b, Explosions: [{Type: 0b, Colors: [I; 6160478]}, {Type: 0b, Colors: [I; 6160478]}, {Type: 0b, Colors: [I; 16739950]}, {Type: 0b, Colors: [I; 6160478]}, {Type: 0b, Colors: [I; 6160478]}, {Type: 0b, Colors: [I; 16739950]}, {Type: 0b, Colors: [I; 6160478]}]}},Count:1b}
+			]
+		}",
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"item_mod_track": 3
+				}
+			}
+		]
+	},
+	{
+		"function": "minecraft:set_nbt",
+		"tag": "{
+			Charged:1b,
+			ChargedProjectiles:[
+				{id:\"minecraft:tipped_arrow\",tag:{Potion:\"minecraft:slowness\"},Count:1b},
+				{id:\"minecraft:tipped_arrow\",tag:{Potion:\"minecraft:slowness\"},Count:1b},
+				{id:\"minecraft:tipped_arrow\",tag:{Potion:\"minecraft:slowness\"},Count:1b}
+			]
+		}",
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"item_mod_track": 4
+				}
+			}
+		]
+	},
+	{
+		"function": "minecraft:set_nbt",
+		"tag": "{
+			Charged:1b,
+			ChargedProjectiles:[
+				{id:\"minecraft:tipped_arrow\",tag:{Potion:\"minecraft:weakness\"},Count:1b},
+				{id:\"minecraft:tipped_arrow\",tag:{Potion:\"minecraft:weakness\"},Count:1b},
+				{id:\"minecraft:tipped_arrow\",tag:{Potion:\"minecraft:weakness\"},Count:1b}
+			]
+		}",
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"item_mod_track": 5
+				}
+			}
+		]
+	},
+	{
+		"function": "minecraft:set_nbt",
+		"tag": "{
+			Charged:1b,
+			ChargedProjectiles:[
+				{id:\"minecraft:tipped_arrow\",tag:{Potion:\"minecraft:harming\"},Count:1b},
+				{id:\"minecraft:tipped_arrow\",tag:{Potion:\"minecraft:harming\"},Count:1b},
+				{id:\"minecraft:tipped_arrow\",tag:{Potion:\"minecraft:harming\"},Count:1b}
+			]
+		}",
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"item_mod_track": 6
+				}
+			}
+		]
+	},
+	{
+		"function": "minecraft:set_nbt",
+		"tag": "{
+			Charged:1b,
+			ChargedProjectiles:[
+				{id:\"minecraft:tipped_arrow\",tag:{Potion:\"minecraft:healing\"},Count:1b},
+				{id:\"minecraft:tipped_arrow\",tag:{Potion:\"minecraft:healing\"},Count:1b},
+				{id:\"minecraft:tipped_arrow\",tag:{Potion:\"minecraft:healing\"},Count:1b}
+			]
+		}",
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"item_mod_track": 7
+				}
+			}
+		]
+	},
+	{
+		"function": "minecraft:set_nbt",
+		"tag": "{
+			Charged:1b,
+			ChargedProjectiles:[
+				{id:\"minecraft:tipped_arrow\",tag:{Potion:\"minecraft:poison\"},Count:1b},
+				{id:\"minecraft:tipped_arrow\",tag:{Potion:\"minecraft:poison\"},Count:1b},
+				{id:\"minecraft:tipped_arrow\",tag:{Potion:\"minecraft:poison\"},Count:1b}
+			]
+		}",
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"item_mod_track": 8
+				}
+			}
+		]
+	},
+	{
+		"function": "minecraft:set_nbt",
+		"tag": "{
+			Charged:1b,
+			ChargedProjectiles:[
+				{id:\"minecraft:tipped_arrow\",tag:{CustomPotionColor:65535,CustomPotionEffects:[{Id:25,Duration:100,Amplifier:2}]},Count:1b},
+				{id:\"minecraft:tipped_arrow\",tag:{CustomPotionColor:65535,CustomPotionEffects:[{Id:25,Duration:100,Amplifier:2}]},Count:1b},
+				{id:\"minecraft:tipped_arrow\",tag:{CustomPotionColor:65535,CustomPotionEffects:[{Id:25,Duration:100,Amplifier:2}]},Count:1b}
+			]
+		}",
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"item_mod_track": 9
+				}
+			}
+		]
+	}
+]
+

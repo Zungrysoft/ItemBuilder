@@ -1,9 +1,11 @@
 # Pull the Effect's id number out of the list
 scoreboard players set effect_id value 0
 scoreboard players set effect_value value 0
+scoreboard players set effect_value2 value 0
 scoreboard players set effect_nosound value 0
 execute store result score effect_id value run data get storage itb:working item[0].Effects[0].Id
 execute store result score effect_value value run data get storage itb:working item[0].Effects[0].Value
+execute store result score effect_value2 value run data get storage itb:working item[0].Effects[0].Value2
 execute store result score effect_nosound value run data get storage itb:working item[0].Effects[0].NoSound
 
 # Use Id to determine which Effect function to run
@@ -94,3 +96,15 @@ execute if score effect_id value matches 84 run function itb:item/effects/e84
 execute if score effect_id value matches 85 run function itb:item/effects/e85
 execute if score effect_id value matches 86 run function itb:item/effects/e86
 execute if score effect_id value matches 87 run function itb:item/effects/e87
+execute if score effect_id value matches 88 run function itb:item/effects/e88
+execute if score effect_id value matches 89 run function itb:item/effects/e89
+execute if score effect_id value matches 90 run function itb:item/effects/e80
+execute if score effect_id value matches 91 run function itb:item/effects/e81
+execute if score effect_id value matches 92 run function itb:item/effects/e82
+execute if score effect_id value matches 93 run function itb:item/effects/e83
+execute if score effect_id value matches 94 run function itb:item/effects/e84
+execute if score effect_id value matches 95 run function itb:item/effects/e85
+execute if score effect_id value matches 96 run function itb:item/effects/e86
+execute if score effect_id value matches 97 run function itb:item/effects/e87
+execute if score effect_id value matches 98 run function itb:item/effects/e88
+execute if score effect_id value matches 99 run function itb:item/effects/e89
