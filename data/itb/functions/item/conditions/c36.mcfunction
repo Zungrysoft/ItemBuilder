@@ -1,1 +1,1 @@
-execute if score @s take_damage_mons matches 1.. run scoreboard players set condition_result value 1
+execute if score @s health >= condition_value value run scoreboard players set condition_result value 1

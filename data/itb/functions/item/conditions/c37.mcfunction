@@ -1,1 +1,5 @@
-execute if score @s take_damage_mons matches 1.. run scoreboard players set condition_result value 1
+# Read in armor
+execute store result score armor value run attribute @s minecraft:generic.armor get
+
+# Check
+execute if score armor value >= condition_value value run scoreboard players set condition_result value 1

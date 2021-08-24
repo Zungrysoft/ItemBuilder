@@ -85,6 +85,8 @@ Conditions
 33:	*Broke Monster Spawner
 34:	*Timer - Value determines how many ticks between each trigger
 35:	 Item is Primed (See Effect #43)
+36:	 Has a certain amount of health - Value sets minimum health
+37:	 Has a certain amount of armor - Value sets minimum armor
 
 =========
 Loadables

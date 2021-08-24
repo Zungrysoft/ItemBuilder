@@ -202,7 +202,7 @@ Boots That Grant 50% Knockback Resistance For 3 Seconds on Kill
 /give @s iron_sword{ItemBuilderMainhand: {Conditions: [{Id: 6,Effects: [{Id: 30}]}]}}
 /give @s iron_sword{ItemBuilderMainhand: {Conditions: [{Id: 31,Effects: [{Id: 30}]}]}}
 /give @s iron_sword{ItemBuilderMainhand: {Conditions: [{Id: 34, Value:2 ,Effects: [{Id: 38, Value: 1}]}]}}
-/give @s iron_pickaxe{ItemBuilderMainhand: {Conditions: [{Id: 33 ,Effects: [{Id: 30, Value: 1}]}]}}
+/give @s iron_pickaxe{ItemBuilderMainhand: {Conditions: [{Id: 37, Value:10,Effects: [{Id: 15}]}]}}
 
 /give @s iron_sword{ItemBuilderMainhand: {Effects: [{Id: 15}]}}
 
@@ -215,13 +215,10 @@ Implement Random List
 Eat Food Trigger
 Drink Potion Trigger
 Near Monster Trigger
-While below half health
 Short-Distance Teleport
 Dash Attack
-High Armor
 Condition for Item Cost
 Condition for Item Reward
 Inflict Effects on Nearby Monsters
 [Reconfirm attribute ranges are sufficient]
 [Reconfirm attribute ranges work for all six attributes, pos and neg]
-Change Activated to ItemBuilderActivated

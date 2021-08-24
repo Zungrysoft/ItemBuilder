@@ -27,6 +27,7 @@ scoreboard objectives add wither dummy
 scoreboard objectives add hunger dummy
 
 # Misc Tracking
+scoreboard objectives add health health "Health"
 scoreboard objectives add deal_damage minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add take_damage minecraft.custom:minecraft.damage_taken
 scoreboard objectives add take_damage_mons dummy
