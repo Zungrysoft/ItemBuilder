@@ -1,0 +1,129 @@
+=======
+Effects
+=======
+0:	 No Effect
+1:	 Plus or Minus Attack Damage - Value sets increase in damage points
+2:	 Plus or Minus Movement Speed - Value sets percent increase
+3:	 Plus or Minus Attack Speed - Value sets percent increase
+4:	 Plus or Minus Max Health - Value sets increase in health points
+5:	 Plus or Minus Armor - Value sets increase in armor points
+6:	 Plus or Minus Knockback Resistance - Value sets percent increase
+7:	 Blindness
+8:	 Dolphin's Grace
+9:	 Fire Resistance
+10:	 Glowing
+11:	 Invisibility
+12:	 Jump Boost - Value sets amplifier (max 4)
+13:	 Levitation - Value sets amplifier (max 4)
+14:	 Nausea
+15:	 Night Vision
+16:	 Poison - Value sets amplifier (max 4)
+17:	 Regeneration - Value sets amplifier (max 4)
+18:	 Slow-Falling
+19:	 Water-Breathing
+20:	 Wither - Value sets amplifier (max 4)
+21:	 Hunger - Value sets amplifier (max 4)
+22:	 Cleanse Blindness
+23:	 Cleanse Fire Resistance
+24:	 Cleanse Levitation
+25:	 Cleanse Nausea
+26:	 Cleanse Poison
+27:	 Cleanse Wither
+28:	 Cleanse Absorption
+29:	 Cleanse Hunger
+30:	*Item Drops on Ground
+31:	*Item Breaks
+32:	*Item Regains Full Durability
+33:	*Decides Randomly Between Multiple Effects - Value sets the number of possibilities. Put another Effects list inside this Effect to set the possible effects.
+34:	*Crossbow Reloads - See "Loadables" list below for use of Value key
+35:	*Set Fire to Ground Below Player - Value sets radius (max 5)
+36:	 Item becomes Activated (See Condition #7)
+37:	*Player loses all experience points
+38:	*Item Loses a Fraction of its Durability - Value: (1: 1%, 2: 5%, 3: 25%)
+39:	*Item Regains a Fraction of its Durability - Value: (1: 1%, 2: 5%, 3: 25%)
+40:	*Sound and Particle Effect - Value determines effect (max 5)
+41:	*Kills you Instantly (Please don't use this except in special situations.)
+42:	*Item is Removed from Armor Slot
+43:	*Item becomes Primed - Value sets number of ticks it will stay primed for (See Condition #35)
+
+==========
+Conditions
+==========
+0:	 Always True
+1:	 Underwater
+2:	 On Ground
+3:	 On Fire
+4:	 Standing in Light Level 8 or Greater
+5:	 Sprinting
+6:	 Sneaking
+7:	 Item has been Activated (See Effect #36)
+8:	 Has a certain amount of xp - Value determines required level
+9:	 There are a certain number of monsters within 20 blocks - Value determines count
+10:	*Dealt Damage - Value is optional and sets minimum damage that must be dealt by the hit to trigger this condition
+11:	*Killed Mob or Player
+12:	*Killed Undead Mob
+13:	*Killed Zombie (Includes variants)
+14:	*Killed Skeleton (Includes variants)
+15:	*Killed Arthropod
+16:	*Killed Spider (Includes variants)
+17:	*Killed Creeper
+18:	*Killed Illager
+19:	*Killed Witch
+20:	*Killed Vex
+21:	*Killed Aquatic Monster
+22:	*Killed Nether Monster
+23:	*Killed Ender Monster
+24:	*Killed Pig-Based Mob
+25:	*Killed Flying Monster
+26:	*Killed Ravager
+27:	*Killed Husk
+28:	*Killed Stray
+29:	*Killed Wither Skeleton
+30:	*Took Damage - Value is optional and sets minimum damage that must be taken by the hit to trigger this condition
+31:	*Took Damage From a Monster
+32:	 Percentage Chance - Values: (1: 0.1%, 2: 1%, 3: 5%, 4: 10%, 5: 25%, 6: 33%, 7: 50%)
+33:	*Broke Monster Spawner
+34:	*Timer - Value determines how many ticks between each trigger
+35:	 Item is Primed (See Effect #43)
+
+=========
+Loadables
+=========
+1:	 Arrow
+2:	 Rocket
+3:	 Spectral Arrow
+4:	 Arrow of Slowness
+5:	 Arrow of Weakness
+6:	 Arrow of Harming
+7:	 Arrow of Healing
+8:	 Arrow of Levitation
+9:	 Arrow of Poison
+
+============================
+Item Id's (Currently Unused)
+============================
+0:	 Air (No Item)
+1:	 Wooden Sword
+2:	 Stone Sword
+3:	 Iron Sword
+4:	 Diamond Sword
+5:	 Netherite Sword
+6:	 Golden Sword
+7:	 Wooden Axe
+8:	 Stone Axe
+9:	 Iron Axe
+10:	 Diamond Axe
+11:	 Netherite Axe
+12:	 Golden Axe
+13:	 Wooden Pickaxe
+14:	 Stone Pickaxe
+15:	 Iron Pickaxe
+16:	 Diamond Pickaxe
+17:	 Netherite Pickaxe
+18:	 Golden Pickaxe
+19:	 Bow
+20:	 Crossbow (empty, consider loading with Effect #34)
+21:	 Trident
+22:	 Shield
+23:	 Totem of Undying
+24:	 Glowstone Dust

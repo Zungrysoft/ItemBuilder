@@ -1,0 +1,227 @@
+======================================
+Sword That Grants +15% Speed When Held
+======================================
+# Formatted
+/give @s stone_sword{
+	ItemBuilderMainhand: {
+		Effects: [
+			{Id: 2, Value: 15}
+		]
+	}
+}
+
+# Inline
+/give @s stone_sword{ItemBuilderMainhand: {Effects: [{Id: 2, Value: 15}]}}
+
+# Notes: The Id key determines which effect you will get. (See id_list.txt for a list of ids). The Value key determines certain qualities of the item. For this effect, it sets the percent increase of the player's speed. The base-level keys for the different slots are ItemBuilderMainhand, ItemBuilderOffhand, ItemBuilderHead, ItemBuilderChest, ItemBuilderLegs, and ItemBuilderFeet.
+
+
+=========================================================
+Chestplate That Grants +2 Damage and +10% Speed When Worn
+=========================================================
+# Formatted
+/give @s chainmail_chestplate{
+	ItemBuilderChest: {
+		Effects: [
+			{Id: 1, Value: 2},
+			{Id: 2, Value: 10}
+		]
+	}
+}
+
+# Inline
+/give @s chainmail_chestplate{ItemBuilderChest: {Effects: [{Id: 1, Value: 2},{Id: 2, Value: 10}]}}
+
+# Notes: You can put multiple effects in the list. They will be executed in order.
+
+
+=================================================
+Axe That Grants +50 Attack Damage When Underwater
+=================================================
+# Formatted
+/give @s iron_axe{
+	ItemBuilderMainhand: {
+		Conditions: [
+			{
+				Id: 1,
+				Effects: [
+					{Id: 1, Value: 50}
+				]
+			}
+		]
+	}
+}
+
+# Inline
+/give @s iron_axe{ItemBuilderMainhand: {Conditions: [{Id: 1,Effects: [{Id: 1, Value: 50}]}]}}
+
+# Notes: Conditions can be used to make effects only happen under certain circumstances. The Id key will determine the condition that must be satisfied to run the effects inside of it. (See id_list.txt for a list of ids.)
+
+
+=====================================================
+Axe That Grants +50 Attack Damage When NOT Underwater
+=====================================================
+# Formatted
+/give @s iron_axe{
+	ItemBuilderMainhand: {
+		Conditions: [
+			{
+				Id: 1,
+				Inverted: 1,
+				Effects: [
+					{Id: 1, Value: 50}
+				]
+			}
+		]
+	}
+}
+
+# Inline
+/give @s iron_axe{ItemBuilderMainhand: {Conditions: [{Id: 1,Inverted: 1,Effects: [{Id: 1, Value: 50}]}]}}
+
+# Notes: Use the Inverted key to swap true and false for the condition. Aside from the Inverted key, this item is identical to the one above, but has the exact opposite effect.
+
+
+=====================================================================
+Offhand Item That Grants +2 Attack Damage When at 9 XP Levels or More
+=====================================================================
+# Formatted
+/give @s raw_copper{
+	ItemBuilderOffhand: {
+		Conditions: [
+			{
+				Id: 8,
+				Value: 9,
+				Effects: [
+					{Id: 1, Value: 2}
+				]
+			}
+		]
+	}
+}
+
+# Inline
+/give @s raw_copper{ItemBuilderOffhand: {Conditions: [{Id: 8,Value: 9,Effects: [{Id: 1, Value: 2}]}]}}
+
+# Notes: Some conditions have Value keys. For this condition, it sets the number of levels required to satisfy the condition.
+
+
+=========================================================================
+Helmet That Grants +30% Speed When on Fire with 3 or More Monsters Nearby
+=========================================================================
+# Formatted
+/give @s golden_helmet{
+	ItemBuilderHead: {
+		Conditions: [
+			{
+				Id: 3,
+				Conditions: [
+					{
+						Id: 9,
+						Value: 3,
+						Effects: [
+							{Id: 2, Value: 30}
+						]
+					}
+				]
+			}
+		]
+	}
+}
+
+# Inline
+/give @s golden_helmet{ItemBuilderHead: {Conditions: [{Id: 3,Conditions: [{Id: 9,Value: 3,Effects: [{Id: 2, Value: 30}]}]}]}}
+
+# Notes: You can put conditions inside other conditions. This allows you to require multiple conditions to get an effect.
+
+
+=========================================
+Sword That Activates Upon Killing a Witch
+Once Activated, Grants +30% Speed
+=========================================
+# Formatted
+/give @s diamond_sword{
+	ItemBuilderMainhand: {
+		Conditions: [
+			{
+				Id: 19,
+				Effects: [
+					{Id: 36}
+				]
+			},
+			{
+				Id: 7,
+				Effects: [
+					{Id: 2, Value: 30}
+				]
+			}
+		]
+	}
+}
+
+# Inline
+/give @s diamond_sword{ItemBuilderMainhand: {Conditions: [{Id: 19,Effects: [{Id: 36}]},{Id: 7,Effects: [{Id: 2, Value: 30}]}]}}
+
+# Notes: Activations allow you to make the player work for their custom effects! The first condition activates the sword upon killing the vex. The second condition grants speed, but only after the sword has been activated. Activating an item for the first time gives the item a special lore text, plays a sound effect, and prints a chat message to the player.
+
+
+===============================================================
+Boots That Grant 50% Knockback Resistance For 3 Seconds on Kill
+===============================================================
+# Formatted
+/give @s diamond_boots{
+	ItemBuilderFeet: {
+		Conditions: [
+			{
+				Id: 11,
+				Effects: [
+					{Id: 43, Value: 60}
+				]
+			},
+			{
+				Id: 35,
+				Effects: [
+					{Id: 6, Value: 50}
+				]
+			}
+		]
+	}
+}
+
+# Inline
+/give @s diamond_boots{ItemBuilderFeet: {Conditions: [{Id: 11,Effects: [{Id: 43, Value: 60}]},{Id: 35,Effects: [{Id: 6, Value: 100}]}]}}
+
+# Notes: Priming an item allows you to grant a passive effect to the player for a controlled duration. The first condition on this item sets the item to be primed for 3 seconds on kill. The second condition grants knockback resistance while it is primed.
+
+============================================================
+
+
+
+/give @s iron_sword{ItemBuilderMainhand: {Conditions: [{Id: 6,Effects: [{Id: 38, Value: 1}]},{Id: 5,Effects: [{Id: 39, Value: 1}]}]}}
+
+/give @s iron_sword{ItemBuilderMainhand: {Conditions: [{Id: 6,Effects: [{Id: 30}]}]}}
+/give @s iron_sword{ItemBuilderMainhand: {Conditions: [{Id: 31,Effects: [{Id: 30}]}]}}
+/give @s iron_sword{ItemBuilderMainhand: {Conditions: [{Id: 34, Value:2 ,Effects: [{Id: 38, Value: 1}]}]}}
+/give @s iron_pickaxe{ItemBuilderMainhand: {Conditions: [{Id: 33 ,Effects: [{Id: 30, Value: 1}]}]}}
+
+/give @s iron_sword{ItemBuilderMainhand: {Effects: [{Id: 15}]}}
+
+**********
+TODO List:
+**********
+One-shot potion effects
+Implement Crossbow reload
+Implement Random List
+Eat Food Trigger
+Drink Potion Trigger
+Near Monster Trigger
+While below half health
+Short-Distance Teleport
+Dash Attack
+High Armor
+Condition for Item Cost
+Condition for Item Reward
+Inflict Effects on Nearby Monsters
+[Reconfirm attribute ranges are sufficient]
+[Reconfirm attribute ranges work for all six attributes, pos and neg]
+Change Activated to ItemBuilderActivated

@@ -1,0 +1,8 @@
+[
+	{
+		"function": "minecraft:set_nbt",
+		"tag": "{
+			ItemBuilderActivated:1
+		}"
+	}
+]

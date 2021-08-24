@@ -1,0 +1,20 @@
+[
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{ItemBuilderPrimed:1}"
+  },
+  {
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "itb:temp"
+    },
+    "ops": [
+      {
+        "source": "PrimeEnd",
+        "target": "ItemBuilderPrimeEnd",
+        "op": "replace"
+      }
+    ]
+  }
+]
