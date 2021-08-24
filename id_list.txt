@@ -41,26 +41,26 @@ Effects
 37:	*Player loses all experience points
 38:	*Item Loses a Fraction of its Durability - Value: (1: 1%, 2: 5%, 3: 25%)
 39:	*Item Regains a Fraction of its Durability - Value: (1: 1%, 2: 5%, 3: 25%)
-40:	*Sound and Particle Effect - Value determines effect (max 5)
+40:	 Sound and Particle Effect - See "Sounds and Particles" list below for use of Value key
 41:	*Kills you Instantly (Please don't use this except in special situations.)
 42:	*Item is Removed from Armor Slot
 43:	*Receive Item - See "Resources" list below for use of Value key, Value2 determines amount received (max 128)
 44:	*Lose Item - See "Resources" list below for use of Value key, Value2 determines amount lost (max 128)
 45:	*Reloads all Crossbows on Hotbar and Offhand - See "Loadables" list below for use of Value key
 46:	*Reloads this Crossbow - See "Loadables" list below for use of Value key
-47:	*Speed I Potion Effect - See "Durations" list below of use of Value key
-48:	*Speed II Potion Effect - See "Durations" list below of use of Value key
-49:	*Speed V Potion Effect - See "Durations" list below of use of Value key
-50:	*Strength I Potion Effect - See "Durations" list below of use of Value key
-51:	*Strength II Potion Effect - See "Durations" list below of use of Value key
-52:	*Strength X Potion Effect - See "Durations" list below of use of Value key
-53:	*Resistance I Potion Effect - See "Durations" list below of use of Value key
-54:	*Resistance II Potion Effect - See "Durations" list below of use of Value key
-55:	*Resistance V Potion Effect - See "Durations" list below of use of Value key
-56:	*Haste I Potion Effect - See "Durations" list below of use of Value key
-57:	*Haste III Potion Effect - See "Durations" list below of use of Value key
-58:	*Haste X Potion Effect - See "Durations" list below of use of Value key
-59:	*Fire Resistance Potion Effect - See "Durations" list below of use of Value key
+47:	*Speed I Potion Effect - See "Durations" list below for use of Value key
+48:	*Speed II Potion Effect - See "Durations" list below for use of Value key
+49:	*Speed V Potion Effect - See "Durations" list below for use of Value key
+50:	*Strength I Potion Effect - See "Durations" list below for use of Value key
+51:	*Strength II Potion Effect - See "Durations" list below for use of Value key
+52:	*Strength X Potion Effect - See "Durations" list below for use of Value key
+53:	*Resistance I Potion Effect - See "Durations" list below for use of Value key
+54:	*Resistance II Potion Effect - See "Durations" list below for use of Value key
+55:	*Resistance V Potion Effect - See "Durations" list below for use of Value key
+56:	*Haste I Potion Effect - See "Durations" list below for use of Value key
+57:	*Haste III Potion Effect - See "Durations" list below for use of Value key
+58:	*Haste X Potion Effect - See "Durations" list below for use of Value key
+59:	*Fire Resistance Potion Effect - See "Durations" list below for use of Value key
 60:	*Inflict Slowness on Monsters That Just Took Damage
 61:	*Inflict Slowness on all Nearby Monsters
 62:	*Inflict Slowness on a Random Nearby Monster
@@ -87,7 +87,7 @@ Conditions
 3:	 On Fire
 4:	 Standing in Light Level 8 or Greater
 5:	 Sprinting
-6:	 Sneaking
+6:	 Sneaking/Crouching
 7:	 *Timer - Value determines how many ticks between each trigger
 8:	 Has a certain amount of xp - Value determines required level
 9:	 There are a certain number of monsters within 20 blocks - Value determines count
@@ -113,7 +113,7 @@ Conditions
 29:	*Killed Wither Skeleton
 30:	*Took Damage - Value is optional and sets minimum damage that must be taken by the hit to trigger this condition
 31:	*Took Damage From a Monster
-32:	 Percentage Chance - Values: (1: 0.1%, 2: 1%, 3: 5%, 4: 10%, 5: 25%, 6: 33%, 7: 50%)
+32:	 Percentage Random Chance - Values: (1: 0.1%, 2: 1%, 3: 5%, 4: 10%, 5: 25%, 6: 33%, 7: 50%)
 33:	*Trigger was set earlier by this item (See Effect #33)
 34:	 Item is Primed (See Effect #34)
 35:	Item has been Activated (See Effect #35)
@@ -162,6 +162,15 @@ Loadables
 8:	 Arrow of Poison
 9:	 Arrow of Levitation
 
+====================
+Sounds and Particles
+====================
+1:	*Fireburst
+2:	 Puff
+3:	*Glimmer
+4:	 Light Glimmer
+5:	 Exaust
+
 =========
 Resources
 =========
@@ -177,32 +186,3 @@ Resources
 10:	 Bone
 11:	 Arrow
 12:	 Magic Scroll (Renamed mojang_banner_pattern)
-
-============================
-Item Id's (Currently Unused)
-============================
-0:	 Air (No Item)
-1:	 Wooden Sword
-2:	 Stone Sword
-3:	 Iron Sword
-4:	 Diamond Sword
-5:	 Netherite Sword
-6:	 Golden Sword
-7:	 Wooden Axe
-8:	 Stone Axe
-9:	 Iron Axe
-10:	 Diamond Axe
-11:	 Netherite Axe
-12:	 Golden Axe
-13:	 Wooden Pickaxe
-14:	 Stone Pickaxe
-15:	 Iron Pickaxe
-16:	 Diamond Pickaxe
-17:	 Netherite Pickaxe
-18:	 Golden Pickaxe
-19:	 Bow
-20:	 Crossbow (empty, consider loading with Effect #34)
-21:	 Trident
-22:	 Shield
-23:	 Totem of Undying
-24:	 Glowstone Dust

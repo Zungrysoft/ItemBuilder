@@ -146,11 +146,11 @@ Once Activated, Grants +30% Speed
 			{
 				Id: 19,
 				Effects: [
-					{Id: 36}
+					{Id: 35}
 				]
 			},
 			{
-				Id: 7,
+				Id: 35,
 				Effects: [
 					{Id: 2, Value: 30}
 				]
@@ -160,7 +160,7 @@ Once Activated, Grants +30% Speed
 }
 
 # Inline
-/give @s diamond_sword{ItemBuilderMainhand: {Conditions: [{Id: 19,Effects: [{Id: 36}]},{Id: 7,Effects: [{Id: 2, Value: 30}]}]}}
+/give @s diamond_sword{ItemBuilderMainhand: {Conditions: [{Id: 19,Effects: [{Id: 35}]},{Id: 35,Effects: [{Id: 2, Value: 30}]}]}}
 
 # Notes: Activations allow you to make the player work for their custom effects! The first condition activates the sword upon killing the vex. The second condition grants speed, but only after the sword has been activated. Activating an item for the first time gives the item a special lore text, plays a sound effect, and prints a chat message to the player.
 
@@ -175,11 +175,11 @@ Boots That Grant 50% Knockback Resistance For 3 Seconds on Kill
 			{
 				Id: 11,
 				Effects: [
-					{Id: 43, Value: 60}
+					{Id: 34, Value: 60}
 				]
 			},
 			{
-				Id: 35,
+				Id: 34,
 				Effects: [
 					{Id: 6, Value: 50}
 				]
@@ -189,56 +189,39 @@ Boots That Grant 50% Knockback Resistance For 3 Seconds on Kill
 }
 
 # Inline
-/give @s diamond_boots{ItemBuilderFeet: {Conditions: [{Id: 11,Effects: [{Id: 43, Value: 60}]},{Id: 35,Effects: [{Id: 6, Value: 100}]}]}}
+/give @s diamond_boots{ItemBuilderFeet: {Conditions: [{Id: 11,Effects: [{Id: 34, Value: 60}]},{Id: 34,Effects: [{Id: 6, Value: 50}]}]}}
 
 # Notes: Priming an item allows you to grant a passive effect to the player for a controlled duration. The first condition on this item sets the item to be primed for 3 seconds on kill. The second condition grants knockback resistance while it is primed.
 
-============================================================
 
+=======
+Jetpack
+=======
+# Formatted
+/give @s iron_chestplate{
+	ItemBuilderChest: {
+		Conditions: [
+			{
+				Id: 6,
+				Effects: [
+					{Id: 13, Value: 4},
+					{Id: 40, Value: 5}
+				],
+				Conditions: [
+					{
+						Id: 32,
+						Value: 3,
+						Effects: [
+							{Id: 38, Value: 1, NoSound:1}
+						]
+					}
+				]
+			}
+		]
+	}
+}
 
+# Inline
+/give @s iron_chestplate{ItemBuilderChest: {Conditions: [{Id: 6,Effects: [{Id: 13, Value: 4},{Id: 40, Value: 5}],Conditions: [{Id: 32,Value: 3,Effects: [{Id: 38, Value: 1, NoSound:1}]}]}]}}
 
-/give @s iron_sword{ItemBuilderMainhand: {Conditions: [{Id: 6,Effects: [{Id: 38, Value: 1}]},{Id: 5,Effects: [{Id: 39, Value: 1}]}]}}
-
-/give @s iron_sword{ItemBuilderMainhand: {Conditions: [{Id: 6,Effects: [{Id: 30}]}]}}
-/give @s iron_sword{ItemBuilderMainhand: {Conditions: [{Id: 31,Effects: [{Id: 30}]}]}}
-/give @s iron_sword{ItemBuilderMainhand: {Conditions: [{Id: 34, Value:2 ,Effects: [{Id: 38, Value: 1}]}]}}
-/give @s iron_pickaxe{ItemBuilderMainhand: {Conditions: [{Id: 37, Value:10,Effects: [{Id: 15}]}]}}
-
-/give @s crossbow{ItemBuilderMainhand: {Effects: [{Id: 3, Value: 2}]}}
-
-/give @s iron_pickaxe{ItemBuilderMainhand: {Conditions: [{Id: 6,Effects: [{Id: 32}]},{Id: 40,Value:1,Effects: [{Id: 2, Value:30}]}]}}
-
-/give @s iron_axe{ItemBuilderMainhand: {Conditions: [{Id: 11,Effects: [{Id: 47, Value: 3}]}]}}
-
-
-# The Oscillator
-/give @s crossbow{ItemBuilderMainhand: {Conditions: [{Id: 38, Effects: [{Id: 46, Value: 3}]},{Id: 39, Effects: [{Id: 46, Value: 1}]}]}}
-
-# The Massacre Iron
-/give @s iron_sword{ItemBuilderMainhand: {Conditions: [{Id: 11,Effects: [{Id: 52, Value: 1}]}]}}
-
-# Escape Plan
-/give @p iron_pickaxe{ItemBuilderMainhand: {Conditions: [{Id: 36,Value: 16,Inverted: 1,Effects: [{Id: 2, Value: 13}]},{Id: 36,Value: 12,Inverted: 1,Effects: [{Id: 2, Value: 13}]},{Id: 36,Value: 8,Inverted: 1,Effects: [{Id: 2, Value: 13}]},{Id: 36,Value: 4,Inverted: 1,Effects: [{Id: 2, Value: 13}]}]}}
-
-# Rocket Boots
-/give @s iron_boots{ItemBuilderFeet: {Conditions: [{Id: 6,Effects: [{Id: 12, Value: 4}]}]}}
-
-# Jetpack
-/give @s iron_chestplate{ItemBuilderChest: {Conditions: [{Id: 6,Effects: [{Id: 13, Value: 4}]}]}}
-
-# Iron-Giver
-/give @s iron_sword{ItemBuilderMainhand: {Conditions: [{Id: 11,Effects: [{Id: 43, Value: 3, Value2: 5}]}]}}
-
-# Silver Slim's Chopper
-/give @s iron_axe{ItemBuilderMainhand: {Conditions: [{Id: 10,Effects: [{Id: 75, Value: 3}]}]}}
-
-# Creeper Nearby
-/give @s iron_sword{ItemBuilderMainhand: {Conditions: [{Id: 51, Value:2 ,Effects: [{Id: 2, Value: 40}]}]}}
-
-*********
-TODO List
-*********
-[Reconfirm attribute ranges are sufficient]
-[Reconfirm attribute ranges work for all six attributes, pos and neg]
-Sound Effects and Particles
-Item Transforms
+# Notes: Nothing special here, just an example of how you can combine many effects together to create a unique item! The outer condition works when the player is crouching. It causes the player to levitate and also creates a particle effect and sound. The inner condition has a random chance to trigger each frame. If it does trigger, it reduces the item's durability by a bit, so the item will degrade from use.
