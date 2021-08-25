@@ -38,7 +38,7 @@ Effects
 34:	*Item becomes Primed - Value sets number of ticks it will stay primed for (See Condition #34)
 35:	*Item becomes Activated (See Condition #35)
 36:	*Set Fire to Ground Below Player - Value sets radius (max 5)
-37:	*Player loses all experience points
+37:	*Player loses all experience points and levels
 38:	*Item Loses a Fraction of its Durability - Value: (1: 1%, 2: 5%, 3: 25%)
 39:	*Item Regains a Fraction of its Durability - Value: (1: 1%, 2: 5%, 3: 25%)
 40:	 Sound and Particle Effect - See "Sounds and Particles" list below for use of Value key
@@ -77,6 +77,8 @@ Effects
 73:	*Set Fire to all Nearby Monsters
 74:	*Set Fire to a Random Nearby Monster
 75:	*Regain Hunger - Value sets number of hunger points gained
+76:	*Player gains a certain number of experience points - Value sets points (max 256)
+77:	*Player loses a certain number of experience levels - Value sets levels lost. (max 256) (Player also goes down to zero points on that level.)
 
 ==========
 Conditions
@@ -89,7 +91,7 @@ Conditions
 5:	 Sprinting
 6:	 Sneaking/Crouching
 7:	 *Timer - Value determines how many ticks between each trigger
-8:	 Has a certain amount of xp - Value determines required level
+8:	 Has a certain number of experience levels - Value determines required level
 9:	 There are a certain number of monsters within 20 blocks - Value determines count
 10:	*Dealt Damage With a Melee Attack - Value is optional and sets minimum damage that must be dealt by the hit to trigger this condition
 11:	*Killed Mob or Player
@@ -181,6 +183,7 @@ Sounds and Particles
 3:	*Glimmer
 4:	 Light Glimmer
 5:	 Exaust
+6:	*Gain Experience
 
 =========
 Resources
