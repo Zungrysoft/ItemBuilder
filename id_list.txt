@@ -186,8 +186,35 @@ Sounds and Particles
 2:	 Puff
 3:	*Glimmer
 4:	 Light Glimmer
-5:	 Exaust
+5:	 Rocket Exaust
 6:	*Gain Experience
+7:	*Fire Attack
+8:	*Stomp
+9:	*Plant Break
+10:	*White Burst
+11:	*Black Burst
+12:	*Red Burst
+13:	*Orange Burst
+14:	*Yellow Burst
+15:	*Green Burst
+16:	*Blue Burst
+17:	*Purple Burst
+18:	*Pink Burst
+19:	*Brown Burst
+20:	 White Shimmer
+21:	 Black Shimmer
+22:	 Red Shimmer
+23:	 Orange Shimmer
+24:	 Yellow Shimmer
+25:	 Green Shimmer
+26:	 Blue Shimmer
+27:	 Purple Shimmer
+28:	 Pink Shimmer
+29:	 Brown Shimmer
+30:	*Wormhole
+31:	*Totem Break
+32:	*Smack
+33:	 Rocket Exaust 2
 
 =========
 Resources
