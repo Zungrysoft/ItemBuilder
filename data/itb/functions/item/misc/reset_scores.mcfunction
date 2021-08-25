@@ -2,6 +2,9 @@
 scoreboard players reset @s deal_damage
 scoreboard players reset @s take_damage
 scoreboard players reset @s take_damage_mons
+scoreboard players reset @s take_damage_blas
+scoreboard players reset @s take_damage_fire
+scoreboard players reset @s take_damage_proj
 scoreboard players reset @s break_spawner
 scoreboard players reset @s land_arrow
 scoreboard players reset @s land_rocket

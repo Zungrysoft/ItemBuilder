@@ -150,6 +150,9 @@ Conditions
 63:	 A Wither Skeleton is within 15 blocks - Value sets minumum count in range
 64:	 A Burning Entity is within 15 blocks - Value sets minumum count in range
 65:	*Used a Carrot on a Stick - Value sets cooldown before it can be used again
+66:	*Took Blast Damage
+67:	*Took Fire Damage
+68:	*Took Projectile Damage
 
 =========
 Durations

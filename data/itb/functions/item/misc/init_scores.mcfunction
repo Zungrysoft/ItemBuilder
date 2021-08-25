@@ -32,6 +32,9 @@ scoreboard objectives add health health "Health"
 scoreboard objectives add deal_damage minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add take_damage minecraft.custom:minecraft.damage_taken
 scoreboard objectives add take_damage_mons dummy
+scoreboard objectives add take_damage_blas dummy
+scoreboard objectives add take_damage_fire dummy
+scoreboard objectives add take_damage_proj dummy
 scoreboard objectives add break_spawner minecraft.mined:minecraft.spawner
 scoreboard objectives add land_arrow dummy
 scoreboard objectives add land_rocket dummy

@@ -1,0 +1,22 @@
+{
+	"rewards": {
+		"function": "itb:advancements/take_damage_blast"
+	},
+	"criteria": {
+		"took_damage": {
+			"trigger": "minecraft:entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"type": {
+						"is_explosion": true
+					}
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"took_damage"
+		]
+	]
+}
