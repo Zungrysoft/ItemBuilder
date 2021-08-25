@@ -23,5 +23,5 @@ execute if score cur_slot value matches 5 run item modify entity @s armor.legs i
 # Feet
 execute if score cur_slot value matches 6 run item modify entity @s armor.feet itb:set_prime_end
 
-# Store the timer into storage
+# Cleanup
 data remove storage itb:temp PrimeEnd

@@ -105,7 +105,7 @@ Conditions
 21:	*Killed Aquatic Monster
 22:	*Killed Nether Monster
 23:	*Killed Ender Monster
-24:	*Killed Pig-Based Monster
+24:	*Killed Piglin (Includes Variants)
 25:	*Killed Flying Monster
 26:	*Killed Ravager
 27:	*Killed Husk
@@ -136,6 +136,17 @@ Conditions
 52:	 An Illager is within 15 blocks - Value sets minumum count in range
 53:	 A Witch is within 15 blocks - Value sets minumum count in range
 54:	 A Vex is within 15 blocks - Value sets minumum count in range
+55:	 An Aquatic Monster is within 15 blocks - Value sets minumum count in range
+56:	 A Nether Monster 15 blocks - Value sets minumum count in range
+57:	 An Ender Monster is within 15 blocks - Value sets minumum count in range
+58:	 A Piglin is within 15 blocks (Includes variants) - Value sets minumum count in range
+59:	 A Flying Monster is within 15 blocks - Value sets minumum count in range
+60:	 A Ravager is within 15 blocks - Value sets minumum count in range
+61:	 A Husk is within 15 blocks - Value sets minumum count in range
+62:	 A Stray is within 15 blocks - Value sets minumum count in range
+63:	 A Wither Skeleton is within 15 blocks - Value sets minumum count in range
+64:	 A Burning Entity is within 15 blocks - Value sets minumum count in range
+65:	*Used a Carrot on a Stick - Value sets cooldown before it can be used again
 
 =========
 Durations

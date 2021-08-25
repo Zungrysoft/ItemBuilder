@@ -11,6 +11,7 @@ scoreboard players operation kill_total value += @s kill_piglin_brut
 scoreboard players operation kill_total value += @s kill_hoglin
 scoreboard players operation kill_total value += @s kill_zoglin
 scoreboard players operation kill_total value += @s kill_wither_skel
+scoreboard players operation kill_total value += @s kill_wither
 
 # Set result
 execute if score kill_total value matches 1.. run scoreboard players set condition_result value 1

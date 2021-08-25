@@ -7,6 +7,7 @@ scoreboard players reset @s land_arrow
 scoreboard players reset @s land_rocket
 scoreboard players reset @s consume_anything
 scoreboard players reset @s consume_potion
+scoreboard players reset @s use_staff
 
 # These scores should be ticked down instead of reset so that multiple counts on one frame can receive multiple activations
 execute if score @s kill_mob matches 1.. run scoreboard players remove @s kill_mob 1
@@ -40,7 +41,6 @@ execute if score @s kill_ghast matches 1.. run scoreboard players remove @s kill
 execute if score @s kill_piglin matches 1.. run scoreboard players remove @s kill_piglin 1
 execute if score @s kill_hoglin matches 1.. run scoreboard players remove @s kill_hoglin 1
 execute if score @s kill_piglin_brut matches 1.. run scoreboard players remove @s kill_piglin_brut 1
-execute if score @s kill_pig matches 1.. run scoreboard players remove @s kill_pig 1
 execute if score @s kill_magma_cube matches 1.. run scoreboard players remove @s kill_magma_cube 1
 execute if score @s kill_blaze matches 1.. run scoreboard players remove @s kill_blaze 1
 execute if score @s kill_dragon matches 1.. run scoreboard players remove @s kill_dragon 1

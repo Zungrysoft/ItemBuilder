@@ -37,6 +37,7 @@ scoreboard objectives add land_arrow dummy
 scoreboard objectives add land_rocket dummy
 scoreboard objectives add consume_anything dummy
 scoreboard objectives add consume_potion dummy
+scoreboard objectives add use_staff minecraft.used:minecraft.carrot_on_a_stick
 
 # Other Stuff
 scoreboard objectives add pending_hunger dummy
@@ -74,7 +75,6 @@ scoreboard objectives add kill_ghast minecraft.killed:minecraft.ghast
 scoreboard objectives add kill_piglin minecraft.killed:minecraft.piglin
 scoreboard objectives add kill_hoglin minecraft.killed:minecraft.hoglin
 scoreboard objectives add kill_piglin_brut minecraft.killed:minecraft.piglin_brute
-scoreboard objectives add kill_pig minecraft.killed:minecraft.pig
 scoreboard objectives add kill_magma_cube minecraft.killed:minecraft.magma_cube
 scoreboard objectives add kill_blaze minecraft.killed:minecraft.blaze
 scoreboard objectives add kill_dragon minecraft.killed:minecraft.ender_dragon

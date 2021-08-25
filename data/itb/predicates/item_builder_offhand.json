@@ -11,6 +11,28 @@
 					}
 				}
 			}
+		},
+		{
+			"condition":"minecraft:entity_properties",
+			"entity":"this",
+			"predicate":{
+				"equipment":{
+					"offhand":{
+						"nbt":"{ItemBuilderEitherHand:{}}"
+					}
+				}
+			}
+		},
+		{
+			"condition":"minecraft:entity_properties",
+			"entity":"this",
+			"predicate":{
+				"equipment":{
+					"offhand":{
+						"nbt":"{ItemBuilderEitherhand:{}}"
+					}
+				}
+			}
 		}
 	]
 }
