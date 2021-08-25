@@ -31,3 +31,4 @@ execute if score effect_value value matches 30 run function itb:av/wormhole
 execute if score effect_value value matches 31 run function itb:av/totem_break
 execute if score effect_value value matches 32 run function itb:av/smack
 execute if score effect_value value matches 33 run function itb:av/exaust2
+execute if score effect_value value matches 34 run function itb:av/pop

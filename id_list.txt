@@ -80,6 +80,7 @@ Effects
 76:	*Player gains a certain number of experience points - Value sets points (max 256)
 77:	*Player loses a certain number of experience levels - Value sets levels lost. (max 256) (Player also goes down to zero points on that level.)
 78:	 Nearby monsters are immune to knockback - Values sets effect radius (1: 7 blocks, 2: 15 blocks, 3: infinite distance)
+79:	*Heal 4 Health Points - Value determines healing. (Healing = Value * 4)
 
 ==========
 Conditions
@@ -215,6 +216,7 @@ Sounds and Particles
 31:	*Totem Break
 32:	*Smack
 33:	 Rocket Exaust 2
+34:	*Pop
 
 =========
 Resources
