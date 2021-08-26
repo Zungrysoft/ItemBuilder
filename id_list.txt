@@ -39,7 +39,7 @@ Effects
 35:	*Item becomes Activated (See Condition #35)
 36:	*Set Fire to Ground Below Player - Value sets radius (max 5)
 37:	*Player loses all experience points and levels
-38:	*Item Loses a Fraction of its Durability, This is affected by the Unbreaking enchantment - Values: (1: 1%, 2: 5%, 3: 25%)
+38:	*Item Loses a Fraction of its Durability - Values: (1: 1%, 2: 5%, 3: 25%)
 39:	*Item Regains a Fraction of its Durability - Values: (1: 1%, 2: 5%, 3: 25%)
 40:	 Sound and Particle Effect - See "Sounds and Particles" list below for use of Value key
 41:	*Kills you Instantly (Please don't use this except in special situations.)
@@ -155,6 +155,7 @@ Conditions
 67:	*Took Fire Damage
 68:	*Took Projectile Damage
 69:	 Have specific item in mainhand - See "Equipment" list for use of Value key
+70:	 In Lava
 
 =========
 Durations
