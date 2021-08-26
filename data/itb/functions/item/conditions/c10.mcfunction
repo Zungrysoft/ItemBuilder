@@ -4,4 +4,4 @@ scoreboard players operation threshold value = condition_value value
 scoreboard players operation threshold value *= calc value
 
 # Make the check
-execute if score @s deal_damage matches 1.. if score @s deal_damage >= threshold value run scoreboard players set condition_result value 1
+execute if score @s deal_damage >= threshold value run scoreboard players set condition_result value 1
