@@ -156,6 +156,7 @@ Conditions
 68:	*Took Projectile Damage
 69:	 Have specific item in mainhand - See "Equipment" list for use of Value key
 70:	 In Lava
+71:	*Fall Certain Distance - Value sets distance in cm. (Notes: This trigger activates when the player hits the ground from their fall. It only triggers if the player fell more than one block. It will not trigger if the player is in Creative Mode.)
 
 =========
 Durations

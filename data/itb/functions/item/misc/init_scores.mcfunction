@@ -41,6 +41,7 @@ scoreboard objectives add land_rocket dummy
 scoreboard objectives add consume_anything dummy
 scoreboard objectives add consume_potion dummy
 scoreboard objectives add use_staff minecraft.used:minecraft.carrot_on_a_stick
+scoreboard objectives add fall_dist minecraft.custom:minecraft.fall_one_cm
 
 # Other Stuff
 scoreboard objectives add pending_hunger dummy
