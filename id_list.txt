@@ -92,7 +92,7 @@ Conditions
 4:	 Standing in Light Level 8 or Greater
 5:	 Sprinting
 6:	 Sneaking/Crouching
-7:	 *Timer - Value determines how many ticks between each trigger
+7:	*Timer - Value determines how many ticks between each trigger
 8:	 Has a certain number of experience levels - Value determines required level
 9:	 There are a certain number of monsters within 20 blocks - Value determines count
 10:	*Dealt Damage With a Melee Attack - Value is optional and sets minimum damage that must be dealt by the hit to trigger this condition
@@ -120,7 +120,7 @@ Conditions
 32:	 Percentage Random Chance - Values: (1: 0.1%, 2: 1%, 3: 5%, 4: 10%, 5: 25%, 6: 33%, 7: 50%)
 33:	*Trigger was set earlier by this item (See Effect #33)
 34:	 Item is Primed (See Effect #34)
-35:	Item has been Activated (See Effect #35)
+35:	 Item has been Activated (See Effect #35)
 36:	 Has a certain amount of health - Value sets minimum health
 37:	 Has a certain amount of armor - Value sets minimum armor
 38:	*Deal Damage With an Arrow or Spectral Arrow
@@ -189,7 +189,7 @@ Sounds and Particles
 4:	 Light Glimmer
 5:	 Rocket Exaust
 6:	*Gain Experience
-7:	*Fire Attack
+7:	*Pop
 8:	*Stomp
 9:	*Plant Break
 10:	*White Burst
@@ -216,7 +216,16 @@ Sounds and Particles
 31:	*Totem Break
 32:	*Smack
 33:	 Rocket Exaust 2
-34:	*Pop
+34:	*Fire Attack
+35:	*Ice Attack
+36:	*Earth Attack
+37:	*Water Attack
+38:	*Blade Attack
+39:	*Flash Attack
+40:	*Dark Attack (Musical)
+41:	*Light Attack (Musical)
+42:	*Adventurous Attack (Musical)
+43:	*Exotic Attack (Musical)
 
 =========
 Resources
