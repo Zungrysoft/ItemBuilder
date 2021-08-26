@@ -45,6 +45,7 @@ scoreboard objectives add use_staff minecraft.used:minecraft.carrot_on_a_stick
 # Other Stuff
 scoreboard objectives add pending_hunger dummy
 scoreboard objectives add pending_hunger_s dummy
+scoreboard objectives add pending_health dummy
 
 # Mob Kills
 scoreboard objectives add kill_mob totalKillCount

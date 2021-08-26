@@ -27,5 +27,8 @@ function itb:item/misc/potion_effects
 # Hunger Restorating
 function itb:item/misc/pending_hunger
 
+# Healing
+function itb:item/misc/pending_health
+
 # Reset per-frame scores
 function itb:item/misc/reset_scores

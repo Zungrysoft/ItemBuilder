@@ -1,5 +1,5 @@
 #Particles
-particle minecraft:dust 1 1 1 2 ~ ~ ~ 1 1 1 0.4 25
+particle minecraft:dust 0.3 0.3 0 2 ~ ~ ~ 1 1 1 0.4 25
 
 #Sound effects
 playsound minecraft:entity.vex.hurt player @a ~ ~ ~ 2 2

@@ -1,2 +1,2 @@
 #Particles
-particle minecraft:dust 1 1 1 2 ~ ~ ~ 1 1 1 0.4 1
+particle minecraft:dust 0.3 0.3 0 2 ~ ~ ~ 1 1 1 0.4 1
