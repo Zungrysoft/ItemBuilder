@@ -39,8 +39,8 @@ Effects
 35:	*Item becomes Activated (See Condition #35)
 36:	*Set Fire to Ground Below Player - Value sets radius (max 5)
 37:	*Player loses all experience points and levels
-38:	*Item Loses a Fraction of its Durability - Value: (1: 1%, 2: 5%, 3: 25%)
-39:	*Item Regains a Fraction of its Durability - Value: (1: 1%, 2: 5%, 3: 25%)
+38:	*Item Loses a Fraction of its Durability, This is affected by the Unbreaking enchantment - Values: (1: 1%, 2: 5%, 3: 25%)
+39:	*Item Regains a Fraction of its Durability - Values: (1: 1%, 2: 5%, 3: 25%)
 40:	 Sound and Particle Effect - See "Sounds and Particles" list below for use of Value key
 41:	*Kills you Instantly (Please don't use this except in special situations.)
 42:	*Item is Removed from Armor Slot
@@ -154,6 +154,7 @@ Conditions
 66:	*Took Blast Damage
 67:	*Took Fire Damage
 68:	*Took Projectile Damage
+69:	 Have specific item in mainhand - See "Equipment" list for use of Value key
 
 =========
 Durations
@@ -242,3 +243,40 @@ Resources
 10:	 Bone
 11:	 Arrow
 12:	 Magic Scroll (Renamed mojang_banner_pattern)
+
+=========
+Equipment
+=========
+1:	 Sword
+2:	 Axe
+3:	 Pickaxe
+4:	 Shovel
+5:	 Hoe
+6:	 Helmet
+7:	 Chestplate
+8:	 Leggings
+9:	 Boots
+10:	 Wooden Equipment
+11:	 Leather Equipment
+12:	 Stone Equipment
+13:	 Chainmail Equipment
+14:	 Iron Equipment
+15:	 Diamond Equipment
+16:	 Netherite Equipment
+17:	 Golden Equipment
+18:	 Bow
+19:	 Crossbow
+20:	 Trident
+21:	 Shield
+22:	 Potion or Water Bottle
+23:	 Totem of Undying
+24:	 Golden Apple or Enchanted Golden Apple
+25:	 Fishing Rod
+26:	 Flint and Steel
+27:	 Empty Bucket
+28:	 Water Bucket (Includes fish buckets)
+29:	 Lava Bucket
+30:	 Milk Bucket
+31:	 Torch or Lantern
+32:	 Elytra
+33:	 Arrow, Spectral Arrow or Tipped Arrow

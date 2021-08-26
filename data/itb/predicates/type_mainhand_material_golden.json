@@ -6,8 +6,8 @@
 			"entity":"this",
 			"predicate":{
 				"equipment":{
-					"offhand":{
-						"nbt":"{ItemBuilderOffhand:{}}"
+					"mainhand":{
+						"tag":"itb:material_golden"
 					}
 				}
 			}

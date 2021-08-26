@@ -6,8 +6,10 @@
 			"entity":"this",
 			"predicate":{
 				"equipment":{
-					"offhand":{
-						"nbt":"{ItemBuilderOffhand:{}}"
+					"mainhand":{
+						"items":[
+							"minecraft:totem_of_undying"
+						]
 					}
 				}
 			}
