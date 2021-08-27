@@ -54,13 +54,13 @@ Effects
 50:	*Inflict Potion Effect on a Random Nearby Monster - See "Potion Effects and Afflictions" list below for use of Value and Value2 key
 51:	*Grant Potion Effect to All Nearby Players (Includes yourself) - See "Potion Effects and Afflictions" list below for use of Value and Value2 key
 52:	*Grant Potion Effect to All Other Nearby Players (Does not include yourself) - See "Potion Effects and Afflictions" list below for use of Value and Value2 key
-53:	 [Currently Unused]
-54:	 [Currently Unused]
-55:	 [Currently Unused]
-56:	 [Currently Unused]
-57:	 [Currently Unused]
-58:	 [Currently Unused]
-59:	 [Currently Unused]
+53:	*Grant Potion Effect to a Random Other Nearby Player (Cannot affect yourself) - See "Potion Effects and Afflictions" list below for use of Value and Value2 key
+54:	*Add to or Remove from Counter1 - Value key sets amount added (See Condition #54)
+55:	*Set value of Counter1 - Value key sets value Counter1 is set to
+56:	*Add to or Remove from Counter2 - Value key sets amount added (See Condition #56)
+57:	*Set value of Counter2 - Value key sets value Counter2 is set to
+58:	*Add to or Remove from Counter3 - Value key sets amount added (See Condition #58)
+59:	*Set value of Counter3 - Value key sets value Counter3 is set to
 60:	 [Currently Unused]
 61:	 [Currently Unused]
 62:	 [Currently Unused]
@@ -140,12 +140,12 @@ Conditions
 51:	 [Currently Unused]
 52:	 [Currently Unused]
 53:	 [Currently Unused]
-54:	 [Currently Unused]
-55:	 [Currently Unused]
-56:	 [Currently Unused]
-57:	 [Currently Unused]
-58:	 [Currently Unused]
-59:	 [Currently Unused]
+54:	 Counter1 is equal to a certain value - Value key sets the value checked (See Effect #54)
+55:	 Counter1 is greater than or equal to a certain value - Value key sets this value
+56:	 Counter2 is equal to a certain value - Value key sets the value checked (See Effect #56)
+57:	 Counter2 is greater than or equal to a certain value - Value key sets this value
+58:	 Counter3 is equal to a certain value - Value key sets the value checked (See Effect #58)
+59:	 Counter3 is greater than or equal to a certain value - Value key sets this value
 60:	 [Currently Unused]
 61:	 [Currently Unused]
 62:	 [Currently Unused]

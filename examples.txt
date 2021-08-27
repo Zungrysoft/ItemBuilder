@@ -145,7 +145,7 @@ Sword That Grants Resistance on Kill
 			{
 				Id: 11,
 				Effects: [
-					{Id: 53, Value: 3}
+					{Id: 47, Value:7, Value2: 3}
 				]
 			}
 		]
@@ -153,7 +153,7 @@ Sword That Grants Resistance on Kill
 }
 
 # Inline
-/give @s stone_sword{ItemBuilderMainhand: {Conditions: [{Id: 11,Effects: [{Id: 53, Value: 3}]}]}}
+/give @s stone_sword{ItemBuilderMainhand: {Conditions: [{Id: 11,Effects: [{Id: 47, Value:7, Value2: 3}]}]}}
 
 # Notes: Some conditions and effects are "instantaneous". (Marked with an * in id_list.txt) For conditions, this means the condition will only be active for one frame. Things like "Player Killed a Mob". This will only be active the frame after you got the kill. Then there are instantaneous effects, which are designed to be used with instantaneous conditions. Things like "Gain Resistance for the next 10 seconds". There is nothing stopping you from using instantaneous conditions with passive effects and vice-versa, but the item may not make a lot of sense. Use your own judgement.
 
@@ -168,7 +168,7 @@ Bow Whose Arrows Inflict Slowness
 			{
 				Id: 38,
 				Effects: [
-					{Id: 60}
+					{Id: 48, Value:13, Value2: 3}
 				]
 			}
 		]
@@ -176,9 +176,9 @@ Bow Whose Arrows Inflict Slowness
 }
 
 # Inline
-/give @s bow{ItemBuilderMainhand: {Conditions: [{Id: 38,Effects: [{Id: 60}]}]}}
+/give @s bow{ItemBuilderMainhand: {Conditions: [{Id: 38,Effects: [{Id: 48, Value:13, Value2: 3}]}]}}
 
-# Notes: This uses the instantaneous condition "Deal Damage With an Arrow" and the instantaneous effect "Inflict Slowness on Monsters That Just Took Damage". Combined together, this causes the mob you just hit with the arrow to inflict slowness. This can result in other mobs sometimes receiving the effect because they happened to take damage at the same time, but that doesn't happen very often.
+# Notes: This uses the instantaneous condition "Deal Damage With an Arrow" and the instantaneous effect "Inflict Potion Effect on Monsters That Just Took Damage". Combined together, this causes the mob you just hit with the arrow to inflict slowness. This can result in other mobs sometimes receiving the effect because they happened to take damage at the same time, but that doesn't happen very often.
 
 
 =========================================
