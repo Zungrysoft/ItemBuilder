@@ -33,3 +33,4 @@ execute if score effect_value value matches 32 run function itb:item/effects/hel
 execute if score effect_value value matches 33 run function itb:item/effects/helpers/potion_effect_33
 execute if score effect_value value matches 34 run function itb:item/effects/helpers/potion_effect_34
 execute if score effect_value value matches 35 run function itb:item/effects/helpers/potion_effect_35
+execute if score effect_value value matches 36 run function itb:item/effects/helpers/potion_effect_36

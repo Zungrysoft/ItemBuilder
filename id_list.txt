@@ -48,12 +48,12 @@ Effects
 44:	*Lose Item - See "Resources" list below for use of Value key; Value2 determines amount lost (max 128)
 45:	*Reloads all Crossbows on Hotbar and Offhand - See "Loadables" list below for use of Value key
 46:	*Reloads this Crossbow - See "Loadables" list below for use of Value key
-47:	*Gain Potion Effect for Certain Duration - See "Potion Effects" list below for use of Value key; See "Durations" list below for use of Value2 key
-48:	*Inflict Potion Effect on Monsters That Just Took Damage - See "Potion Effects" list below for use of Value key; See "Durations" list below for use of Value2 key
-49:	*Inflict Potion Effect on All Nearby Monsters - See "Potion Effects" list below for use of Value key; See "Durations" list below for use of Value2 key
-50:	*Inflict Potion Effect on a Random Nearby Monster - See "Potion Effects" list below for use of Value key; See "Durations" list below for use of Value2 key
-51:	*Grant Potion Effect to All Nearby Players (Includes yourself) - See "Potion Effects" list below for use of Value key; See "Durations" list below for use of Value2 key
-52:	*Grant Potion Effect to All Other Nearby Players (Does not include yourself) - See "Potion Effects" list below for use of Value key; See "Durations" list below for use of Value2 key
+47:	*Gain Potion Effect for Certain Duration - See "Potion Effects and Afflictions" list below for use of Value and Value2 key
+48:	*Inflict Potion Effect on Monsters That Just Took Damage - See "Potion Effects and Afflictions" list below for use of Value and Value2 key
+49:	*Inflict Potion Effect on All Nearby Monsters - See "Potion Effects and Afflictions" list below for use of Value and Value2 key
+50:	*Inflict Potion Effect on a Random Nearby Monster - See "Potion Effects and Afflictions" list below for use of Value and Value2 key
+51:	*Grant Potion Effect to All Nearby Players (Includes yourself) - See "Potion Effects and Afflictions" list below for use of Value and Value2 key
+52:	*Grant Potion Effect to All Other Nearby Players (Does not include yourself) - See "Potion Effects and Afflictions" list below for use of Value and Value2 key
 53:	 [Currently Unused]
 54:	 [Currently Unused]
 55:	 [Currently Unused]
@@ -159,31 +159,10 @@ Conditions
 70:	 In Lava
 71:	*Fall Certain Distance - Value sets distance in cm. (Notes: This trigger activates when the player hits the ground from their fall. It only triggers if the player fell more than one block. It will not trigger if the player is in Creative Mode.)
 
-=============
-Monster Types
-=============
-1:	 Undead
-2:	 Zombie (Includes variants)
-3:	 Skeleton (Includes variants)
-4:	 Arthropod
-5:	 Spider (Includes variants)
-6:	 Creeper
-7:	 Illager
-8:	 Witch
-9:	 Vex
-10:	 Aquatic Monster
-11:	 Nether Monster
-12:	 Ender Monster
-13:	 Piglin (Includes variants)
-14:	 Flying Monster
-15:	 Ravager
-16:	 Husk
-17:	 Stray
-18:	 Wither Skeleton
-
-==============
-Potion Effects
-==============
+==============================
+Potion Effects and Afflictions
+==============================
+Note: Value key determines which item on this list should be used; Value2 key sets Duration unless otherwise specified. (See "Durations" list for use)
 1:	 Speed I
 2:	 Speed II
 3:	 Speed V
@@ -215,10 +194,11 @@ Potion Effects
 29:	 Regeneration II
 30:	 Regeneration V
 31:	 Fire Resistance
-32:	 Set on Fire (Not actually a potion effect, but goes here regardless)
+32:	 Set on Fire - Value2 key has no effect
 33:	 Instant Damage I
 34:	 Instant Damage II
 35:	 Instant Damage X
+36:	 Explosion - Value2 key sets explosion radius (max 10)
 
 =========
 Durations
@@ -231,6 +211,28 @@ Durations
 6:	 3 Minutes
 7:	 5 Minutes
 8:	 10 Minutes
+
+=============
+Monster Types
+=============
+1:	 Undead
+2:	 Zombie (Includes variants)
+3:	 Skeleton (Includes variants)
+4:	 Arthropod
+5:	 Spider (Includes variants)
+6:	 Creeper
+7:	 Illager
+8:	 Witch
+9:	 Vex
+10:	 Aquatic Monster
+11:	 Nether Monster
+12:	 Ender Monster
+13:	 Piglin (Includes variants)
+14:	 Flying Monster
+15:	 Ravager
+16:	 Husk
+17:	 Stray
+18:	 Wither Skeleton
 
 =========
 Loadables
