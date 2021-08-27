@@ -1,5 +1,8 @@
-# Count up nearby mobs
-execute store result score nearby value if entity @e[type=minecraft:wither_skeleton,distance=0..15]
+# Track burning entities
+scoreboard players set burning value 0
 
-# Make check
-execute if score nearby value matches 1.. if score nearby value >= condition_value value run scoreboard players set condition_result value 1
+# Count up burning entities
+execute as @e[distance=0..15] run function itb:item/conditions/c64_count
+
+# Check
+execute if score burning value matches 1.. if score burning value >= condition_value value run scoreboard players set condition_result value 1
