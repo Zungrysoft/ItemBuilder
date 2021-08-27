@@ -1,5 +1,19 @@
-# Count up nearby mobs
-execute store result score nearby value if entity @e[type=#itb:undead,distance=0..15]
+execute if score condition_value value matches 1 run function itb:item/conditions/helpers/nearby_1
+execute if score condition_value value matches 2 run function itb:item/conditions/helpers/nearby_2
+execute if score condition_value value matches 3 run function itb:item/conditions/helpers/nearby_3
+execute if score condition_value value matches 4 run function itb:item/conditions/helpers/nearby_4
+execute if score condition_value value matches 5 run function itb:item/conditions/helpers/nearby_5
+execute if score condition_value value matches 6 run function itb:item/conditions/helpers/nearby_6
+execute if score condition_value value matches 7 run function itb:item/conditions/helpers/nearby_7
+execute if score condition_value value matches 8 run function itb:item/conditions/helpers/nearby_8
+execute if score condition_value value matches 9 run function itb:item/conditions/helpers/nearby_9
+execute if score condition_value value matches 10 run function itb:item/conditions/helpers/nearby_10
+execute if score condition_value value matches 11 run function itb:item/conditions/helpers/nearby_11
+execute if score condition_value value matches 12 run function itb:item/conditions/helpers/nearby_12
+execute if score condition_value value matches 13 run function itb:item/conditions/helpers/nearby_13
+execute if score condition_value value matches 14 run function itb:item/conditions/helpers/nearby_14
+execute if score condition_value value matches 15 run function itb:item/conditions/helpers/nearby_15
+execute if score condition_value value matches 16 run function itb:item/conditions/helpers/nearby_16
+execute if score condition_value value matches 17 run function itb:item/conditions/helpers/nearby_17
+execute if score condition_value value matches 18 run function itb:item/conditions/helpers/nearby_18
 
-# Make check
-execute if score nearby value matches 1.. if score nearby value >= condition_value value run scoreboard players set condition_result value 1
