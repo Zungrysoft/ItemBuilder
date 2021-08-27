@@ -31,7 +31,7 @@ Effects
 27:	 Cleanse Wither
 28:	 Cleanse Absorption
 29:	 Cleanse Hunger
-30:	*Item Drops on Ground
+30:	*Item Falls out of Player's Hand
 31:	*Item Breaks
 32:	*Item Regains Full Durability
 33:	*Set Trigger (See Condition #33)
@@ -81,6 +81,7 @@ Effects
 77:	*Player loses a certain number of experience levels - Value sets levels lost. (max 256)
 78:	 Nearby monsters are immune to knockback - Values sets effect radius (1: 7 blocks, 2: 15 blocks, 3: infinite distance)
 79:	*Heal 4 Health Points - Value determines healing. (Healing = Value * 4)
+80:	*Player gains a certain number of experience levels - Value sets levels (max 256)
 
 ==========
 Conditions
