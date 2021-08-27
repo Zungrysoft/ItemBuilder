@@ -48,34 +48,34 @@ Effects
 44:	*Lose Item - See "Resources" list below for use of Value key; Value2 determines amount lost (max 128)
 45:	*Reloads all Crossbows on Hotbar and Offhand - See "Loadables" list below for use of Value key
 46:	*Reloads this Crossbow - See "Loadables" list below for use of Value key
-47:	*Speed I Potion Effect - See "Durations" list below for use of Value key
-48:	*Speed II Potion Effect - See "Durations" list below for use of Value key
-49:	*Speed V Potion Effect - See "Durations" list below for use of Value key
-50:	*Strength I Potion Effect - See "Durations" list below for use of Value key
-51:	*Strength II Potion Effect - See "Durations" list below for use of Value key
-52:	*Strength X Potion Effect - See "Durations" list below for use of Value key
-53:	*Resistance I Potion Effect - See "Durations" list below for use of Value key
-54:	*Resistance II Potion Effect - See "Durations" list below for use of Value key
-55:	*Resistance V Potion Effect - See "Durations" list below for use of Value key
-56:	*Haste I Potion Effect - See "Durations" list below for use of Value key
-57:	*Haste III Potion Effect - See "Durations" list below for use of Value key
-58:	*Haste X Potion Effect - See "Durations" list below for use of Value key
-59:	*Fire Resistance Potion Effect - See "Durations" list below for use of Value key
-60:	*Inflict Slowness on Monsters That Just Took Damage
-61:	*Inflict Slowness on all Nearby Monsters
-62:	*Inflict Slowness on a Random Nearby Monster
-63:	*Inflict Weakness on Monsters That Just Took Damage
-64:	*Inflict Weakness on all Nearby Monsters
-65:	*Inflict Weakness on a Random Nearby Monster
-66:	*Inflict Wither on Monsters That Just Took Damage
-67:	*Inflict Wither on all Nearby Monsters
-68:	*Inflict Wither on a Random Nearby Monster
-69:	*Inflict Levitation on Monsters That Just Took Damage
-70:	*Inflict Levitation on all Nearby Monsters
-71:	*Inflict Levitation on a Random Nearby Monster
-72:	*Set Fire to Monsters That Just Took Damage
-73:	*Set Fire to all Nearby Monsters
-74:	*Set Fire to a Random Nearby Monster
+47:	*Gain Potion Effect for Certain Duration - See "Potion Effects" list below for use of Value key; See "Durations" list below for use of Value2 key
+48:	*Inflict Potion Effect on Monsters That Just Took Damage - See "Potion Effects" list below for use of Value key; See "Durations" list below for use of Value2 key
+49:	*Inflict Potion Effect on All Nearby Monsters - See "Potion Effects" list below for use of Value key; See "Durations" list below for use of Value2 key
+50:	*Inflict Potion Effect on a Random Nearby Monster - See "Potion Effects" list below for use of Value key; See "Durations" list below for use of Value2 key
+51:	*Grant Potion Effect to All Nearby Players (Includes yourself) - See "Potion Effects" list below for use of Value key; See "Durations" list below for use of Value2 key
+52:	*Grant Potion Effect to All Other Nearby Players (Does not include yourself) - See "Potion Effects" list below for use of Value key; See "Durations" list below for use of Value2 key
+53:	 [Currently Unused]
+54:	 [Currently Unused]
+55:	 [Currently Unused]
+56:	 [Currently Unused]
+57:	 [Currently Unused]
+58:	 [Currently Unused]
+59:	 [Currently Unused]
+60:	 [Currently Unused]
+61:	 [Currently Unused]
+62:	 [Currently Unused]
+63:	 [Currently Unused]
+64:	 [Currently Unused]
+65:	 [Currently Unused]
+66:	 [Currently Unused]
+67:	 [Currently Unused]
+68:	 [Currently Unused]
+69:	 [Currently Unused]
+70:	 [Currently Unused]
+71:	 [Currently Unused]
+72:	 [Currently Unused]
+73:	 [Currently Unused]
+74:	 [Currently Unused]
 75:	*Regain Hunger - Value sets number of hunger points gained
 76:	*Player gains a certain number of experience points - Value sets points (max 256)
 77:	*Player loses a certain number of experience levels - Value sets levels lost. (max 256)
@@ -181,9 +181,44 @@ Monster Types
 17:	 Stray
 18:	 Wither Skeleton
 
-=================
-Inflicted Effects
-=================
+==============
+Potion Effects
+==============
+1:	 Speed I
+2:	 Speed II
+3:	 Speed V
+4:	 Strength I
+5:	 Strength II
+6:	 Strength X
+7:	 Resistance I
+8:	 Resistance II
+9:	 Resistance V
+10:	 Haste I
+11:	 Haste II
+12:	 Haste X
+13:	 Slowness I
+14:	 Slowness II
+15:	 Slowness X
+16:	 Weakness I
+17:	 Weakness II
+18:	 Weakness X
+19:	 Wither I
+20:	 Wither II
+21:	 Wither V
+22:	 Levitation I
+23:	 Levitation III
+24:	 Levitation V
+25:	 Absorption I
+26:	 Absorption II
+27:	 Absorption V
+28:	 Regeneration I
+29:	 Regeneration II
+30:	 Regeneration V
+31:	 Fire Resistance
+32:	 Set on Fire (Not actually a potion effect, but goes here regardless)
+33:	 Instant Damage I
+34:	 Instant Damage II
+35:	 Instant Damage X
 
 =========
 Durations
