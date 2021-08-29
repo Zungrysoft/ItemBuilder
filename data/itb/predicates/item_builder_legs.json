@@ -7,7 +7,7 @@
 			"predicate":{
 				"equipment":{
 					"legs":{
-						"nbt":"{ItemBuilderLegs:{}}"
+						"nbt":"{ItemBuilderArmor:{}}"
 					}
 				}
 			}

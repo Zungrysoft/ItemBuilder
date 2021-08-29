@@ -1,0 +1,81 @@
+;;;
+Amount;input;;
+Amount;input;;
+Amount;input;;
+Amount;input;;
+Amount;input;;
+Amount;input;;
+;;;
+;;;
+;;;
+;;;
+;;;
+Amplifier (max 4);input;;
+Amplifier (max 4);input;;
+;;;
+;;;
+Amplifier (max 4);input;;
+Amplifier (max 4);input;;
+;;;
+;;;
+Amplifier (max 4);input;;
+Amplifier (max 4);input;;
+;;;
+;;;
+;;;
+;;;
+;;;
+;;;
+;;;
+;;;
+;;;
+;;;
+;;;
+;;;
+Ticks to Prime For;input;;
+;;;
+Radius;dropdown-4;;
+;;;
+Percent Lost;percentage;;
+Percent Regained;percentage;;
+Effect;sound;;
+;;;
+;;;
+Item Received;resource;Amount Recevied;input
+Item Lost;resource;Amount Lost;input
+Projectile;loadable;;
+Projectile;loadable;;
+Potion Effect;potion_effect;Duration;duration
+Potion Effect;potion_effect;Duration;duration
+Potion Effect;potion_effect;Duration;duration
+Potion Effect;potion_effect;Duration;duration
+Potion Effect;potion_effect;Duration;duration
+Potion Effect;potion_effect;Duration;duration
+Potion Effect;potion_effect;Duration;duration
+Amount Added;input;;
+Value;input;;
+Amount Added;input;;
+Value;input;;
+Amount Added;input;;
+Value;input;;
+;;;
+;;;
+;;;
+;;;
+;;;
+;;;
+;;;
+;;;
+;;;
+;;;
+;;;
+;;;
+;;;
+;;;
+;;;
+Points Gained;input;;
+Points Gained;input;;
+Levels Lost;input;;
+Radius;no_knockback_distance_radius;;
+Times the Player Should Gain 4 Health;input;;
+Levels Gained;input;;

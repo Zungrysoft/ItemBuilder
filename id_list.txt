@@ -79,7 +79,7 @@ Effects
 75:	*Regain Hunger - Value sets number of hunger points gained
 76:	*Player gains a certain number of experience points - Value sets points (max 256)
 77:	*Player loses a certain number of experience levels - Value sets levels lost. (max 256)
-78:	 Nearby monsters are immune to knockback - Values sets effect radius (1: 7 blocks, 2: 15 blocks, 3: infinite distance)
+78:	 Nearby monsters are immune to knockback - Values sets effect radius (1: 7 blocks, 2: 15 blocks, 3: unlimited distance)
 79:	*Heal 4 Health Points - Value determines healing. (Healing = Value * 4)
 80:	*Player gains a certain number of experience levels - Value sets levels (max 256)
 
@@ -151,7 +151,7 @@ Conditions
 62:	 [Currently Unused]
 63:	 [Currently Unused]
 64:	 A Burning Entity is within 15 blocks - Value sets minumum count in range
-65:	*Used a Carrot on a Stick - Value sets cooldown before it can be used again
+65:	*Used a Carrot on a Stick - Value sets cooldown in ticks before it can be used again
 66:	*Took Blast Damage
 67:	*Took Fire Damage
 68:	*Took Projectile Damage
@@ -198,7 +198,7 @@ Note: Value key determines which item on this list should be used; Value2 key se
 33:	 Instant Damage I
 34:	 Instant Damage II
 35:	 Instant Damage X
-36:	 Explosion - Value2 key sets explosion radius (max 10)
+36:	 Explosion - Value2 key sets explosion power
 
 =========
 Durations
