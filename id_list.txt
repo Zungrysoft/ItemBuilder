@@ -91,7 +91,7 @@ Conditions
 2:	 On Ground
 3:	 On Fire
 4:	 Standing in Light Level 8 or Greater
-5:	 Sprinting
+5:	 Sprinting while on Ground - (Note: Attacking causes you to stop sprinting, but there is a bug with the game that makes it look like you are still sprinting)
 6:	 Sneaking/Crouching
 7:	*Timer - Value determines how many ticks between each trigger
 8:	 Has a certain number of experience levels - Value determines required level
@@ -119,7 +119,7 @@ Conditions
 30:	*Took Damage - Value is optional and sets minimum damage that must be taken by the hit to trigger this condition
 31:	*Took Damage From a Monster
 32:	 Percentage Random Chance - Values: (1: 0.1%, 2: 1%, 3: 5%, 4: 10%, 5: 25%, 6: 33%, 7: 50%)
-33:	*Trigger was set earlier by this item (See Effect #33)
+33:	 Trigger was set earlier by this item (See Effect #33)
 34:	 Item is Primed (See Effect #34)
 35:	 Item has been Activated (See Effect #35)
 36:	 Has a certain amount of health - Value sets minimum health

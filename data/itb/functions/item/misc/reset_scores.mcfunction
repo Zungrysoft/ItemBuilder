@@ -13,6 +13,10 @@ scoreboard players reset @s consume_potion
 scoreboard players reset @s use_staff
 scoreboard players reset @s fall_dist
 
+# Sprinting needs to be extended an extra frame to combo with "on hit" effects
+execute if score @s sprint_dist matches 1 run scoreboard players reset @s sprint_dist
+execute if score @s sprint_dist matches 2.. run scoreboard players set @s sprint_dist 1
+
 # These scores should be ticked down instead of reset so that multiple counts on one frame can receive multiple activations
 execute if score @s kill_mob matches 1.. run scoreboard players remove @s kill_mob 1
 execute if score @s kill_zombie matches 1.. run scoreboard players remove @s kill_zombie 1
