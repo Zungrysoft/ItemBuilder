@@ -5,7 +5,7 @@
 ;;;
 ;;;
 ;;;
-Ticks Between Each Trigger;input;;
+Ticks Between Each Trigger;input;Offset in Ticks;input
 Required Level;input;;
 Required Monsters;input;;
 Minimum Damage Dealt (optional);input;;
