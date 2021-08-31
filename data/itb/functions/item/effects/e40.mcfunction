@@ -41,3 +41,4 @@ execute if score effect_value value matches 40 run function itb:av/attack_dark
 execute if score effect_value value matches 41 run function itb:av/attack_light
 execute if score effect_value value matches 42 run function itb:av/attack_adventurous
 execute if score effect_value value matches 43 run function itb:av/attack_exotic
+execute if score effect_value value matches 44 run function itb:av/attack_blood

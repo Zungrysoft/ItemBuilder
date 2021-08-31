@@ -11,7 +11,7 @@ Required Monsters;input;;
 Minimum Damage Dealt (optional);input;;
 ;;;
 Monster Type;monster_type;;
-;;;
+Minimum Damage Blocked (optional);input;;
 ;;;
 ;;;
 ;;;

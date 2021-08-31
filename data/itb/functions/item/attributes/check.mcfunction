@@ -9,6 +9,7 @@ execute unless score @s att_haste = att_haste value run function itb:item/attrib
 execute unless score @s att_health = att_health value run function itb:item/attributes/update_health
 execute unless score @s att_armor = att_armor value run function itb:item/attributes/update_armor
 execute unless score @s att_kbr = att_kbr value run function itb:item/attributes/update_kbr
+execute unless score @s att_toughness = att_toughness value run function itb:item/attributes/update_toughness
 
 # Reset all values for the next player/tick
 scoreboard players set att_damage value 0
@@ -17,3 +18,4 @@ scoreboard players set att_haste value 1000000
 scoreboard players set att_health value 0
 scoreboard players set att_armor value 0
 scoreboard players set att_kbr value 0
+scoreboard players set att_toughness value 0

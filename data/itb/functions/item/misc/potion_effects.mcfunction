@@ -18,6 +18,7 @@ execute if score @s slow_falling matches 0 run effect clear @s slow_falling
 execute if score @s water_breathing matches 0 run effect clear @s water_breathing
 execute if score @s wither matches 0 run effect clear @s wither
 execute if score @s hunger matches 0 run effect clear @s hunger
+execute if score @s resistance matches 0 run effect clear @s resistance
 
 # Tick the scores down
 scoreboard players remove @s blindness 1
@@ -35,3 +36,4 @@ scoreboard players remove @s slow_falling 1
 scoreboard players remove @s water_breathing 1
 scoreboard players remove @s wither 1
 scoreboard players remove @s hunger 1
+scoreboard players remove @s resistance 1

@@ -74,8 +74,8 @@ Effects
 70:	 [Currently Unused]
 71:	 [Currently Unused]
 72:	 [Currently Unused]
-73:	 [Currently Unused]
-74:	 [Currently Unused]
+73:	 Resistance - Value sets amplifier (max 4)
+74:	 Plus or Minus Armor Toughness - Value sets increase in points
 75:	*Regain Hunger - Value sets number of hunger points gained
 76:	*Player gains a certain number of experience points - Value sets points (max 256)
 77:	*Player loses a certain number of experience levels - Value sets levels lost. (max 256)
@@ -96,10 +96,10 @@ Conditions
 7:	*Timer - Value determines how many ticks between each trigger
 8:	 Has a certain number of experience levels - Value determines required level
 9:	 There are a certain number of monsters within 20 blocks - Value determines count
-10:	*Dealt Damage With a Melee Attack - Value is optional and sets minimum damage that must be dealt by the hit to trigger this condition
+10:	*Dealt Damage With a Melee Attack - Value is optional and sets minimum damage that must be dealt
 11:	*Killed Mob or Player
 12:	*Killed Mob of a Specific Type - See "Monster Types" list below for use of Value key
-13:	 [Currently Unused]
+13:	*Blocked Damage with Shield - Value is optional and sets minimum damage that must be blocked
 14:	 [Currently Unused]
 15:	 [Currently Unused]
 16:	 [Currently Unused]
@@ -199,6 +199,9 @@ Note: Value key determines which item on this list should be used; Value2 key se
 34:	 Instant Damage II
 35:	 Instant Damage X
 36:	 Explosion - Value2 key sets explosion power
+37:	 Instant Health I (Use Effect #79 instead if possible)
+38:	 Instant Health II (Use Effect #79 instead if possible)
+39:	 Instant Health X (Use Effect #79 instead if possible)
 
 =========
 Durations
@@ -233,6 +236,8 @@ Monster Types
 16:	 Husk
 17:	 Stray
 18:	 Wither Skeleton
+19:	 Blaze
+20:	 Silverfish
 
 =========
 Loadables
@@ -293,6 +298,7 @@ Sounds and Particles
 41:	*Light Attack (Musical)
 42:	*Adventurous Attack (Musical)
 43:	*Exotic Attack (Musical)
+44:	*Blood Attack
 
 =========
 Resources

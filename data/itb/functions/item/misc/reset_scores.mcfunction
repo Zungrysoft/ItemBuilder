@@ -12,6 +12,7 @@ scoreboard players reset @s consume_anything
 scoreboard players reset @s consume_potion
 scoreboard players reset @s use_staff
 scoreboard players reset @s fall_dist
+scoreboard players reset @s block_damage
 
 # Sprinting needs to be extended an extra frame to combo with "on hit" effects
 execute if score @s sprint_dist matches 1 run scoreboard players reset @s sprint_dist

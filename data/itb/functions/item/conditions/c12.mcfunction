@@ -16,4 +16,6 @@ execute if score condition_value value matches 15 run function itb:item/conditio
 execute if score condition_value value matches 16 run function itb:item/conditions/helpers/killed_16
 execute if score condition_value value matches 17 run function itb:item/conditions/helpers/killed_17
 execute if score condition_value value matches 18 run function itb:item/conditions/helpers/killed_18
+execute if score condition_value value matches 19 run function itb:item/conditions/helpers/killed_19
+execute if score condition_value value matches 20 run function itb:item/conditions/helpers/killed_20
 

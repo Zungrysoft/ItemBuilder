@@ -9,6 +9,7 @@ scoreboard objectives add att_health dummy
 scoreboard objectives add att_armor dummy
 scoreboard objectives add att_kbr dummy
 scoreboard objectives add att_haste dummy
+scoreboard objectives add att_toughness dummy
 
 # Potion Effects
 scoreboard objectives add blindness dummy
@@ -26,6 +27,7 @@ scoreboard objectives add slow_falling dummy
 scoreboard objectives add water_breathing dummy
 scoreboard objectives add wither dummy
 scoreboard objectives add hunger dummy
+scoreboard objectives add resistance dummy
 
 # Misc Tracking
 scoreboard objectives add health health "Health"
@@ -43,6 +45,7 @@ scoreboard objectives add consume_potion dummy
 scoreboard objectives add use_staff minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add fall_dist minecraft.custom:minecraft.fall_one_cm
 scoreboard objectives add sprint_dist minecraft.custom:minecraft.sprint_one_cm
+scoreboard objectives add block_damage minecraft.custom:minecraft.damage_blocked_by_shield
 
 # Other Stuff
 scoreboard objectives add pending_hunger dummy
