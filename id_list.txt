@@ -304,6 +304,9 @@ Sounds and Particles
 47:	*Bramble Attack
 48:	*Strike Attack
 49:	*Web Attack
+50:	*Advancement
+51:	*Beacon 1
+52:	*Beacon 2
 
 =========
 Resources

@@ -47,3 +47,6 @@ execute if score effect_value value matches 46 run function itb:av/attack_honey
 execute if score effect_value value matches 47 run function itb:av/attack_bramble
 execute if score effect_value value matches 48 run function itb:av/attack_strike
 execute if score effect_value value matches 49 run function itb:av/attack_web
+execute if score effect_value value matches 50 run function itb:av/advancement
+execute if score effect_value value matches 51 run function itb:av/beacon_1
+execute if score effect_value value matches 52 run function itb:av/beacon_2
