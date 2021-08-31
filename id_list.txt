@@ -299,6 +299,11 @@ Sounds and Particles
 42:	*Adventurous Attack (Musical)
 43:	*Exotic Attack (Musical)
 44:	*Blood Attack
+45:	*Slime Attack
+46:	*Honey Attack
+47:	*Bramble Attack
+48:	*Strike Attack
+49:	*Web Attack
 
 =========
 Resources

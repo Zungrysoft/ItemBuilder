@@ -1,5 +1,5 @@
 # Sound effect
-playsound minecraft:entity.blaze.hurt player @a ~ ~ ~ 1 1.7
+playsound minecraft:entity.blaze.hurt player @a ~ ~ ~ 0.5 1.6
 playsound minecraft:block.ancient_debris.break player @a ~ ~ ~ 0.5 1.4
 
 # Particles

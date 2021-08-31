@@ -42,3 +42,8 @@ execute if score effect_value value matches 41 run function itb:av/attack_light
 execute if score effect_value value matches 42 run function itb:av/attack_adventurous
 execute if score effect_value value matches 43 run function itb:av/attack_exotic
 execute if score effect_value value matches 44 run function itb:av/attack_blood
+execute if score effect_value value matches 45 run function itb:av/attack_slime
+execute if score effect_value value matches 46 run function itb:av/attack_honey
+execute if score effect_value value matches 47 run function itb:av/attack_bramble
+execute if score effect_value value matches 48 run function itb:av/attack_strike
+execute if score effect_value value matches 49 run function itb:av/attack_web
