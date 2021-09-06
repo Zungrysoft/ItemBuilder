@@ -13,7 +13,7 @@ Sword That Grants +15% Speed When Held
 # Inline
 /give @s stone_sword{ItemBuilderMainhand: {Effects: [{Id: 2, Value: 15}]}}
 
-# Notes: The Id key determines which effect you will get. (See id_list.txt for a list of available ids). The Value key determines certain qualities of the effect. For this effect, it sets the percent increase of the player's speed. The base-level keys for the different slots are ItemBuilderMainhand, ItemBuilderOffhand, ItemBuilderEitherHand, ItemBuilderHead, ItemBuilderChest, ItemBuilderLegs, and ItemBuilderFeet.
+# Notes: The Id key determines which effect you will get. (See id_list.txt for a list of available ids). The Value key determines certain qualities of the effect. For this effect, it sets the percent increase of the player's speed. The base-level keys for the different slots are ItemBuilderMainhand, ItemBuilderOffhand, ItemBuilderEitherHand, ItemBuilderArmor, ItemBuilderArmor, ItemBuilderArmor, and ItemBuilderArmor.
 
 
 =========================================================
@@ -21,7 +21,7 @@ Chestplate That Grants +2 Damage and +10% Speed When Worn
 =========================================================
 # Formatted
 /give @s chainmail_chestplate{
-	ItemBuilderChest: {
+	ItemBuilderArmor: {
 		Effects: [
 			{Id: 1, Value: 2},
 			{Id: 2, Value: 10}
@@ -30,7 +30,7 @@ Chestplate That Grants +2 Damage and +10% Speed When Worn
 }
 
 # Inline
-/give @s chainmail_chestplate{ItemBuilderChest: {Effects: [{Id: 1, Value: 2},{Id: 2, Value: 10}]}}
+/give @s chainmail_chestplate{ItemBuilderArmor: {Effects: [{Id: 1, Value: 2},{Id: 2, Value: 10}]}}
 
 # Notes: You can put multiple effects in the list. They will be executed in order.
 
@@ -111,7 +111,7 @@ Helmet That Grants +80% Speed When on Fire With 2 or More Monsters Nearby
 =========================================================================
 # Formatted
 /give @s golden_helmet{
-	ItemBuilderHead: {
+	ItemBuilderArmor: {
 		Conditions: [
 			{
 				Id: 3,
@@ -130,7 +130,7 @@ Helmet That Grants +80% Speed When on Fire With 2 or More Monsters Nearby
 }
 
 # Inline
-/give @s golden_helmet{ItemBuilderHead: {Conditions: [{Id: 3,Conditions: [{Id: 9,Value: 2,Effects: [{Id: 2, Value: 80}]}]}]}}
+/give @s golden_helmet{ItemBuilderArmor: {Conditions: [{Id: 3,Conditions: [{Id: 9,Value: 2,Effects: [{Id: 2, Value: 80}]}]}]}}
 
 # Notes: You can put conditions inside other conditions. This allows you to require multiple conditions to get an effect.
 
@@ -216,7 +216,7 @@ Boots That Grant 50% Knockback Resistance For 3 Seconds on Kill
 ===============================================================
 # Formatted
 /give @s diamond_boots{
-	ItemBuilderFeet: {
+	ItemBuilderArmor: {
 		Conditions: [
 			{
 				Id: 11,
@@ -235,7 +235,7 @@ Boots That Grant 50% Knockback Resistance For 3 Seconds on Kill
 }
 
 # Inline
-/give @s diamond_boots{ItemBuilderFeet: {Conditions: [{Id: 11,Effects: [{Id: 34, Value: 60}]},{Id: 34,Effects: [{Id: 6, Value: 50}]}]}}
+/give @s diamond_boots{ItemBuilderArmor: {Conditions: [{Id: 11,Effects: [{Id: 34, Value: 60}]},{Id: 34,Effects: [{Id: 6, Value: 50}]}]}}
 
 # Notes: Priming an item allows you to grant a passive effect to the player for a controlled duration. The first condition on this item sets the item to be primed for 3 seconds on kill. The second condition grants knockback resistance while it is primed.
 
@@ -245,7 +245,7 @@ Boots That Set Fire to the Ground
 =================================
 # Formatted
 /give @s chainmail_boots{
-	ItemBuilderFeet: {
+	ItemBuilderArmor: {
 		Effects: [
 			{Id: 36, Value: 1, NoSound: 1}
 		]
@@ -253,7 +253,7 @@ Boots That Set Fire to the Ground
 }
 
 # Inline
-/give @s chainmail_boots{ItemBuilderFeet: {Effects: [{Id: 36, Value: 1, NoSound: 1}]}}
+/give @s chainmail_boots{ItemBuilderArmor: {Effects: [{Id: 36, Value: 1, NoSound: 1}]}}
 
 # Notes: There are built in Sound and Particle effects on many of these Effects. There may be situations where you want to disable them, however. You can use the NoSound tag on an effect to accomplish that.
 
@@ -263,7 +263,7 @@ Jetpack
 =======
 # Formatted
 /give @s iron_chestplate{
-	ItemBuilderChest: {
+	ItemBuilderArmor: {
 		Conditions: [
 			{
 				Id: 6,
@@ -286,6 +286,6 @@ Jetpack
 }
 
 # Inline
-/give @s iron_chestplate{ItemBuilderChest: {Conditions: [{Id: 6,Effects: [{Id: 13, Value: 4},{Id: 40, Value: 5}],Conditions: [{Id: 32,Value: 3,Effects: [{Id: 38, Value: 1, NoSound:1}]}]}]}}
+/give @s iron_chestplate{ItemBuilderArmor: {Conditions: [{Id: 6,Effects: [{Id: 13, Value: 4},{Id: 40, Value: 5}],Conditions: [{Id: 32,Value: 3,Effects: [{Id: 38, Value: 1, NoSound:1}]}]}]}}
 
 # Notes: Nothing special here, just an example of how you can combine many effects together to create a unique item! The outer condition works when the player is crouching. It causes the player to levitate and also creates a particle effect and sound. The inner condition has a random chance to trigger each frame. If it does trigger, it reduces the item's durability by a bit, so the item will degrade from use.
