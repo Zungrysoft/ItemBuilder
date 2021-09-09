@@ -1,0 +1,23 @@
+{
+	"rewards": {
+		"function": "itb:advancements/consume_water"
+	},
+	"criteria": {
+		"consume": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:potion"
+					],
+					"nbt":"{Potion:\"minecraft:water\"}"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"consume"
+		]
+	]
+}

@@ -42,6 +42,7 @@ scoreboard objectives add land_arrow dummy
 scoreboard objectives add land_rocket dummy
 scoreboard objectives add consume_anything dummy
 scoreboard objectives add consume_potion dummy
+scoreboard objectives add consume_water dummy
 scoreboard objectives add use_staff minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add fall_dist minecraft.custom:minecraft.fall_one_cm
 scoreboard objectives add sprint_dist minecraft.custom:minecraft.sprint_one_cm

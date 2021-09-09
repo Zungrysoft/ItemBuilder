@@ -10,6 +10,7 @@ scoreboard players reset @s land_arrow
 scoreboard players reset @s land_rocket
 scoreboard players reset @s consume_anything
 scoreboard players reset @s consume_potion
+scoreboard players reset @s consume_water
 scoreboard players reset @s use_staff
 scoreboard players reset @s fall_dist
 scoreboard players reset @s block_damage
