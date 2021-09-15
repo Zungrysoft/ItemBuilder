@@ -79,3 +79,5 @@ Levels Lost;input;;
 Radius;no_knockback_distance_radius;;
 Times the Player Should Gain 4 Health;input;;
 Levels Gained;input;;
+max;input;;
+;;;
