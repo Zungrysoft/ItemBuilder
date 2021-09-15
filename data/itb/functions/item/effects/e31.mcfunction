@@ -1,5 +1,3 @@
-# Activate the item
-
 # Mainhand
 execute if score cur_slot value matches 1 run function itb:item/effects/e31_mainhand
 

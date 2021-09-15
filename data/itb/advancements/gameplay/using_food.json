@@ -1,0 +1,27 @@
+{
+	"rewards": {
+		"function": "itb:advancements/using_food"
+	},
+	"criteria": {
+		"using_item": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {}
+					}
+				],
+				"item": {
+					"tag": "itb:foods"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"using_item"
+		]
+	]
+}

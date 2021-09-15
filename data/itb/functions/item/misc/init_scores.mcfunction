@@ -40,13 +40,21 @@ scoreboard objectives add take_damage_proj dummy
 scoreboard objectives add break_spawner minecraft.mined:minecraft.spawner
 scoreboard objectives add land_arrow dummy
 scoreboard objectives add land_rocket dummy
-scoreboard objectives add consume_anything dummy
+scoreboard objectives add consume_food dummy
 scoreboard objectives add consume_potion dummy
 scoreboard objectives add consume_water dummy
 scoreboard objectives add use_staff minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add fall_dist minecraft.custom:minecraft.fall_one_cm
 scoreboard objectives add sprint_dist minecraft.custom:minecraft.sprint_one_cm
 scoreboard objectives add block_damage minecraft.custom:minecraft.damage_blocked_by_shield
+scoreboard objectives add using_bow dummy
+scoreboard objectives add using_crossbow dummy
+scoreboard objectives add using_trident dummy
+scoreboard objectives add using_shield dummy
+scoreboard objectives add using_spyglass dummy
+scoreboard objectives add using_food dummy
+scoreboard objectives add using_potion dummy
+scoreboard objectives add using_water dummy
 
 # Other Stuff
 scoreboard objectives add pending_hunger dummy

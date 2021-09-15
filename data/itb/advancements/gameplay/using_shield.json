@@ -1,0 +1,29 @@
+{
+	"rewards": {
+		"function": "itb:advancements/using_shield"
+	},
+	"criteria": {
+		"using_item": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {}
+					}
+				],
+				"item": {
+					"items": [
+						"minecraft:shield"
+					]
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"using_item"
+		]
+	]
+}

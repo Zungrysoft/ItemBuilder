@@ -109,3 +109,5 @@ execute if score condition_id value matches 96 run function itb:item/conditions/
 execute if score condition_id value matches 97 run function itb:item/conditions/c97
 execute if score condition_id value matches 98 run function itb:item/conditions/c98
 execute if score condition_id value matches 99 run function itb:item/conditions/c99
+
+execute if score condition_id value matches 1001.. run function itb:item/conditions/c_user
