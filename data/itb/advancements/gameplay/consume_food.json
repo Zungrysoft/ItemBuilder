@@ -1,0 +1,20 @@
+{
+	"rewards": {
+		"function": "itb:advancements/consume_food"
+	},
+	"criteria": {
+		"consume": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"tag": "itb:foods"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"consume"
+		]
+	]
+}

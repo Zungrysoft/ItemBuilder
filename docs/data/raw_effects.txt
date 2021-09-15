@@ -70,7 +70,7 @@ Value;input;;
 ;;;
 ;;;
 ;;;
-;;;
+Amount Gained;input;;
 Amplifier (max 4);input;;
 Amount;input;;
 Points Gained;input;;

@@ -98,13 +98,15 @@ execute if score effect_id value matches 86 run function itb:item/effects/e86
 execute if score effect_id value matches 87 run function itb:item/effects/e87
 execute if score effect_id value matches 88 run function itb:item/effects/e88
 execute if score effect_id value matches 89 run function itb:item/effects/e89
-execute if score effect_id value matches 90 run function itb:item/effects/e80
-execute if score effect_id value matches 91 run function itb:item/effects/e81
-execute if score effect_id value matches 92 run function itb:item/effects/e82
-execute if score effect_id value matches 93 run function itb:item/effects/e83
-execute if score effect_id value matches 94 run function itb:item/effects/e84
-execute if score effect_id value matches 95 run function itb:item/effects/e85
-execute if score effect_id value matches 96 run function itb:item/effects/e86
-execute if score effect_id value matches 97 run function itb:item/effects/e87
-execute if score effect_id value matches 98 run function itb:item/effects/e88
-execute if score effect_id value matches 99 run function itb:item/effects/e89
+execute if score effect_id value matches 90 run function itb:item/effects/e90
+execute if score effect_id value matches 91 run function itb:item/effects/e91
+execute if score effect_id value matches 92 run function itb:item/effects/e92
+execute if score effect_id value matches 93 run function itb:item/effects/e93
+execute if score effect_id value matches 94 run function itb:item/effects/e94
+execute if score effect_id value matches 95 run function itb:item/effects/e95
+execute if score effect_id value matches 96 run function itb:item/effects/e96
+execute if score effect_id value matches 97 run function itb:item/effects/e97
+execute if score effect_id value matches 98 run function itb:item/effects/e98
+execute if score effect_id value matches 99 run function itb:item/effects/e99
+
+execute if score effect_id value matches 1001.. run function itb:item/effects/e_user

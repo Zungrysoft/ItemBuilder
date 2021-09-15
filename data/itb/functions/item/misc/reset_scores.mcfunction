@@ -8,12 +8,20 @@ scoreboard players reset @s take_damage_proj
 scoreboard players reset @s break_spawner
 scoreboard players reset @s land_arrow
 scoreboard players reset @s land_rocket
-scoreboard players reset @s consume_anything
+scoreboard players reset @s consume_food
 scoreboard players reset @s consume_potion
 scoreboard players reset @s consume_water
 scoreboard players reset @s use_staff
 scoreboard players reset @s fall_dist
 scoreboard players reset @s block_damage
+scoreboard players reset @s using_bow
+scoreboard players reset @s using_crossbow
+scoreboard players reset @s using_trident
+scoreboard players reset @s using_shield
+scoreboard players reset @s using_spyglass
+scoreboard players reset @s using_food
+scoreboard players reset @s using_potion
+scoreboard players reset @s using_water
 
 # Sprinting needs to be extended an extra frame to combo with "on hit" effects
 execute if score @s sprint_dist matches 1 run scoreboard players reset @s sprint_dist

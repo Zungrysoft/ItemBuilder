@@ -45,7 +45,7 @@ Resource;resource;Amount Required;input
 ;;;
 ;;;
 Monster Type;monster_type;Minumum Required in Range (optional);input
-;;;
+;;Minumum Required in Range (optional);input
 ;;;
 ;;;
 ;;;
