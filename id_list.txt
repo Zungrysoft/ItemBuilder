@@ -176,6 +176,12 @@ Conditions
 
 1001 to 1020: User Defined (See user_defined.txt for more information)
 
+=======
+Filters
+=======
+0:	 No Changes
+1:	 Executed as all nearby monsters
+
 ==============================
 Potion Effects and Afflictions
 ==============================

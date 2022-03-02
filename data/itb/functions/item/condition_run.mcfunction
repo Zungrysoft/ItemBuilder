@@ -5,3 +5,6 @@ execute if data storage itb:working item[0].Effects[0] run function itb:item/eff
 
 # Conditions
 execute if data storage itb:working item[0].Conditions[0] run function itb:item/condition_list_execute
+
+# Filters
+execute if data storage itb:working item[0].Filters[0] run function itb:item/filter_list_execute
