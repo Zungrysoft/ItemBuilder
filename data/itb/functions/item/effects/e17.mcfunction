@@ -9,4 +9,4 @@ execute unless score @s regeneration matches 0.. if score effect_value value mat
 execute unless score @s regeneration matches 0.. if score effect_value value matches 4 store success score effect_given value run effect give @s minecraft:regeneration 999999 4 false
 
 # If the effect was successfully given, set the passive potion effect flag
-scoreboard players set @s regeneration 1
+execute unless score effect_given value matches 0 run scoreboard players set @s regeneration 1

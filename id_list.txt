@@ -1,190 +1,254 @@
 =======
 Effects
 =======
-0:	 No Effect
-1:	 Plus or Minus Attack Damage - Value sets increase in damage points
-2:	 Plus or Minus Movement Speed - Value sets percent increase
-3:	 Plus or Minus Attack Speed - Value sets percent increase
-4:	 Plus or Minus Max Health - Value sets increase in health points
-5:	 Plus or Minus Armor - Value sets increase in armor points
-6:	 Plus or Minus Knockback Resistance - Value sets percent increase
-7:	 Blindness
-8:	 Dolphin's Grace
-9:	 Fire Resistance
-10:	 Glowing
-11:	 Invisibility
-12:	 Jump Boost - Value sets amplifier (max 4)
-13:	 Levitation - Value sets amplifier (max 4)
-14:	 Nausea
-15:	 Night Vision
-16:	 Poison - Value sets amplifier (max 4)
-17:	 Regeneration - Value sets amplifier (max 4)
-18:	 Slow-Falling
-19:	 Water-Breathing
-20:	 Wither - Value sets amplifier (max 4)
-21:	 Hunger - Value sets amplifier (max 4)
-22:	 Cleanse Blindness
-23:	 Cleanse Fire Resistance
-24:	 Cleanse Levitation
-25:	 Cleanse Nausea
-26:	 Cleanse Poison
-27:	 Cleanse Wither
-28:	 Cleanse Absorption
-29:	 Cleanse Hunger
-30:	*Item Falls out of Player's Hand
-31:	*Item Breaks
-32:	*Item Regains Full Durability
-33:	*Set Trigger (See Condition #33)
-34:	*Item becomes Primed - Value sets number of ticks it will stay primed for (See Condition #34)
-35:	*Item becomes Activated (See Condition #35)
-36:	*Set Fire to Ground Below Player - Value sets radius (max 5)
-37:	*Player loses all experience points and levels
-38:	*Item Loses a Fraction of its Durability - Values: (1: 1%, 2: 5%, 3: 25%)
-39:	*Item Regains a Fraction of its Durability - Values: (1: 1%, 2: 5%, 3: 25%)
-40:	 Sound and Particle Effect - See "Sounds and Particles" list below for use of Value key
-41:	*Kills you Instantly (Please don't use this except in special situations.)
-42:	*Item is Removed from Armor Slot
-43:	*Receive Item - See "Resources" list below for use of Value key; Value2 determines amount received (max 128)
-44:	*Lose Item - See "Resources" list below for use of Value key; Value2 determines amount lost (max 128)
-45:	*Reloads all Crossbows on Hotbar and Offhand - See "Loadables" list below for use of Value key
-46:	*Reloads this Crossbow - See "Loadables" list below for use of Value key
-47:	*Gain Potion Effect for Certain Duration - See "Potion Effects and Afflictions" list below for use of Value and Value2 key
-48:	*Inflict Potion Effect on Monsters That Just Took Damage - See "Potion Effects and Afflictions" list below for use of Value and Value2 key
-49:	*Inflict Potion Effect on All Nearby Monsters - See "Potion Effects and Afflictions" list below for use of Value and Value2 key
-50:	*Inflict Potion Effect on a Random Nearby Monster - See "Potion Effects and Afflictions" list below for use of Value and Value2 key
-51:	*Grant Potion Effect to All Nearby Players (Includes yourself) - See "Potion Effects and Afflictions" list below for use of Value and Value2 key
-52:	*Grant Potion Effect to All Other Nearby Players (Does not include yourself) - See "Potion Effects and Afflictions" list below for use of Value and Value2 key
-53:	*Grant Potion Effect to a Random Other Nearby Player (Cannot affect yourself) - See "Potion Effects and Afflictions" list below for use of Value and Value2 key
-54:	*Add to or Remove from Counter1 - Value key sets amount added (See Condition #54)
-55:	*Set value of Counter1 - Value key sets value Counter1 is set to
-56:	*Add to or Remove from Counter2 - Value key sets amount added (See Condition #56)
-57:	*Set value of Counter2 - Value key sets value Counter2 is set to
-58:	*Add to or Remove from Counter3 - Value key sets amount added (See Condition #58)
-59:	*Set value of Counter3 - Value key sets value Counter3 is set to
-60:	 [Reserved]
-61:	 [Reserved]
-62:	 [Reserved]
-63:	 [Reserved]
-64:	 [Currently Unused]
-65:	 [Currently Unused]
-66:	 [Currently Unused]
-67:	 [Currently Unused]
-68:	 [Currently Unused]
-69:	 [Currently Unused]
-70:	 [Currently Unused]
-71:	 [Currently Unused]
-72:	*Increase or Decrease Item Count - Value sets amount added
-73:	 Resistance - Value sets amplifier (max 4)
-74:	 Plus or Minus Armor Toughness - Value sets increase in points
-75:	*Regain Hunger - Value sets number of hunger points gained
-76:	*Player gains a certain number of experience points - Value sets points (max 256)
-77:	*Player loses a certain number of experience levels - Value sets levels lost. (max 256)
-78:	 Nearby monsters are immune to knockback - Values sets effect radius (1: 7 blocks, 2: 15 blocks, 3: unlimited distance)
-79:	*Heal 4 Health Points - Value determines healing. (Healing = Value * 4)
-80:	*Player gains a certain number of experience levels - Value sets levels (max 256)
-81:	*Roll random number [0 <= n < max] (See Condition #81) - Value sets max (This will never actually roll max, only 1 less than it. This value only survives for one tick.)
-82:	 [Reserved]
 
+Utility
+--------------
+0:		  No Effect
+
+Attributes
+--------------
+100:	  Plus or Minus Attack Damage - Value sets increase in damage points
+101:	  Plus or Minus Movement Speed - Value sets percent increase
+102:	  Plus or Minus Attack Speed - Value sets percent increase
+103:	  Plus or Minus Max Health - Value sets increase in health points
+104:	  Plus or Minus Armor - Value sets increase in armor points
+105:	  Plus or Minus Knockback Resistance - Value sets percent increase
+106:	  Plus or Minus Armor Toughness - Value sets increase in points
+
+Bonuses
+--------------
+200:	 *Gain Potion Effect for Certain Duration - See "Potion Effects" list below for use of Value and Value2 key
+200:	 *Heal 4 Health - Value determines healing. (Healing = Value * 4)
+200:	 *Take 6 Damage - Value determines damage. (Damage = Value * 6)
+200:	 *Regain Hunger - Value sets number of hunger points gained
+200:	 *Player gains a certain number of experience points - Value sets points (max 256)
+200:	 *Player gains a certain number of experience levels - Value sets levels (max 256)
+200:	 *Player loses a certain number of experience levels - Value sets levels lost. (max 256)
+200:	 *Player loses all experience points and levels
+200:	 *Receive Resource Item - See "Resources" list below for use of Value key; Value2 determines amount received (max 128)
+200:	 *Lose Resource Item - See "Resources" list below for use of Value key; Value2 determines amount lost (max 128)
+
+Passive Potion Effects
+--------------
+300:	  Passive Blindness
+301:	  Passive Dolphin's Grace
+302:	  Passive Fire Resistance
+303:	  Passive Glowing
+304:	  Passive Haste - Value sets amplifier (max 4)
+305:	  Passive Hunger - Value sets amplifier (max 4)
+306:	  Passive Invisibility
+307:	  Passive Jump Boost - Value sets amplifier (max 4)
+308:	  Passive Levitation - Value sets amplifier (max 4)
+309:	  Passive Mining Fatigue - Value sets amplifier (max 4)
+310:	  Passive Nausea
+311:	  Passive Night Vision
+312:	  Passive Poison - Value sets amplifier (max 4)
+313:	  Passive Regeneration - Value sets amplifier (max 4)
+314:	  Passive Resistance - Value sets amplifier (max 4)
+315:	  Passive Slow-Falling
+316:	  Passive Speed
+317:	  Passive Strength
+318:	  Passive Water-Breathing
+319:	  Passive Weakness
+320:	  Passive Wither - Value sets amplifier (max 4)
+350:	  Cleanse Blindness
+351:	  Cleanse Dolphin's Grace
+352:	  Cleanse Fire Resistance
+353:	  Cleanse Glowing
+354:	  Cleanse Haste
+355:	  Cleanse Hunger
+356:	  Cleanse Invisibility
+357:	  Cleanse Jump Boost
+358:	  Cleanse Levitation
+359:	  Cleanse Mining Fatigue
+360:	  Cleanse Nausea
+361:	  Cleanse Night Vision
+362:	  Cleanse Poison
+363:	  Cleanse Regeneration
+364:	  Cleanse Resistance
+365:	  Cleanse Slow-Falling
+366:	  Cleanse Speed
+367:	  Cleanse Strength
+368:	  Cleanse Water-Breathing
+369:	  Cleanse Weakness
+370:	  Cleanse Wither
+
+Item Modification
+--------------
+400:	 *Increase or Decrease Item Count - Value sets amount added
+411:	 *Item Regains Full Durability
+412:	 *Item Loses a Fraction of its Durability - Values: (1: 1%, 2: 5%, 3: 25%)
+413:	 *Item Regains a Fraction of its Durability - Values: (1: 1%, 2: 5%, 3: 25%)
+480:	 *Reloads this Crossbow - See "Loadables" list below for use of Value key
+481:	 *Reloads all Crossbows on Hotbar and Offhand - See "Loadables" list below for use of Value key
+
+Special Attacks
+--------------
+500:	 *Set on Fire
+501:	 *Set Fire to Ground - Value sets radius (max 5)
+502:	 *Lightning Strike
+503:	 *Explosion - Value sets radius (max 5)
+
+Logic
+--------------
+800:	 *Set SavedCounter1 equal to Value
+801:	 *Increase SavedCounter1 by Value
+805:	 *Set SavedCounter2 equal to Value
+806:	 *Increase SavedCounter2 by Value
+810:	 *Set SavedCounter3 equal to Value
+811:	 *Increase SavedCounter3 by Value
+820:	 *Set TempCounter1 equal to Value
+821:	 *Increase TempCounter1 by Value
+825:	 *Set TempCounter2 equal to Value
+826:	 *Increase TempCounter2 by Value
+830:	 *Set TempCounter3 equal to Value
+831:	 *Increase TempCounter3 by Value
+840:	 *Set FrameCounter1 equal to Value
+841:	 *Increase FrameCounter1 by Value
+845:	 *Set FrameCounter2 equal to Value
+846:	 *Increase FrameCounter2 by Value
+850:	 *Set FrameCounter3 equal to Value
+851:	 *Increase FrameCounter3 by Value
+860:	  Roll random number [0 <= n < Value] (Number only survives for one frame)
+871:	  Item is Primed (See Effect #34)
+882:	  Item has been Activated (See Effect #35)
+
+Misc
+--------------
+900:	  Sound and Particle Effect - See "Sounds and Particles" list below for use of Value key
+910:	 *Kills you
+920:	 *Item Breaks
+921:	 *Item Falls out of Player's Hand
+922:	 *Item is Removed from Armor Slot
+
+User-Defined
+--------------
 1001 to 1020: User Defined (See user_defined.txt for more information)
+
 
 ==========
 Conditions
 ==========
-0:	 Always True
-1:	 Underwater
-2:	 On Ground
-3:	 On Fire
-4:	 Standing in Light Level 8 or Greater
-5:	 Sprinting while on Ground - (Note: Attacking causes you to stop sprinting, but there is a bug with the game that makes it look like you are still sprinting)
-6:	 Sneaking/Crouching
-7:	*Timer - Value determines time in ticks between each trigger; Value2 sets offset in ticks
-8:	 Has a certain number of experience levels - Value determines required level
-9:	 There are a certain number of monsters within 15 blocks - Value determines count
-10:	*Dealt Damage With a Melee Attack - Value is optional and sets minimum damage that must be dealt
-11:	*Killed Mob or Player
-12:	*Killed Mob of a Specific Type - See "Monster Types" list below for use of Value key
-13:	*Blocked Damage with Shield - Value is optional and sets minimum damage that must be blocked
-14:	 This Crossbow is Loaded
-15:	*Player loads a crossbow
-16:	 Eating food
-17:	 Drinking a potion
-18:	 [Currently Unused]
-19:	 [Currently Unused]
-20:	 [Currently Unused]
-21:	 [Currently Unused]
-22:	 [Currently Unused]
-23:	 [Currently Unused]
-24:	 [Currently Unused]
-25:	 [Currently Unused]
-26:	 [Currently Unused]
-27:	 [Currently Unused]
-28:	 [Currently Unused]
-29:	 [Currently Unused]
-30:	*Took Damage - Value is optional and sets minimum damage that must be taken by the hit to trigger this condition
-31:	*Took Damage From a Monster
-32:	 Percentage Random Chance - Values: (1: 0.1%, 2: 1%, 3: 5%, 4: 10%, 5: 25%, 6: 33%, 7: 50%)
-33:	 Trigger was set earlier by this item (See Effect #33)
-34:	 Item is Primed (See Effect #34)
-35:	 Item has been Activated (See Effect #35)
-36:	 Has a certain amount of health - Value sets minimum health
-37:	 Has a certain amount of armor - Value sets minimum armor
-38:	*Deal Damage With an Arrow or Spectral Arrow
-39:	*Deal Damage With a Firework Rocket
-40:	 Item has a certain amount of durability damage - Value sets minimum damage
-41:	*Ate Food
-42:	*Drank Potion
-43:	 Has Item - See "Resources" list below for use of Value key; Value2 determines the amount they must have
-44:	 [Reserved]
-45:	*Broke Monster Spawner
-46:	 A Mob of a Specific Type is Within 15 Blocks - See "Monster Types" list below for use of Value key; Value2 is optional and sets minumum count in range
-47:	 Another Player is within 20 Blocks - Value2 is optional and sets minimum count in range
-48:	 Bow is being drawn back
-49:	 Crossbow is being loaded
-50:	 Trident is being drawn back
-51:	 Shield is being held up
-52:	 Spyglass is being looked through
-53:	 [Currently Unused]
-54:	 Counter1 is equal to a certain value - Value key sets the value checked (See Effect #54)
-55:	 Counter1 is greater than or equal to a certain value - Value key sets this value
-56:	 Counter2 is equal to a certain value - Value key sets the value checked (See Effect #56)
-57:	 Counter2 is greater than or equal to a certain value - Value key sets this value
-58:	 Counter3 is equal to a certain value - Value key sets the value checked (See Effect #58)
-59:	 Counter3 is greater than or equal to a certain value - Value key sets this value
-60:	 [Reserved]
-61:	 [Reserved]
-62:	 [Reserved]
-63:	 [Reserved]
-64:	 A Burning Entity is within 15 blocks - Value sets minumum count in range
-65:	*Used a Carrot on a Stick - Value sets cooldown in ticks before it can be used again
-66:	*Took Blast Damage
-67:	*Took Fire Damage
-68:	*Took Projectile Damage
-69:	 Have specific item in mainhand - See "Equipment" list for use of Value key
-70:	 In Lava
-71:	*Fall Certain Distance - Value sets distance in cm. (Notes: This trigger activates when the player hits the ground from their fall. It only triggers if the player fell more than one block. It will not trigger if the player is in Creative Mode.)
-72:	 [Reserved]
-73:	 [Currently Unused]
-74:	 [Currently Unused]
-75:	 [Currently Unused]
-76:	 [Currently Unused]
-77:	 [Currently Unused]
-78:	 [Currently Unused]
-79:	 [Currently Unused]
-80:	 [Currently Unused]
-81:	 Rolled random number equals certain number (See Effect #81) - Value sets number checked against
-82:	 Rolled random number is greater than or equal to certain number (See Effect #81) - Value sets number checked
 
+Utility
+--------------
+0:		  Always True
+
+Combat
+--------------
+100:	 *Dealt Damage With a Melee Attack - Value is optional and sets minimum damage that must be dealt
+101:	 *Deal Damage With an Arrow or Spectral Arrow
+102:	 *Deal Damage With a Firework Rocket
+110:	 *Took Damage - Value is optional and sets minimum damage that must be taken by the hit to trigger this condition
+111:	 *Took Damage From a Monster
+112:	 *Took Blast Damage
+113:	 *Took Fire Damage
+114:	 *Took Projectile Damage
+120:	 *Killed Mob or Player
+121:	 *Killed Mob of a Specific Type - See "Monster Types" list below for use of Value key
+
+Actions
+--------------
+200:	  Bow is being drawn back
+205:	  Crossbow is being loaded
+206:	 *Loads crossbow
+207:	  Crossbow is Loaded
+210:	  Trident is being drawn back
+215:	  Shield is being held up
+216:	 *Blocked Damage with Shield - Value is optional and sets minimum damage that must be blocked
+220:	  Eating food
+221:	 *Ate Food
+225:	  Drinking a potion
+226:	 *Drank Potion
+230:	  Spyglass is being looked through
+250:	  On Ground
+251:	  Sprinting while on Ground - (Note: Attacking causes you to stop sprinting, but there is a bug with the game that makes it look like you are still sprinting)
+252:	  Sneaking/Crouching
+260:	 *Fall Certain Distance - Value sets distance in cm. (Notes: This trigger activates when the player hits the ground from their fall. It only triggers if the player fell more than one block. It will not trigger if the player is in Creative Mode.)
+270:	 *Broke Monster Spawner
+ 
+Player Data
+--------------
+300:	  Has a certain amount of health - Value sets minimum health
+301:	  Has a certain amount of armor - Value sets minimum armor
+302:	  Has a certain number of experience levels - Value determines required level
+310:	  Has Resource Item - See "Resources" list below for use of Value key; Value2 determines the amount they must have
+320:	  Have specific item in mainhand - See "Equipment" list for use of Value key
+380:	  On Fire
+381:	  In Water
+382:	  In Lava
+383:	  Standing in Light Level 8 or Greater
+
+Item Data
+--------------
+400:	  Item has a certain amount of durability damage - Value sets minimum damage
+401:	  Item is enchanted
+
+Logic
+--------------
+800:	  SavedCounter1 equals Value
+801:	  SavedCounter1 is greater than or equal to Value
+805:	  SavedCounter2 equals Value
+806:	  SavedCounter2 is greater than or equal to Value
+810:	  SavedCounter3 equals Value
+811:	  SavedCounter3 is greater than or equal to Value
+820:	  TempCounter1 equals Value
+821:	  TempCounter1 is greater than or equal to Value
+825:	  TempCounter2 equals Value
+826:	  TempCounter2 is greater than or equal to Value
+830:	  TempCounter3 equals Value
+831:	  TempCounter3 is greater than or equal to Value
+840:	  FrameCounter1 equals Value
+841:	  FrameCounter1 is greater than or equal to Value
+845:	  FrameCounter2 equals Value
+846:	  FrameCounter2 is greater than or equal to Value
+850:	  FrameCounter3 equals Value
+851:	  FrameCounter3 is greater than or equal to Value
+860:	  Rolled random number equals Value
+861:	  Rolled random number is greater than or equal to Value
+871:	  Item is Primed (See Effect #34)
+882:	  Item has been Activated (See Effect #35)
+
+Misc
+--------------
+900:	 *Timer - Value determines time in ticks between each trigger; Value2 sets offset in ticks
+901:	  Percentage Random Chance - Value sets percent chance
+902:	 *Used a Carrot on a Stick - Value sets cooldown in ticks before it can be used agai
+
+User-Defined
+--------------
 1001 to 1020: User Defined (See user_defined.txt for more information)
+
 
 =======
 Filters
 =======
-0:	 No Changes
-1:	 Executed as all nearby monsters
 
-==============================
-Potion Effects and Afflictions
-==============================
+Utility
+--------------
+0:		  No Changes
+
+Contextual
+--------------
+100:	  Executed as all nearby monsters - See "Radius" list below for use of Value key
+101:	  Executed as nearest monster within range - See "Radius" list below for use of Value key
+102:	  Executed as random nearby monster - See "Radius" list below for use of Value key
+103:	  Executed as random other nearby monster - See "Radius" list below for use of Value key
+104:	  Executed as monsters that just took damage
+110:	  Executed as all nearby players - See "Radius" list below for use of Value key
+111:	  Executed as all other nearby players - See "Radius" list below for use of Value key
+112:	  Executed as random nearby player - See "Radius" list below for use of Value key
+113:	  Executed as random other nearby player - See "Radius" list below for use of Value key
+
+Timing
+--------------
+500:	  Delay - Value sets number of ticks
+
+
+==============
+Potion Effects
+==============
 Note: Value key determines which item on this list should be used; Value2 key sets Duration unless otherwise specified. (See "Durations" list for use)
 1:	 Speed I
 2:	 Speed II
@@ -217,15 +281,12 @@ Note: Value key determines which item on this list should be used; Value2 key se
 29:	 Regeneration II
 30:	 Regeneration V
 31:	 Fire Resistance
-32:	 Set on Fire - Value2 key has no effect
 33:	 Instant Damage I
 34:	 Instant Damage II
 35:	 Instant Damage X
-36:	 Explosion - Value2 key sets explosion power
 37:	 Instant Health I (Use Effect #79 instead if possible)
 38:	 Instant Health II (Use Effect #79 instead if possible)
 39:	 Instant Health X (Use Effect #79 instead if possible)
-40:	 Lightning Strike - Value2 key has no effect
 
 =========
 Durations

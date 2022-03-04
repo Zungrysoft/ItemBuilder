@@ -5,4 +5,4 @@ scoreboard players set effect_given value 0
 execute store success score effect_given value run effect give @s minecraft:nausea 5 0 false
 
 # If the effect was successfully given, set the passive potion effect flag
-scoreboard players set @s nausea 1
+execute unless score effect_given value matches 0 run scoreboard players set @s nausea 1
