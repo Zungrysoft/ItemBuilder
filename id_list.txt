@@ -117,6 +117,7 @@ Logic
 Misc
 --------------
 900:	  Sound and Particle Effect - See "Sounds and Particles" list below for use of Value key
+901:	 *Chat Message
 910:	 *Kills you
 920:	 *Item Breaks
 921:	 *Item Falls out of Player's Hand
@@ -207,14 +208,15 @@ Logic
 851:	  FrameCounter3 is greater than or equal to Value
 860:	  Rolled random number equals Value
 861:	  Rolled random number is greater than or equal to Value
-871:	  Item is Primed (See Effect #34)
-882:	  Item has been Activated (See Effect #35)
+870:	  Item is Primed
+871:	 *Item becomes Unprimed
+875:	  Item has been Activated
 
 Misc
 --------------
 900:	 *Timer - Value determines time in ticks between each trigger; Value2 sets offset in ticks
 901:	  Percentage Random Chance - Value sets percent chance
-902:	 *Used a Carrot on a Stick - Value sets cooldown in ticks before it can be used agai
+902:	 *Used Carrot on a Stick - Value sets cooldown in ticks before it can be used again
 
 User-Defined
 --------------
