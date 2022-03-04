@@ -18,17 +18,17 @@ execute unless score angle value matches -360..0 run summon minecraft:item ~ ~0.
 
 # Transfer item data and remove old item
 # Mainhand
-execute if score cur_slot value matches 1 run function itb:item/effects/e30_mainhand
+execute if score cur_slot value matches 1 run function itb:item/effects/helpers/slip_mainhand
 # Offhand
-execute if score cur_slot value matches 2 run function itb:item/effects/e30_offhand
+execute if score cur_slot value matches 2 run function itb:item/effects/helpers/slip_offhand
 # Head
-execute if score cur_slot value matches 3 run function itb:item/effects/e30_head
+execute if score cur_slot value matches 3 run function itb:item/effects/helpers/slip_head
 # Chest
-execute if score cur_slot value matches 4 run function itb:item/effects/e30_chest
+execute if score cur_slot value matches 4 run function itb:item/effects/helpers/slip_chest
 # Legs
-execute if score cur_slot value matches 5 run function itb:item/effects/e30_legs
+execute if score cur_slot value matches 5 run function itb:item/effects/helpers/slip_legs
 # Feet
-execute if score cur_slot value matches 6 run function itb:item/effects/e30_feet
+execute if score cur_slot value matches 6 run function itb:item/effects/helpers/slip_feet
 
 # Remove new tag
 tag @e[tag=new] remove new

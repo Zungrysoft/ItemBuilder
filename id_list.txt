@@ -19,15 +19,15 @@ Attributes
 Bonuses
 --------------
 200:	 *Gain Potion Effect for Certain Duration - See "Potion Effects" list below for use of Value and Value2 key
-200:	 *Heal 4 Health - Value determines healing. (Healing = Value * 4)
-200:	 *Take 6 Damage - Value determines damage. (Damage = Value * 6)
-200:	 *Regain Hunger - Value sets number of hunger points gained
-200:	 *Player gains a certain number of experience points - Value sets points (max 256)
-200:	 *Player gains a certain number of experience levels - Value sets levels (max 256)
-200:	 *Player loses a certain number of experience levels - Value sets levels lost. (max 256)
-200:	 *Player loses all experience points and levels
-200:	 *Receive Resource Item - See "Resources" list below for use of Value key; Value2 determines amount received (max 128)
-200:	 *Lose Resource Item - See "Resources" list below for use of Value key; Value2 determines amount lost (max 128)
+201:	 *Heal 4 Health - Value determines healing. (Healing = Value * 4)
+202:	 *Take 6 Damage - Value determines damage. (Damage = Value * 6)
+203:	 *Regain Hunger - Value sets number of hunger points gained
+210:	 *Player gains a certain number of experience points - Value sets points (max 256)
+211:	 *Player gains a certain number of experience levels - Value sets levels (max 256)
+212:	 *Player loses a certain number of experience levels - Value sets levels lost. (max 256)
+213:	 *Player loses all experience points and levels
+220:	 *Receive Resource Item - See "Resources" list below for use of Value key; Value2 determines amount received (max 128)
+221:	 *Lose Resource Item - See "Resources" list below for use of Value key; Value2 determines amount lost (max 128)
 
 Passive Potion Effects
 --------------
@@ -73,13 +73,15 @@ Passive Potion Effects
 368:	  Cleanse Water-Breathing
 369:	  Cleanse Weakness
 370:	  Cleanse Wither
+371:	  Cleanse Absorption
 
 Item Modification
 --------------
-400:	 *Increase or Decrease Item Count - Value sets amount added
+400:	 *Set Item Count - Value sets count
+401:	 *Increase or Decrease Item Count - Value sets count added
 411:	 *Item Regains Full Durability
-412:	 *Item Loses a Fraction of its Durability - Values: (1: 1%, 2: 5%, 3: 25%)
-413:	 *Item Regains a Fraction of its Durability - Values: (1: 1%, 2: 5%, 3: 25%)
+412:	 *Item Regains a Fraction of its Durability - Values: (1: 1%, 2: 5%, 3: 25%)
+413:	 *Item Loses a Fraction of its Durability - Values: (1: 1%, 2: 5%, 3: 25%)
 480:	 *Reloads this Crossbow - See "Loadables" list below for use of Value key
 481:	 *Reloads all Crossbows on Hotbar and Offhand - See "Loadables" list below for use of Value key
 
@@ -111,8 +113,8 @@ Logic
 850:	 *Set FrameCounter3 equal to Value
 851:	 *Increase FrameCounter3 by Value
 860:	  Roll random number [0 <= n < Value] (Number only survives for one frame)
-871:	  Item is Primed (See Effect #34)
-882:	  Item has been Activated (See Effect #35)
+870:	  Prime Item for n ticks (See Condition #870)
+875:	  Activate Item (See Condition #875)
 
 Misc
 --------------
