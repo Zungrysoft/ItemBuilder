@@ -18,4 +18,4 @@ execute if score cur_slot value matches 6 store result score prime_end value run
 execute if score global_timer value <= prime_end value run scoreboard players set condition_result value 1
 
 # If the timer has ended, reset the ItemBuilderPrimed key so this function won't be called anymore
-execute unless score global_timer value <= prime_end value run function itb:item/conditions/helpers/prime_check
+execute unless score global_timer value <= prime_end value run function itb:item/conditions/helpers/prime_reset

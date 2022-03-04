@@ -5,13 +5,13 @@ Sword That Grants +15% Speed When Held
 /give @s stone_sword{
 	ItemBuilderMainhand: {
 		Effects: [
-			{Id: 2, Value: 15}
+			{Id: 101, Value: 15}
 		]
 	}
 }
 
 # Inline
-/give @s stone_sword{ItemBuilderMainhand: {Effects: [{Id: 2, Value: 15}]}}
+/give @s stone_sword{ItemBuilderMainhand: {Effects: [{Id: 101, Value: 15}]}}
 
 # Notes: The Id key determines which effect you will get. (See id_list.txt for a list of available ids). The Value key determines certain qualities of the effect. For this effect, it sets the percent increase of the player's speed. The base-level keys for the different slots are ItemBuilderMainhand, ItemBuilderOffhand, ItemBuilderEitherHand, ItemBuilderArmor, ItemBuilderArmor, ItemBuilderArmor, and ItemBuilderArmor.
 
@@ -23,14 +23,14 @@ Chestplate That Grants +2 Damage and +10% Speed When Worn
 /give @s chainmail_chestplate{
 	ItemBuilderArmor: {
 		Effects: [
-			{Id: 1, Value: 2},
-			{Id: 2, Value: 10}
+			{Id: 100, Value: 2},
+			{Id: 101, Value: 10}
 		]
 	}
 }
 
 # Inline
-/give @s chainmail_chestplate{ItemBuilderArmor: {Effects: [{Id: 1, Value: 2},{Id: 2, Value: 10}]}}
+/give @s chainmail_chestplate{ItemBuilderArmor: {Effects: [{Id: 100, Value: 2},{Id: 101, Value: 10}]}}
 
 # Notes: You can put multiple effects in the list. They will be executed in order.
 
@@ -43,9 +43,9 @@ Axe That Grants +50 Attack Damage When Underwater
 	ItemBuilderMainhand: {
 		Conditions: [
 			{
-				Id: 1,
+				Id: 381,
 				Effects: [
-					{Id: 1, Value: 50}
+					{Id: 100, Value: 50}
 				]
 			}
 		]
@@ -53,7 +53,7 @@ Axe That Grants +50 Attack Damage When Underwater
 }
 
 # Inline
-/give @s iron_axe{ItemBuilderMainhand: {Conditions: [{Id: 1,Effects: [{Id: 1, Value: 50}]}]}}
+/give @s iron_axe{ItemBuilderMainhand: {Conditions: [{Id: 381,Effects: [{Id: 100, Value: 50}]}]}}
 
 # Notes: Conditions can be used to make effects only happen under certain circumstances. The Id key will determine the condition that must be satisfied to run the effects inside of it. (See id_list.txt for a list of ids.)
 
@@ -66,10 +66,10 @@ Axe That Grants +50 Attack Damage When NOT Underwater
 	ItemBuilderMainhand: {
 		Conditions: [
 			{
-				Id: 1,
+				Id: 381,
 				Inverted: 1,
 				Effects: [
-					{Id: 1, Value: 50}
+					{Id: 100, Value: 50}
 				]
 			}
 		]
@@ -77,7 +77,7 @@ Axe That Grants +50 Attack Damage When NOT Underwater
 }
 
 # Inline
-/give @s iron_axe{ItemBuilderMainhand: {Conditions: [{Id: 1,Inverted: 1,Effects: [{Id: 1, Value: 50}]}]}}
+/give @s iron_axe{ItemBuilderMainhand: {Conditions: [{Id: 381,Inverted: 1,Effects: [{Id: 100, Value: 50}]}]}}
 
 # Notes: Use the Inverted key to swap true and false for the condition. Aside from the Inverted key, this item is identical to the one above, but has the exact opposite effect.
 
@@ -90,10 +90,10 @@ Offhand Item That Grants +10% Speed When at 13 XP Levels or More
 	ItemBuilderOffhand: {
 		Conditions: [
 			{
-				Id: 8,
+				Id: 302,
 				Value: 13,
 				Effects: [
-					{Id: 2, Value: 10}
+					{Id: 101, Value: 10}
 				]
 			}
 		]
@@ -101,26 +101,25 @@ Offhand Item That Grants +10% Speed When at 13 XP Levels or More
 }
 
 # Inline
-/give @s raw_copper{ItemBuilderOffhand: {Conditions: [{Id: 8,Value: 13,Effects: [{Id: 2, Value: 10}]}]}}
+/give @s raw_copper{ItemBuilderOffhand: {Conditions: [{Id: 302,Value: 13,Effects: [{Id: 101, Value: 10}]}]}}
 
 # Notes: Some conditions have Value keys. For this condition, it sets the number of levels required to satisfy the condition.
 
 
-=========================================================================
-Helmet That Grants +80% Speed When on Fire With 2 or More Monsters Nearby
-=========================================================================
+==========================================================
+Helmet That Grants +80% Speed When on Fire And Eating Food
+==========================================================
 # Formatted
 /give @s golden_helmet{
 	ItemBuilderArmor: {
 		Conditions: [
 			{
-				Id: 3,
+				Id: 380,
 				Conditions: [
 					{
-						Id: 9,
-						Value: 2,
+						Id: 220,
 						Effects: [
-							{Id: 2, Value: 80}
+							{Id: 101, Value: 80}
 						]
 					}
 				]
@@ -130,7 +129,7 @@ Helmet That Grants +80% Speed When on Fire With 2 or More Monsters Nearby
 }
 
 # Inline
-/give @s golden_helmet{ItemBuilderArmor: {Conditions: [{Id: 3,Conditions: [{Id: 9,Value: 2,Effects: [{Id: 2, Value: 80}]}]}]}}
+/give @s golden_helmet{ItemBuilderArmor: {Conditions: [{Id: 380,Conditions: [{Id: 220,Value: 2,Effects: [{Id: 101, Value: 80}]}]}]}}
 
 # Notes: You can put conditions inside other conditions. This allows you to require multiple conditions to get an effect.
 
@@ -143,9 +142,9 @@ Sword That Grants Resistance on Kill
 	ItemBuilderMainhand: {
 		Conditions: [
 			{
-				Id: 11,
+				Id: 120,
 				Effects: [
-					{Id: 47, Value:7, Value2: 3}
+					{Id: 200, Value:20, Value2: 3}
 				]
 			}
 		]
@@ -153,13 +152,128 @@ Sword That Grants Resistance on Kill
 }
 
 # Inline
-/give @s stone_sword{ItemBuilderMainhand: {Conditions: [{Id: 11,Effects: [{Id: 47, Value:7, Value2: 3}]}]}}
+/give @s stone_sword{ItemBuilderMainhand: {Conditions: [{Id: 120,Effects: [{Id: 200, Value:20, Value2: 3}]}]}}
 
 # Notes: Some conditions and effects are "instantaneous". (Marked with an * in id_list.txt) For conditions, this means the condition will only be active for one frame. Things like "Player Killed a Mob". This will only be active the frame after you got the kill. Then there are instantaneous effects, which are designed to be used with instantaneous conditions. Things like "Gain Resistance for the next 10 seconds". There is nothing stopping you from using instantaneous conditions with passive effects and vice-versa, but the item may not make a lot of sense. Use your own judgement.
 
 
 =================================
-Bow Whose Arrows Inflict Slowness
+Boots That Set Fire to the Ground
+=================================
+# Formatted
+/give @s chainmail_boots{
+	ItemBuilderArmor: {
+		Effects: [
+			{Id: 501, Value: 1, NoSound: 1}
+		]
+	}
+}
+
+# Inline
+/give @s chainmail_boots{ItemBuilderArmor: {Effects: [{Id: 501, Value: 1, NoSound: 1}]}}
+
+# Notes: There are built in sound and particle effects on many of these Effects. There may be situations where you want to disable them, however. You can use the NoSound tag on an effect to accomplish that.
+
+
+=========================================
+Sword That Activates Upon Killing a Witch
+    Once Activated, Grants +30% Speed
+=========================================
+# Formatted
+/give @s diamond_sword{
+	ItemBuilderMainhand: {
+		Conditions: [
+			{
+				Id: 121,
+				Value: 8,
+				Effects: [
+					{Id: 875}
+				]
+			},
+			{
+				Id: 875,
+				Effects: [
+					{Id: 101, Value: 30}
+				]
+			}
+		]
+	}
+}
+
+# Inline
+/give @s diamond_sword{ItemBuilderMainhand: {Conditions: [{Id: 121, Value: 8,Effects: [{Id: 875}]},{Id: 875,Effects: [{Id: 101, Value: 30}]}]}}
+
+# Notes: Activations allow you to make the player work for their custom effects! The first condition activates the sword upon killing the witch. The second condition grants speed, but only after the sword has been activated. Activating an item for the first time gives the item a special lore text, plays a sound effect, and prints a chat message to the player.
+
+
+===============================================================
+Boots That Grant 50% Knockback Resistance For 3 Seconds on Kill
+===============================================================
+# Formatted
+/give @s diamond_boots{
+	ItemBuilderArmor: {
+		Conditions: [
+			{
+				Id: 120,
+				Effects: [
+					{Id: 870, Value: 60}
+				]
+			},
+			{
+				Id: 870,
+				Effects: [
+					{Id: 105, Value: 50},
+					{Id: 900, Value: 54}
+				]
+			}
+		]
+	}
+}
+
+# Inline
+/give @s diamond_boots{ItemBuilderArmor: {Conditions: [{Id: 120,Effects: [{Id: 870, Value: 60}]},{Id: 870,Effects: [{Id: 105, Value: 50},{Id: 900, Value: 54}]}]}}
+
+# Notes: Priming an item allows you to grant a passive effect to the player for a controlled duration. The first condition on this item sets the item to be primed for 3 seconds on kill. The second condition grants knockback resistance while it is primed.
+
+
+====================================================
+Staff That Kills Monsters That Have 5 Health or Less
+====================================================
+# Formatted
+/give @s carrot_on_a_stick{
+	ItemBuilderEitherHand: {
+		Conditions:[
+			{
+				Id:902,
+				Filters: [
+					{
+						Id:120,
+						Value:5,
+						Conditions: [
+							{
+								Id:300,
+								Value:6,
+								Inverted:1,
+								Effects: [
+									{Id:910}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}
+
+# Inline
+/give @s minecraft:carrot_on_a_stick{ItemBuilderEitherHand:{Conditions:[{Id:902,Filters:[{Id:120,Value:5,Conditions:[{Id:300,Value:6,Inverted:1,Effects:[{Id:910}]}]}]}]}}
+
+# Notes: Filters allow you to affect and make checks against monsters, among other things. First, the item (a Carrot on a Stick) checks if you've used it. If so, then run a filter that affects all monsters within a radius of 5 blocks. For each of those monsters, it will check the condition that tests how much health it has. It doesn't check against the player's health, it checks against the monster's health because the condition falls inside the filter. Each monster for whom the condition is true will execute the effect, which also is on the monster instead of the player. Thus, the monster is killed if it has five health or less.
+
+
+=================================
+Bow Whose Arrows Inflict Weakness
 =================================
 # Formatted
 /give @s bow{
@@ -176,116 +290,48 @@ Bow Whose Arrows Inflict Slowness
 }
 
 # Inline
-/give @s bow{ItemBuilderMainhand: {Conditions: [{Id: 38,Effects: [{Id: 48, Value:13, Value2: 3}]}]}}
+/give @s bow{ItemBuilderMainhand: {Conditions: [{Id: 101, Filters: [{Id: 125,Effects: [{Id: 200, Value:51, Value2: 3}]}]}]}}
 
-# Notes: This uses the instantaneous condition "Deal Damage With an Arrow" and the instantaneous effect "Inflict Potion Effect on Monsters That Just Took Damage". Combined together, this causes the mob you just hit with the arrow to inflict slowness. This can result in other mobs sometimes receiving the effect because they happened to take damage at the same time, but that doesn't happen very often.
+# Notes: This uses a filter "Executed as nearby monsters that just took damage" and the instantaneous effect "Gain Potion Effect for Certain Duration". Combined together, this causes the mob you just hit with the arrow to be inflicted with slowness. This can result in other mobs sometimes receiving the effect because they happened to take damage at the same time as you landing the arrow, but that doesn't happen very often.
 
 
-=========================================
-Sword That Activates Upon Killing a Witch
-    Once Activated, Grants +30% Speed
-=========================================
+=========================================================================
+Leggings that Grant +60% Speed if There Are Three Burning Monsters Nearby
+=========================================================================
 # Formatted
-/give @s diamond_sword{
-	ItemBuilderMainhand: {
-		Conditions: [
-			{
-				Id: 19,
-				Effects: [
-					{Id: 35}
-				]
-			},
-			{
-				Id: 35,
-				Effects: [
-					{Id: 2, Value: 30}
-				]
-			}
-		]
-	}
-}
-
-# Inline
-/give @s diamond_sword{ItemBuilderMainhand: {Conditions: [{Id: 19,Effects: [{Id: 35}]},{Id: 35,Effects: [{Id: 2, Value: 30}]}]}}
-
-# Notes: Activations allow you to make the player work for their custom effects! The first condition activates the sword upon killing the witch. The second condition grants speed, but only after the sword has been activated. Activating an item for the first time gives the item a special lore text, plays a sound effect, and prints a chat message to the player.
-
-
-===============================================================
-Boots That Grant 50% Knockback Resistance For 3 Seconds on Kill
-===============================================================
-# Formatted
-/give @s diamond_boots{
+/give @s diamond_leggings{
 	ItemBuilderArmor: {
 		Conditions: [
 			{
-				Id: 11,
-				Effects: [
-					{Id: 34, Value: 60}
-				]
-			},
-			{
-				Id: 34,
-				Effects: [
-					{Id: 6, Value: 50}
-				]
-			}
-		]
-	}
-}
-
-# Inline
-/give @s diamond_boots{ItemBuilderArmor: {Conditions: [{Id: 11,Effects: [{Id: 34, Value: 60}]},{Id: 34,Effects: [{Id: 6, Value: 50}]}]}}
-
-# Notes: Priming an item allows you to grant a passive effect to the player for a controlled duration. The first condition on this item sets the item to be primed for 3 seconds on kill. The second condition grants knockback resistance while it is primed.
-
-
-=================================
-Boots That Set Fire to the Ground
-=================================
-# Formatted
-/give @s chainmail_boots{
-	ItemBuilderArmor: {
-		Effects: [
-			{Id: 36, Value: 1, NoSound: 1}
-		]
-	}
-}
-
-# Inline
-/give @s chainmail_boots{ItemBuilderArmor: {Effects: [{Id: 36, Value: 1, NoSound: 1}]}}
-
-# Notes: There are built in Sound and Particle effects on many of these Effects. There may be situations where you want to disable them, however. You can use the NoSound tag on an effect to accomplish that.
-
-
-=======
-Jetpack
-=======
-# Formatted
-/give @s iron_chestplate{
-	ItemBuilderArmor: {
-		Conditions: [
-			{
-				Id: 6,
-				Effects: [
-					{Id: 13, Value: 4},
-					{Id: 40, Value: 5}
-				],
-				Conditions: [
+				Id: 0,
+				Filters: [
 					{
-						Id: 32,
-						Value: 3,
-						Effects: [
-							{Id: 38, Value: 1, NoSound:1}
+						Id: 120,
+						Value: 8,
+						Conditions: [
+							{
+								Id: 380,
+								Effects: [
+									{Id: 841, Value: 1}
+								]
+							}
 						]
 					}
 				]
+			},
+			{
+				Id: 841,
+				Value: 3,
+				Effects: [
+					{Id: 101, Value: 60}
+				]
 			}
 		]
 	}
 }
 
 # Inline
-/give @s iron_chestplate{ItemBuilderArmor: {Conditions: [{Id: 6,Effects: [{Id: 13, Value: 4},{Id: 40, Value: 5}],Conditions: [{Id: 32,Value: 3,Effects: [{Id: 38, Value: 1, NoSound:1}]}]}]}}
+/give @s diamond_leggings{ItemBuilderArmor: {Conditions: [{Id: 0,Filters: [{Id: 120,Value: 8,Conditions: [{Id: 380,Effects: [{Id: 841, Value: 1}]}]}]},{Id: 841,Value: 3,Effects: [{Id: 101, Value: 60}]}]}}
 
-# Notes: Nothing special here, just an example of how you can combine many effects together to create a unique item! The outer condition works when the player is crouching. It causes the player to levitate and also creates a particle effect and sound. The inner condition has a random chance to trigger each frame. If it does trigger, it reduces the item's durability by a bit, so the item will degrade from use.
+# Notes: This uses filters and FrameCounters together to create an item that counts nearby monsters that have certain properties. The first part goes through each nearby monster and checks if it's on fire. If it is, it increments the FrameCounter by one. (FrameCounters are counters that can be added to or subtracted from, but are reset to 0 at the beginning of the frame. So it's useful for logic like this, but not for storing data permanently.) If three monsters are found to be on fire, the FrameCounter will be incremented three times. The second part checks if the FrameCounter was incremented to at least three and grants the effect. One more thing to note is the Condition with Id 0. Condition 0 means "always true", so it really does nothing. Its purpose is to allow us to manage the order between the Filter inside it and the Condition below it. ItemBuilder always executes Effects, then Conditions, then Filters, but you can rearrange Conditions with each other. We need the Filter to be run before the Condition below, so we use this "Container" Condition to put the Filter inside, which can be rearranged with the other Condition to whichever order we choose.
+

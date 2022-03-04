@@ -51,3 +51,5 @@ execute if score effect_value value matches 50 run function itb:av/advancement
 execute if score effect_value value matches 51 run function itb:av/beacon_1
 execute if score effect_value value matches 52 run function itb:av/beacon_2
 execute if score effect_value value matches 53 run function itb:av/raincloud_small
+execute if score effect_value value matches 54 run function itb:av/shields_teal
+execute if score effect_value value matches 55 run function itb:av/shields_red

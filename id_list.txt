@@ -235,7 +235,7 @@ Utility
 
 Contextual
 --------------
-100:	  Executed as all nearby players - See "Radius" list below for use of Value key
+100:	  Executed as all nearby players - See "Ranges" list below for use of Value key
 101:	  Executed as all other nearby players
 102:	  Executed as nearest player within range
 103:	  Executed as random nearby player
@@ -251,65 +251,56 @@ Timing
 --------------
 500:	  Delay - Value sets number of ticks
 
+Misc
+--------------
+900:	  On item slot - See "Slots" list below for use of the Value key
+
+User-Defined
+--------------
+1001 to 1020: User Defined (See user_defined.txt for more information)
+
 
 ==============
 Potion Effects
 ==============
 Note: Value key determines which item on this list should be used; Value2 key sets Duration unless otherwise specified. (See "Durations" list for use)
-1:	 Speed I
-2:	 Speed II
-3:	 Speed V
-4:	 Strength I
-5:	 Strength II
-6:	 Strength X
-7:	 Resistance I
-8:	 Resistance II
-9:	 Resistance V
-10:	 Haste I
-11:	 Haste II
-12:	 Haste X
-13:	 Slowness I
-14:	 Slowness II
-15:	 Slowness X
-16:	 Weakness I
-17:	 Weakness II
-18:	 Weakness X
-19:	 Wither I
-20:	 Wither II
-21:	 Wither V
-22:	 Levitation I
-23:	 Levitation III
-24:	 Levitation V
-25:	 Absorption I
-26:	 Absorption II
-27:	 Absorption V
-28:	 Regeneration I
-29:	 Regeneration II
-30:	 Regeneration V
-31:	 Fire Resistance
-33:	 Instant Damage I
-34:	 Instant Damage II
-35:	 Instant Damage X
-37:	 Instant Health I (Use Effect #79 instead if possible)
-38:	 Instant Health II (Use Effect #79 instead if possible)
-39:	 Instant Health X (Use Effect #79 instead if possible)
-
-======
-Ranges
-======
-1:		 1 Block
-2:		 2 Blocks
-3:		 3 Blocks
-4:		 4 Blocks
-5:		 5 Blocks
-6:		 7 Blocks
-7:		 10 Blocks
-8:		 15 Blocks
-9:		 20 Blocks
-10:		 30 Blocks
-11:		 50 Blocks
-12:		 100 Blocks
-100:	 Unlimited Range
+0:		 Speed I
+1:		 Speed II
+4:		 Speed V
+10:		 Strength I
+11:		 Strength II
+19:		 Strength X
+20:		 Resistance I
+21:		 Resistance II
+24:		 Resistance V
+30:		 Haste I
+31:		 Haste II
+39:		 Haste X
+40:		 Slowness I
+41:		 Slowness II
+49:		 Slowness X
+50:		 Weakness I
+51:		 Weakness II
+59:		 Weakness X
+60:		 Wither I
+61:		 Wither II
+64:		 Wither V
+70:		 Levitation I
+72:		 Levitation III
+74:		 Levitation V
+80:		 Absorption I
+81:		 Absorption II
+84:		 Absorption V
+90:		 Regeneration I
+91:		 Regeneration II
+94:		 Regeneration V
+100:	 Fire Resistance
+110:	 Instant Damage I
+111:	 Instant Damage II
+119:	 Instant Damage X
+120:	 Instant Health I
+121:	 Instant Health II
+129:	 Instant Health X
 
 =========
 Durations
@@ -322,6 +313,23 @@ Durations
 6:	 3 Minutes
 7:	 5 Minutes
 8:	 10 Minutes
+
+======
+Ranges
+======
+0:		 Unlimited Range
+1:		 1 Block
+2:		 2 Blocks
+3:		 3 Blocks
+4:		 4 Blocks
+5:		 5 Blocks
+6:		 7 Blocks
+7:		 10 Blocks
+8:		 15 Blocks
+9:		 20 Blocks
+10:		 30 Blocks
+11:		 50 Blocks
+12:		 100 Blocks
 
 =============
 Monster Types
@@ -360,6 +368,16 @@ Loadables
 8:	 Arrow of Poison
 9:	 Arrow of Levitation
 10:	 Arrow from Inventory
+
+=====
+Slots
+=====
+1:		 Mainhand
+2:		 Offhand
+3:		 Head
+4:		 Chest
+5:		 Legs
+6:		 Feet
 
 ====================
 Sounds and Particles
@@ -417,6 +435,8 @@ Sounds and Particles
 51:	*Beacon 1
 52:	*Beacon 2
 53:	 Small Raincloud
+54:	 Rotating Teal Shields
+55:	 Rotating Red Shields
 
 =========
 Resources
