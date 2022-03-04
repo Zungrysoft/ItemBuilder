@@ -231,15 +231,17 @@ Utility
 
 Contextual
 --------------
-100:	  Executed as all nearby monsters - See "Radius" list below for use of Value key
-101:	  Executed as nearest monster within range - See "Radius" list below for use of Value key
-102:	  Executed as random nearby monster - See "Radius" list below for use of Value key
-103:	  Executed as random other nearby monster - See "Radius" list below for use of Value key
-104:	  Executed as monsters that just took damage
-110:	  Executed as all nearby players - See "Radius" list below for use of Value key
-111:	  Executed as all other nearby players - See "Radius" list below for use of Value key
-112:	  Executed as random nearby player - See "Radius" list below for use of Value key
-113:	  Executed as random other nearby player - See "Radius" list below for use of Value key
+100:	  Executed as all nearby players - See "Radius" list below for use of Value key
+101:	  Executed as all other nearby players
+102:	  Executed as nearest player within range
+103:	  Executed as random nearby player
+104:	  Executed as random other nearby player
+120:	  Executed as all nearby monsters
+121:	  Executed as all other nearby monsters
+122:	  Executed as nearest monster within range
+123:	  Executed as random nearby monster
+124:	  Executed as random other nearby monster
+125:	  Executed as nearby monsters that just took damage
 
 Timing
 --------------
@@ -287,6 +289,23 @@ Note: Value key determines which item on this list should be used; Value2 key se
 37:	 Instant Health I (Use Effect #79 instead if possible)
 38:	 Instant Health II (Use Effect #79 instead if possible)
 39:	 Instant Health X (Use Effect #79 instead if possible)
+
+======
+Ranges
+======
+1:		 1 Block
+2:		 2 Blocks
+3:		 3 Blocks
+4:		 4 Blocks
+5:		 5 Blocks
+6:		 7 Blocks
+7:		 10 Blocks
+8:		 15 Blocks
+9:		 20 Blocks
+10:		 30 Blocks
+11:		 50 Blocks
+12:		 100 Blocks
+100:	 Unlimited Range
 
 =========
 Durations
