@@ -14,8 +14,8 @@ execute if score cur_slot value matches 5 store result score prime_end value run
 # Feet
 execute if score cur_slot value matches 6 store result score prime_end value run data get entity @s Inventory[{Slot:100b}].tag.ItemBuilderPrimeEnd
 
-# Check if the global timer still hasn't reached the prime end time
-execute unless score global_timer value > prime_end value run scoreboard players set condition_result value 1
+# Check if the global timer has exactly reached the prime end time
+execute if score global_timer value = prime_end value run scoreboard players set condition_result value 1
 
 # If the timer has ended, reset the ItemBuilderPrimed key so this function won't be called anymore
 execute if score global_timer value > prime_end value run function itb:item/helpers/prime_reset

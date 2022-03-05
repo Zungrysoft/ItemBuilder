@@ -260,10 +260,6 @@ Contextual
 124:	  Executed as random other nearby monster
 125:	  Executed as nearby monsters that just took damage
 
-Timing
---------------
-500:	  Delay - Value sets number of ticks
-
 Misc
 --------------
 900:	  Executed on item slot - See "Slots" list below for use of the Value key
