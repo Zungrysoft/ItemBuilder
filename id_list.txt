@@ -171,6 +171,7 @@ Actions
 216:	 *Blocked Damage with Shield - Value is optional and sets minimum damage that must be blocked
 220:	  Eating food
 221:	 *Ate Food
+222:	 *Ate a slice of cake
 225:	  Drinking a potion
 226:	 *Drank Potion
 230:	  Spyglass is being looked through

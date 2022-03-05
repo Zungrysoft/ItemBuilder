@@ -25,6 +25,7 @@ scoreboard players reset @s using_water
 scoreboard players reset @s jump
 scoreboard players reset @s fire_bow
 scoreboard players reset @s fire_crossbow
+scoreboard players reset @s eat_cake
 
 # Sprinting needs to be extended an extra frame to combo with "on hit" effects
 execute if score @s sprint_dist matches 1 run scoreboard players reset @s sprint_dist
