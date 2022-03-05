@@ -161,9 +161,11 @@ Combat
 Actions
 --------------
 200:	  Bow is being drawn back
+201:	 *Fire Bow
 205:	  Crossbow is being loaded
 206:	 *Loads crossbow
 207:	  Crossbow is Loaded
+208:	 *Fire Crossbow
 210:	  Trident is being drawn back
 215:	  Shield is being held up
 216:	 *Blocked Damage with Shield - Value is optional and sets minimum damage that must be blocked
@@ -176,6 +178,7 @@ Actions
 251:	  Sprinting while on Ground - (Note: Attacking causes you to stop sprinting, but there is a bug with the game that makes it look like you are still sprinting)
 252:	  Sneaking/Crouching
 260:	 *Fall Certain Distance - Value sets distance in cm. (Notes: This trigger activates when the player hits the ground from their fall. It only triggers if the player fell more than one block. It will not trigger if the player is in Creative Mode.)
+261:	 *Jump
 270:	 *Broke Monster Spawner
  
 Player Data
