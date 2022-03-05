@@ -57,7 +57,7 @@ execute if score cur_slot value matches 6 if predicate itb:broken_feet run score
 
 # If the item was broken, destroy it and don't play the damage sound
 execute if score broken value matches 1 run scoreboard players set cancel_sound value 1
-execute if score broken value matches 1 run function itb:item/effects/helpers/break
+execute if score broken value matches 1 run function itb:item/helpers/break
 
 # Sound Effect
 execute unless score effect_nosound value matches 1 unless score cancel_sound value matches 1 if score effect_value value matches 1.. run playsound minecraft:block.anvil.land player @a ~ ~ ~ 0.2 1.8

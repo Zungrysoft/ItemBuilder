@@ -1,3 +1,3 @@
-function itb:item/effects/helpers/is_empty
+function itb:item/helpers/empty
 
-execute unless score empty value matches 1 run function itb:item/effects/helpers/unequip
+execute unless score empty value matches 1 run function itb:item/helpers/unequip

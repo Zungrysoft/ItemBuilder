@@ -1,1 +1,1 @@
-function itb:item/effects/helpers/break
+function itb:item/helpers/break
