@@ -369,14 +369,14 @@ Loadables
 =========
 1:	 Arrow
 2:	 Spectral Arrow
-3:	 Firework Rocket
-4:	 Arrow of Slowness
-5:	 Arrow of Weakness
-6:	 Arrow of Harming
-7:	 Arrow of Healing
-8:	 Arrow of Poison
-9:	 Arrow of Levitation
-10:	 Arrow from Inventory
+10:	 Arrow of Slowness
+11:	 Arrow of Weakness
+12:	 Arrow of Harming
+13:	 Arrow of Healing
+14:	 Arrow of Poison
+15:	 Arrow of Levitation
+30:	 Firework Rocket
+50:	 Arrow from Inventory
 
 =====
 Slots

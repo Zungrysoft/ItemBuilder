@@ -1,5 +1,5 @@
-# First, check for type 10, which requires an arrow from the inventory
-execute if score effect_value value matches 10 run function itb:item/helpers/reload_from_inventory
+# First, check for type 50, which requires an arrow from the inventory
+execute if score effect_value value matches 50 run function itb:item/helpers/reload_from_inventory
 
 # Store the arrow selection into item_mod_track, so the item modifier knows which arrow to load
 scoreboard players operation @s item_mod_track = effect_value value

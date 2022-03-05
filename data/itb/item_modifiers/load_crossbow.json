@@ -40,24 +40,6 @@
 		"tag": "{
 			Charged:1b,
 			ChargedProjectiles:[
-				{id:\"minecraft:firework_rocket\",tag:{display:{Name:'[{\"text\":\"Firework Rocket\",\"italic\":false,\"bold\":false,\"color\":\"red\"}]',Lore:['[{\"text\":\"7 charges\",\"italic\":false,\"color\":\"gray\"}]']},HideFlags:65535,Fireworks: {Flight: 1b, Explosions: [{Type: 0b, Colors: [I; 6160478]}, {Type: 0b, Colors: [I; 6160478]}, {Type: 0b, Colors: [I; 16739950]}, {Type: 0b, Colors: [I; 6160478]}, {Type: 0b, Colors: [I; 6160478]}, {Type: 0b, Colors: [I; 16739950]}, {Type: 0b, Colors: [I; 6160478]}]}},Count:1b}
-			]
-		}",
-		"conditions": [
-			{
-				"condition": "minecraft:entity_scores",
-				"entity": "this",
-				"scores": {
-					"item_mod_track": 3
-				}
-			}
-		]
-	},
-	{
-		"function": "minecraft:set_nbt",
-		"tag": "{
-			Charged:1b,
-			ChargedProjectiles:[
 				{id:\"minecraft:tipped_arrow\",tag:{Potion:\"minecraft:slowness\"},Count:1b}
 			]
 		}",
@@ -66,7 +48,7 @@
 				"condition": "minecraft:entity_scores",
 				"entity": "this",
 				"scores": {
-					"item_mod_track": 4
+					"item_mod_track": 10
 				}
 			}
 		]
@@ -84,7 +66,7 @@
 				"condition": "minecraft:entity_scores",
 				"entity": "this",
 				"scores": {
-					"item_mod_track": 5
+					"item_mod_track": 11
 				}
 			}
 		]
@@ -102,7 +84,7 @@
 				"condition": "minecraft:entity_scores",
 				"entity": "this",
 				"scores": {
-					"item_mod_track": 6
+					"item_mod_track": 12
 				}
 			}
 		]
@@ -120,7 +102,7 @@
 				"condition": "minecraft:entity_scores",
 				"entity": "this",
 				"scores": {
-					"item_mod_track": 7
+					"item_mod_track": 13
 				}
 			}
 		]
@@ -138,7 +120,7 @@
 				"condition": "minecraft:entity_scores",
 				"entity": "this",
 				"scores": {
-					"item_mod_track": 8
+					"item_mod_track": 14
 				}
 			}
 		]
@@ -156,7 +138,25 @@
 				"condition": "minecraft:entity_scores",
 				"entity": "this",
 				"scores": {
-					"item_mod_track": 9
+					"item_mod_track": 15
+				}
+			}
+		]
+	},
+	{
+		"function": "minecraft:set_nbt",
+		"tag": "{
+			Charged:1b,
+			ChargedProjectiles:[
+				{id:\"minecraft:firework_rocket\",tag:{display:{Name:'[{\"text\":\"Firework Rocket\",\"italic\":false,\"bold\":false,\"color\":\"red\"}]',Lore:['[{\"text\":\"7 charges\",\"italic\":false,\"color\":\"gray\"}]']},HideFlags:65535,Fireworks: {Flight: 1b, Explosions: [{Type: 0b, Colors: [I; 6160478]}, {Type: 0b, Colors: [I; 6160478]}, {Type: 0b, Colors: [I; 16739950]}, {Type: 0b, Colors: [I; 6160478]}, {Type: 0b, Colors: [I; 6160478]}, {Type: 0b, Colors: [I; 16739950]}, {Type: 0b, Colors: [I; 6160478]}]}},Count:1b}
+			]
+		}",
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"item_mod_track": 30
 				}
 			}
 		]
