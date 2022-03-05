@@ -1,13 +1,13 @@
-======
-Legend
-======
+==========
+  Legend
+==========
 * - Instant Condition or Effect
 $ - Players Only
 # - Mobs Only
 
-=======
-Effects
-=======
+===========
+  Effects
+===========
 
 Utility
 --------------
@@ -137,9 +137,9 @@ User-Defined
 1001 to 1020: User Defined (See user_defined.txt for more information)
 
 
-==========
-Conditions
-==========
+==============
+  Conditions
+==============
 
 Utility
 --------------
@@ -180,7 +180,13 @@ Actions
 252:	  Sneaking/Crouching
 260:	 *Fall Certain Distance - Value sets distance in cm. (Notes: This trigger activates when the player hits the ground from their fall. It only triggers if the player fell more than one block. It will not trigger if the player is in Creative Mode.)
 261:	 *Jump
-270:	 *Broke Monster Spawner
+270:	  Riding a mob
+271:	  Riding a Pig
+272:	  Riding a Strider
+273:	  Riding a Horse, Donkey, or Mule
+274:	  Riding a Minecart
+275:	  Riding a Boat
+280:	 *Broke Monster Spawner
  
 Player Data
 --------------
@@ -199,7 +205,6 @@ Item Data
 --------------
 400:	  Item is enchanted
 420:	  Item has a certain amount of durability damage - Value sets minimum damage
-
 
 Logic
 --------------
@@ -238,9 +243,9 @@ User-Defined
 1001 to 1020: User Defined (See user_defined.txt for more information)
 
 
-=======
-Filters
-=======
+===========
+  Filters
+===========
 
 Utility
 --------------
@@ -259,6 +264,7 @@ Contextual
 123:	  Executed as random nearby monster
 124:	  Executed as random other nearby monster
 125:	  Executed as nearby monsters that just took damage
+180:	  Executed as mount
 
 Misc
 --------------
@@ -269,9 +275,9 @@ User-Defined
 1001 to 1020: User Defined (See user_defined.txt for more information)
 
 
-==============
-Potion Effects
-==============
+==================
+  Potion Effects
+==================
 Note: Value key determines which item on this list should be used; Value2 key sets Duration unless otherwise specified. (See "Durations" list for use)
 0:		 Speed I
 1:		 Speed II
@@ -311,9 +317,9 @@ Note: Value key determines which item on this list should be used; Value2 key se
 121:	 Instant Health II
 129:	 Instant Health X
 
-=========
-Durations
-=========
+=============
+  Durations
+=============
 1:	 1 Second
 2:	 5 Seconds
 3:	 10 Seconds
@@ -323,9 +329,9 @@ Durations
 7:	 5 Minutes
 8:	 10 Minutes
 
-======
-Ranges
-======
+==========
+  Ranges
+==========
 0:		 Unlimited Range
 1:		 1 Block
 2:		 2 Blocks
@@ -340,9 +346,9 @@ Ranges
 11:		 50 Blocks
 12:		 100 Blocks
 
-=============
-Monster Types
-=============
+=================
+  Monster Types
+=================
 1:	 Creeper
 2:	 Husk
 3:	 Stray
@@ -364,9 +370,9 @@ Monster Types
 72:	 Ender Monster
 73:	 Aquatic Monster
 
-=========
-Loadables
-=========
+=============
+  Loadables
+=============
 1:	 Arrow
 2:	 Spectral Arrow
 10:	 Arrow of Slowness
@@ -378,9 +384,9 @@ Loadables
 30:	 Firework Rocket
 50:	 Arrow from Inventory
 
-=====
-Slots
-=====
+=========
+  Slots
+=========
 1:		 Mainhand
 2:		 Offhand
 3:		 Head
@@ -388,9 +394,9 @@ Slots
 5:		 Legs
 6:		 Feet
 
-=========
-Resources
-=========
+=============
+  Resources
+=============
 1:	 Gold Ingot
 2:	 Gold Nugget
 3:	 Iron Ingot
@@ -404,9 +410,9 @@ Resources
 11:	 Arrow
 12:	 Magic Scroll (Renamed mojang_banner_pattern)
 
-=========
-Equipment
-=========
+=============
+  Equipment
+=============
 1:	 Sword
 2:	 Axe
 3:	 Pickaxe
@@ -441,9 +447,9 @@ Equipment
 32:	 Elytra
 33:	 Arrow, Spectral Arrow or Tipped Arrow
 
-====================
-Sounds and Particles
-====================
+========================
+  Sounds and Particles
+========================
 
 Utility
 --------------

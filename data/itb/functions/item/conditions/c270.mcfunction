@@ -1,1 +1,1 @@
-execute if score @s break_spawner matches 1.. run scoreboard players set condition_result value 1
+execute if predicate itb:riding_mob run scoreboard players set condition_result value 1
