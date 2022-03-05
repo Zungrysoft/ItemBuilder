@@ -97,6 +97,7 @@ Special Attacks
 501:	 *Set Fire to Ground - Value sets radius (max 5)
 502:	 *Lightning Strike
 503:	 *Explosion - Value sets radius (max 5)
+520:	*#Launch Upwards - Value sets launch force
 
 Logic
 --------------
