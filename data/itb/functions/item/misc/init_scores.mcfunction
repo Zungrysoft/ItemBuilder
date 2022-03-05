@@ -84,6 +84,7 @@ scoreboard objectives add using_spyglass dummy
 scoreboard objectives add using_food dummy
 scoreboard objectives add using_potion dummy
 scoreboard objectives add using_water dummy
+scoreboard objectives add using_elytra minecraft.custom:minecraft.aviate_one_cm
 scoreboard objectives add jump minecraft.custom:minecraft.jump
 scoreboard objectives add fire_bow minecraft.used:minecraft.bow
 scoreboard objectives add fire_crossbow minecraft.used:minecraft.crossbow

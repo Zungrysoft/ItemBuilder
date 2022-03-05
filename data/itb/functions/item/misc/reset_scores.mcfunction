@@ -22,6 +22,7 @@ scoreboard players reset @s using_spyglass
 scoreboard players reset @s using_food
 scoreboard players reset @s using_potion
 scoreboard players reset @s using_water
+scoreboard players reset @s using_elytra
 scoreboard players reset @s jump
 scoreboard players reset @s fire_bow
 scoreboard players reset @s fire_crossbow
