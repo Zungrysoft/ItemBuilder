@@ -260,7 +260,7 @@ Timing
 
 Misc
 --------------
-900:	  On item slot - See "Slots" list below for use of the Value key
+900:	  Executed on item slot - See "Slots" list below for use of the Value key
 
 User-Defined
 --------------
@@ -386,65 +386,6 @@ Slots
 5:		 Legs
 6:		 Feet
 
-====================
-Sounds and Particles
-====================
-1:	*Fireburst
-2:	 Puff
-3:	*Glimmer
-4:	 Light Glimmer
-5:	 Rocket Exaust
-6:	*Gain Experience
-7:	*Pop
-8:	*Stomp
-9:	*Plant Break
-10:	*White Burst
-11:	*Black Burst
-12:	*Red Burst
-13:	*Orange Burst
-14:	*Yellow Burst
-15:	*Green Burst
-16:	*Blue Burst
-17:	*Purple Burst
-18:	*Pink Burst
-19:	*Brown Burst
-20:	 White Shimmer
-21:	 Black Shimmer
-22:	 Red Shimmer
-23:	 Orange Shimmer
-24:	 Yellow Shimmer
-25:	 Green Shimmer
-26:	 Blue Shimmer
-27:	 Purple Shimmer
-28:	 Pink Shimmer
-29:	 Brown Shimmer
-30:	*Wormhole
-31:	*Totem Break
-32:	*Smack
-33:	 Rocket Exaust 2
-34:	*Fire Attack
-35:	*Ice Attack
-36:	*Earth Attack
-37:	*Water Attack
-38:	*Blade Attack
-39:	*Flash Attack
-40:	*Dark Attack (Musical)
-41:	*Light Attack (Musical)
-42:	*Adventurous Attack (Musical)
-43:	*Exotic Attack (Musical)
-44:	*Blood Attack
-45:	*Slime Attack
-46:	*Honey Attack
-47:	*Bramble Attack
-48:	*Strike Attack
-49:	*Web Attack
-50:	*Advancement
-51:	*Beacon 1
-52:	*Beacon 2
-53:	 Small Raincloud
-54:	 Rotating Teal Shields
-55:	 Rotating Red Shields
-
 =========
 Resources
 =========
@@ -497,3 +438,77 @@ Equipment
 31:	 Torch or Lantern
 32:	 Elytra
 33:	 Arrow, Spectral Arrow or Tipped Arrow
+
+====================
+Sounds and Particles
+====================
+
+Utility
+--------------
+0:		  No Effect
+
+Passive
+--------------
+100:	  Light Glimmer
+101:	  Small Raincloud
+150:	  Rocket Exaust
+151:	  Rocket Exaust 2
+180:	  Rotating Teal Shields
+181:	  Rotating Red Shields
+190:	  Red Shimmer
+191:	  Orange Shimmer
+192:	  Yellow Shimmer
+193:	  Green Shimmer
+194:	  Blue Shimmer
+195:	  Purple Shimmer
+196:	  Pink Shimmer
+197:	  Brown Shimmer
+198:	  White Shimmer
+199:	  Black Shimmer
+
+Instant
+--------------
+200:	 *Fireburst
+201:	 *Glimmer
+202:	 *Gain Experience
+203:	 *Pop
+204:	 *Stomp
+205:	 *Plant Break
+206:	 *Wormhole
+207:	 *Smack
+290:	 *Red Burst
+291:	 *Orange Burst
+292:	 *Yellow Burst
+293:	 *Green Burst
+294:	 *Blue Burst
+295:	 *Purple Burst
+296:	 *Pink Burst
+297:	 *Brown Burst
+298:	 *White Burst
+299:	 *Black Burst
+
+Attack
+--------------
+300:	 *Fire Attack
+301:	 *Ice Attack
+302:	 *Earth Attack
+303:	 *Water Attack
+304:	 *Bramble Attack
+305:	 *Blade Attack
+306:	 *Flash Attack
+307:	 *Blood Attack
+308:	 *Slime Attack
+309:	 *Honey Attack
+310:	 *Strike Attack
+311:	 *Web Attack
+370:	 *Dark Attack (Musical)
+371:	 *Light Attack (Musical)
+372:	 *Adventurous Attack (Musical)
+373:	 *Exotic Attack (Musical)
+
+Misc
+--------------
+900:	 *Advancement
+901:	 *Beacon 1
+902:	 *Beacon 2
+903:	 *Totem Break

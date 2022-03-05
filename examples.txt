@@ -223,7 +223,7 @@ Boots That Grant 50% Knockback Resistance For 3 Seconds on Kill
 				Id: 870,
 				Effects: [
 					{Id: 105, Value: 50},
-					{Id: 900, Value: 54}
+					{Id: 900, Value: 180}
 				]
 			}
 		]
@@ -231,7 +231,7 @@ Boots That Grant 50% Knockback Resistance For 3 Seconds on Kill
 }
 
 # Inline
-/give @s diamond_boots{ItemBuilderArmor: {Conditions: [{Id: 120,Effects: [{Id: 870, Value: 60}]},{Id: 870,Effects: [{Id: 105, Value: 50},{Id: 900, Value: 54}]}]}}
+/give @s diamond_boots{ItemBuilderArmor: {Conditions: [{Id: 120,Effects: [{Id: 870, Value: 60}]},{Id: 870,Effects: [{Id: 105, Value: 50},{Id: 900, Value: 180}]}]}}
 
 # Notes: Priming an item allows you to grant a passive effect to the player for a controlled duration. The first condition on this item sets the item to be primed for 3 seconds on kill. The second condition grants knockback resistance while it is primed.
 
