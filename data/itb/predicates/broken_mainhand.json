@@ -4,7 +4,10 @@
   "predicate": {
     "equipment": {
       "mainhand": {
-        "durability": 0
+        "durability": {
+			"min": -99999,
+			"max": -1
+		}
       }
     }
   }

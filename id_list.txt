@@ -87,8 +87,7 @@ Item Modification
 400:	 *Set Item Count - Value sets count
 401:	 *Increase or Decrease Item Count - Value sets count added
 411:	 *Item Regains Full Durability
-412:	 *Item Regains a Fraction of its Durability - Values: (1: 1%, 2: 5%, 3: 25%)
-413:	 *Item Loses a Fraction of its Durability - Values: (1: 1%, 2: 5%, 3: 25%)
+412:	 *Item Takes Durability Damage - Value sets damage points added or removed
 480:	 *Reloads this Crossbow - See "Loadables" list below for use of Value key
 481:	 *Reloads all Crossbows on Hotbar and Offhand - See "Loadables" list below for use of Value key
 
