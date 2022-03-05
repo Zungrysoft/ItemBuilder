@@ -84,10 +84,10 @@ Passive Potion Effects
 
 Item Modification
 --------------
-400:	 *Set Item Count - Value sets count
-401:	 *Increase or Decrease Item Count - Value sets count added
-411:	 *Item Regains Full Durability
-412:	 *Item Takes Durability Damage - Value sets damage points added or removed
+420:	 *Item Takes Durability Damage - Value sets damage points added or removed
+421:	 *Item Regains Full Durability
+430:	 *Set Item Count - Value sets count
+431:	 *Increase or Decrease Item Count - Value sets count added
 480:	 *Reloads this Crossbow - See "Loadables" list below for use of Value key
 481:	 *Reloads all Crossbows on Hotbar and Offhand - See "Loadables" list below for use of Value key
 
@@ -125,7 +125,7 @@ Logic
 Misc
 --------------
 900:	  Sound and Particle Effect - See "Sounds and Particles" list below for use of Value key
-901:	 *Chat Message
+901:	 *Chat Message - Use the Text key to set message
 910:	 *Kills you
 920:	 *Item Breaks
 921:	 *Item Falls out of Player's Hand
@@ -191,8 +191,9 @@ Player Data
 
 Item Data
 --------------
-400:	  Item has a certain amount of durability damage - Value sets minimum damage
-401:	  Item is enchanted
+400:	  Item is enchanted
+420:	  Item has a certain amount of durability damage - Value sets minimum damage
+
 
 Logic
 --------------
