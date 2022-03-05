@@ -12,22 +12,51 @@ scoreboard objectives add att_haste dummy
 scoreboard objectives add att_toughness dummy
 
 # Potion Effects
-scoreboard objectives add blindness dummy
-scoreboard objectives add dolphins_grace dummy
-scoreboard objectives add fire_resistance dummy
-scoreboard objectives add glowing dummy
-scoreboard objectives add invisibility dummy
-scoreboard objectives add jump_boost dummy
-scoreboard objectives add levitation dummy
-scoreboard objectives add nausea dummy
-scoreboard objectives add night_vision dummy
-scoreboard objectives add poison dummy
-scoreboard objectives add regeneration dummy
-scoreboard objectives add slow_falling dummy
-scoreboard objectives add water_breathing dummy
-scoreboard objectives add wither dummy
-scoreboard objectives add hunger dummy
-scoreboard objectives add resistance dummy
+scoreboard objectives add itbg_blindness dummy
+scoreboard objectives add itbg_dolphins_gr dummy
+scoreboard objectives add itbg_fire_resist dummy
+scoreboard objectives add itbg_glowing dummy
+scoreboard objectives add itbg_haste dummy
+scoreboard objectives add itbg_hunger dummy
+scoreboard objectives add itbg_invisibilit dummy
+scoreboard objectives add itbg_jump_boost dummy
+scoreboard objectives add itbg_levitation dummy
+scoreboard objectives add itbg_mining_fati dummy
+scoreboard objectives add itbg_nausea dummy
+scoreboard objectives add itbg_night_visio dummy
+scoreboard objectives add itbg_poison dummy
+scoreboard objectives add itbg_regeneratio dummy
+scoreboard objectives add itbg_resistance dummy
+scoreboard objectives add itbg_slow_fallin dummy
+scoreboard objectives add itbg_speed dummy
+scoreboard objectives add itbg_strength dummy
+scoreboard objectives add itbg_water_breat dummy
+scoreboard objectives add itbg_weakness dummy
+scoreboard objectives add itbg_wither dummy
+
+# Potion Effect Cleanse Flags
+scoreboard objectives add itbc_blindness dummy
+scoreboard objectives add itbc_dolphins_gr dummy
+scoreboard objectives add itbc_fire_resist dummy
+scoreboard objectives add itbc_glowing dummy
+scoreboard objectives add itbc_haste dummy
+scoreboard objectives add itbc_hunger dummy
+scoreboard objectives add itbc_invisibilit dummy
+scoreboard objectives add itbc_jump_boost dummy
+scoreboard objectives add itbc_levitation dummy
+scoreboard objectives add itbc_mining_fati dummy
+scoreboard objectives add itbc_nausea dummy
+scoreboard objectives add itbc_night_visio dummy
+scoreboard objectives add itbc_poison dummy
+scoreboard objectives add itbc_regeneratio dummy
+scoreboard objectives add itbc_resistance dummy
+scoreboard objectives add itbc_slow_fallin dummy
+scoreboard objectives add itbc_speed dummy
+scoreboard objectives add itbc_strength dummy
+scoreboard objectives add itbc_water_breat dummy
+scoreboard objectives add itbc_weakness dummy
+scoreboard objectives add itbc_wither dummy
+scoreboard objectives add itbc_absorption dummy
 
 # Misc Tracking
 scoreboard objectives add health health "Health"
@@ -58,8 +87,8 @@ scoreboard objectives add using_water dummy
 
 # Other Stuff
 scoreboard objectives add pending_hunger dummy
-scoreboard objectives add pending_hunger_s dummy
 scoreboard objectives add pending_health dummy
+scoreboard objectives add pending_damage dummy
 
 # Mob Kills
 scoreboard objectives add kill_mob totalKillCount

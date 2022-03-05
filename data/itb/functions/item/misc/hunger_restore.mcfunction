@@ -2,4 +2,4 @@
 effect give @s saturation 1 0 true
 
 # Count on scoreboard
-scoreboard players remove @s pending_hunger_s 1
+scoreboard players remove @s pending_hunger 1

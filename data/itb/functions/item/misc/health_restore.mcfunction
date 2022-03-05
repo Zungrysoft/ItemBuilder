@@ -1,4 +1,4 @@
-# Restore the hunger
+# Restore the health
 effect give @s minecraft:instant_health 1 0 true
 
 # Count on scoreboard

@@ -5,4 +5,4 @@ scoreboard players set effect_given value 0
 execute store success score effect_given value run effect give @s minecraft:dolphins_grace 5 0 false
 
 # If the effect was successfully given, set the passive potion effect flag
-execute unless score effect_given value matches 0 run scoreboard players set @s dolphins_grace 1
+execute unless score effect_given value matches 0 run scoreboard players set @s itbg_dolphins_gr 1

@@ -1,1 +1,1 @@
-effect clear @s hunger
+scoreboard players set @s itbc_hunger 1

@@ -1,1 +1,1 @@
-effect clear @s wither
+scoreboard players set @s itbc_wither 1

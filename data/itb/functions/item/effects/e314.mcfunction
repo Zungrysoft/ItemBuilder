@@ -9,4 +9,4 @@ execute if score effect_value value matches 3 store success score effect_given v
 execute if score effect_value value matches 4 store success score effect_given value run effect give @s minecraft:resistance 5 4 true
 
 # If the effect was successfully given, set the passive potion effect flag
-scoreboard players set @s resistance 1
+execute unless score effect_given value matches 0 run scoreboard players set @s itbg_resistance 1

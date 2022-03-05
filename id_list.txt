@@ -1,3 +1,10 @@
+======
+Legend
+======
+* - Instant Condition or Effect
+$ - Players Only
+# - Mobs Only
+
 =======
 Effects
 =======
@@ -35,10 +42,10 @@ Passive Potion Effects
 301:	  Passive Dolphin's Grace
 302:	  Passive Fire Resistance
 303:	  Passive Glowing
-304:	  Passive Haste - Value sets amplifier (max 4)
-305:	  Passive Hunger - Value sets amplifier (max 4)
+304:	  Passive Haste - Value sets amplifier (max 9)
+305:	  Passive Hunger - Value sets amplifier (max 9)
 306:	  Passive Invisibility
-307:	  Passive Jump Boost - Value sets amplifier (max 4)
+307:	  Passive Jump Boost - Value sets amplifier (max 9)
 308:	  Passive Levitation - Value sets amplifier (max 4)
 309:	  Passive Mining Fatigue - Value sets amplifier (max 4)
 310:	  Passive Nausea
@@ -47,10 +54,10 @@ Passive Potion Effects
 313:	  Passive Regeneration - Value sets amplifier (max 4)
 314:	  Passive Resistance - Value sets amplifier (max 4)
 315:	  Passive Slow-Falling
-316:	  Passive Speed
-317:	  Passive Strength
+316:	  Passive Speed - Value sets amplifier (max 9)
+317:	  Passive Strength - Value sets amplifier (max 9)
 318:	  Passive Water-Breathing
-319:	  Passive Weakness
+319:	  Passive Weakness - Value sets amplifier (max 9)
 320:	  Passive Wither - Value sets amplifier (max 4)
 350:	  Cleanse Blindness
 351:	  Cleanse Dolphin's Grace
