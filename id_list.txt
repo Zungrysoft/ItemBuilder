@@ -183,11 +183,12 @@ Player Data
 301:	  Has a certain amount of armor - Value sets minimum armor
 302:	  Has a certain number of experience levels - Value determines required level
 310:	  Has Resource Item - See "Resources" list below for use of Value key; Value2 determines the amount they must have
-320:	  Have specific item in mainhand - See "Equipment" list for use of Value key
+320:	  Item is specific type - See "Equipment" list for use of Value key
 380:	  On Fire
 381:	  In Water
 382:	  In Lava
 383:	  Standing in Light Level 8 or Greater
+390:	 #Monster Type - See "Monster Types" list below for use of Value key
 
 Item Data
 --------------
@@ -341,26 +342,26 @@ Ranges
 =============
 Monster Types
 =============
-1:	 Undead
-2:	 Zombie (Includes variants)
-3:	 Skeleton (Includes variants)
-4:	 Arthropod
-5:	 Spider (Includes variants)
-6:	 Creeper
-7:	 Illager
-8:	 Witch
-9:	 Vex
-10:	 Aquatic Monster
-11:	 Nether Monster
-12:	 Ender Monster
-13:	 Piglin (Includes variants)
-14:	 Flying Monster
-15:	 Ravager
-16:	 Husk
-17:	 Stray
-18:	 Wither Skeleton
-19:	 Blaze
-20:	 Silverfish
+1:	 Creeper
+2:	 Husk
+3:	 Stray
+4:	 Wither Skeleton
+5:	 Blaze
+6:	 Silverfish
+7:	 Witch
+8:	 Vex
+9:	 Ravager
+50:	 Zombie (Includes variants)
+51:	 Skeleton (Includes variants)
+52:	 Spider (Includes variants)
+53:	 Piglin (Includes variants)
+54:	 Arthropod
+55:	 Illager
+76:	 Flying Monster
+70:	 Undead Monster
+71:	 Nether Monster
+72:	 Ender Monster
+73:	 Aquatic Monster
 
 =========
 Loadables
