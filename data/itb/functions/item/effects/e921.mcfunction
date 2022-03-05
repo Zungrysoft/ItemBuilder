@@ -4,17 +4,17 @@ execute if score angle value matches 1.. run scoreboard players remove angle val
 
 #Summon the item with its angle key
 # South
-execute if score angle value matches -360..-315 run summon minecraft:item ~ ~0.8 ~ {Motion:[0d,0.1d,0.3d], PickupDelay:20, Item:{Count:1b, id:"minecraft:stick"}, Tags:["new"]}
+execute if score angle value matches -360..-315 run summon minecraft:item ~ ~0.8 ~ {Motion:[0d,0.1d,0.4d], PickupDelay:20, Item:{Count:1b, id:"minecraft:stick"}, Tags:["new"]}
 # West
-execute if score angle value matches -314..-225 run summon minecraft:item ~ ~0.8 ~ {Motion:[-0.3d,0.1d,0d], PickupDelay:20, Item:{Count:1b, id:"minecraft:stick"}, Tags:["new"]}
+execute if score angle value matches -314..-225 run summon minecraft:item ~ ~0.8 ~ {Motion:[-0.4d,0.1d,0d], PickupDelay:20, Item:{Count:1b, id:"minecraft:stick"}, Tags:["new"]}
 # North
-execute if score angle value matches -224..-135 run summon minecraft:item ~ ~0.8 ~ {Motion:[0d,0.1d,-0.3d], PickupDelay:20, Item:{Count:1b, id:"minecraft:stick"}, Tags:["new"]}
+execute if score angle value matches -224..-135 run summon minecraft:item ~ ~0.8 ~ {Motion:[0d,0.1d,-0.4d], PickupDelay:20, Item:{Count:1b, id:"minecraft:stick"}, Tags:["new"]}
 # East
-execute if score angle value matches -134..-45 run summon minecraft:item ~ ~0.8 ~ {Motion:[0.3d,0.1d,0d], PickupDelay:20, Item:{Count:1b, id:"minecraft:stick"}, Tags:["new"]}
+execute if score angle value matches -134..-45 run summon minecraft:item ~ ~0.8 ~ {Motion:[0.4d,0.1d,0d], PickupDelay:20, Item:{Count:1b, id:"minecraft:stick"}, Tags:["new"]}
 # South
-execute if score angle value matches -44..0 run summon minecraft:item ~ ~0.8 ~ {Motion:[0d,0.1d,0.3d], PickupDelay:20, Item:{Count:1b, id:"minecraft:stick"}, Tags:["new"]}
+execute if score angle value matches -44..0 run summon minecraft:item ~ ~0.8 ~ {Motion:[0d,0.1d,0.4d], PickupDelay:20, Item:{Count:1b, id:"minecraft:stick"}, Tags:["new"]}
 # Safety Case
-execute unless score angle value matches -360..0 run summon minecraft:item ~ ~0.8 ~ {Motion:[0d,0.3d,0d], PickupDelay:20, Item:{Count:1b, id:"minecraft:stick"}, Tags:["new"]}
+execute unless score angle value matches -360..0 run summon minecraft:item ~ ~0.8 ~ {Motion:[0d,0.4d,0d], PickupDelay:20, Item:{Count:1b, id:"minecraft:stick"}, Tags:["new"]}
 
 # Transfer item data and remove old item
 # Mainhand
