@@ -175,7 +175,7 @@ Actions
 225:	  Drinking a potion
 226:	 *Drank Potion
 230:	  Spyglass is being looked through
-231:	  Using Elytra
+231:	  Gliding with Elytra
 250:	  On Ground
 251:	  Sprinting while on Ground - (Note: Attacking causes you to stop sprinting, but there is a bug with the game that makes it look like you are still sprinting)
 252:	  Sneaking/Crouching
