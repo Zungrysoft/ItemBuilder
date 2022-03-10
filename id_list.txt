@@ -20,21 +20,19 @@ Attributes
 102:	  Plus or Minus Attack Speed - Value sets percent increase
 103:	  Plus or Minus Max Health - Value sets increase in health points
 104:	  Plus or Minus Armor - Value sets increase in armor points
-105:	  Plus or Minus Knockback Resistance - Value sets percent increase
-106:	  Plus or Minus Armor Toughness - Value sets increase in points
+105:	  Plus or Minus Armor Toughness - Value sets increase in points
+106:	  Plus or Minus Knockback Resistance - Value sets percent increase
 
 Bonuses
 --------------
-200:	 *Gain Potion Effect for Certain Duration - See "Potion Effects" list below for use of Value and Value2 key
+200:	 *Gain Potion Effect for Certain Duration - See "Potion Effects" list below for use of Value key; See "Durations" list below for use of Value2 key.
 201:	 *Heal 4 Health - Value determines healing. (Healing = Value * 4)
 202:	 *Take 6 Damage - Value determines damage. (Damage = Value * 6)
 203:	 *Regain Hunger - Value sets number of hunger points gained
 210:	 *Player gains a certain number of experience points - Value sets points (max 256)
-211:	 *Player gains a certain number of experience levels - Value sets levels (max 256)
-212:	 *Player loses a certain number of experience levels - Value sets levels lost. (max 256)
-213:	 *Player loses all experience points and levels
+211:	 *Player gains a certain number of experience levels - Value sets levels gained (max 256)
+212:	 *Player loses all experience points and levels
 220:	 *Receive Resource Item - See "Resources" list below for use of Value key; Value2 determines amount received (max 128)
-221:	 *Lose Resource Item - See "Resources" list below for use of Value key; Value2 determines amount lost (max 128)
 
 Passive Potion Effects
 --------------
@@ -46,8 +44,8 @@ Passive Potion Effects
 305:	  Passive Hunger - Value sets amplifier (max 9)
 306:	  Passive Invisibility
 307:	  Passive Jump Boost - Value sets amplifier (max 9)
-308:	  Passive Levitation - Value sets amplifier (max 4)
-309:	  Passive Mining Fatigue - Value sets amplifier (max 4)
+308:	  Passive Levitation - Value sets amplifier (max 9)
+309:	  Passive Mining Fatigue - Value sets amplifier (max 2)
 310:	  Passive Nausea
 311:	  Passive Night Vision
 312:	  Passive Poison - Value sets amplifier (max 4)
@@ -279,7 +277,6 @@ User-Defined
 ==================
   Potion Effects
 ==================
-Note: Value key determines which item on this list should be used; Value2 key sets Duration unless otherwise specified. (See "Durations" list for use)
 0:		 Speed I
 1:		 Speed II
 4:		 Speed V
@@ -321,14 +318,17 @@ Note: Value key determines which item on this list should be used; Value2 key se
 =============
   Durations
 =============
-1:	 1 Second
-2:	 5 Seconds
-3:	 10 Seconds
-4:	 30 Seconds
-5:	 1 Minute
-6:	 3 Minutes
-7:	 5 Minutes
-8:	 10 Minutes
+1:		 1 Second
+3:		 3 Seconds
+5:		 5 Seconds
+7:		 7 Seconds
+10:		 10 Seconds
+20:		 20 Seconds
+30:		 30 Seconds
+60:		 1 Minute
+180:	 3 Minutes
+300:	 5 Minutes
+600:	 10 Minutes
 
 ==========
   Ranges
@@ -365,7 +365,7 @@ Note: Value key determines which item on this list should be used; Value2 key se
 53:	 Piglin (Includes variants)
 54:	 Arthropod
 55:	 Illager
-76:	 Flying Monster
+56:	 Flying Monster
 70:	 Undead Monster
 71:	 Nether Monster
 72:	 Ender Monster
@@ -398,18 +398,21 @@ Note: Value key determines which item on this list should be used; Value2 key se
 =============
   Resources
 =============
-1:	 Gold Ingot
-2:	 Gold Nugget
-3:	 Iron Ingot
-4:	 Iron Nugget
-5:	 Emerald
-6:	 Diamond
-7:	 Fire Charge
-8:	 Coal
-9:	 Gunpowder
-10:	 Bone
-11:	 Arrow
-12:	 Magic Scroll (Renamed mojang_banner_pattern)
+0:	 Gold Ingot
+1:	 Gold Nugget
+2:	 Iron Ingot
+3:	 Iron Nugget
+4:	 Emerald
+5:	 Diamond
+6:	 Coal
+20:	 Gunpowder
+21:	 Bone
+22:	 Rotten Flesh
+23:	 String
+24:	 Spider Eye
+50:	 Arrow
+51:	 Fire Charge
+80:	 Magic Scroll (Renamed mojang_banner_pattern)
 
 =============
   Equipment

@@ -1,12 +1,16 @@
 - Effects and Conditions 1001-1020 are reserved for user-defined conditions which you may define in your own datapack.
 
 - To define these, use the following file paths in your datapack:
-[YOUR_DATAPACK]/data/itb/functions/user_defined/effects/ud1
-[YOUR_DATAPACK]/data/itb/functions/user_defined/conditions/ud1
+[YOUR_DATAPACK]/data/itb/functions/user_defined/effects/ud1.mcfunction
+[YOUR_DATAPACK]/data/itb/functions/user_defined/conditions/ud1.mcfunction
+[YOUR_DATAPACK]/data/itb/functions/user_defined/filters/ud1.mcfunction
 - You may call other functions from these functions
 
-- Within these functions, you may use the following statements to retrieve data from the effect/condition
+- Use the following commands to retrieve values from the effect/condition/filter.
 
+=======
+Effects
+=======
 - To retrieve the effect's Value:
 scoreboard players get effect_value value
 
@@ -16,6 +20,9 @@ scoreboard players get effect_value2 value
 - To retrieve whether the effect was specified as having no sounds or particles:
 scoreboard players get effect_nosound value
 
+==========
+Conditions
+==========
 - To retrieve the condition's Value:
 scoreboard players get condition_value value
 
@@ -25,3 +32,15 @@ scoreboard players get condition_value2 value
 - To set the condition as true:
 scoreboard players set condition_result value 1
 - Make sure you set this to 1 or 0. Do not use any other value.
+
+=======
+Filters
+=======
+- To retrieve the filter's Value:
+scoreboard players get filter_value value
+
+- To retrieve the filter's Value2:
+scoreboard players get filter_value2 value
+
+- To execute the filter:
+function itb:item/filter_run
