@@ -86,8 +86,11 @@ Item Modification
 421:	 *Item Regains Full Durability
 430:	 *Set Item Count - Value sets count
 431:	 *Increase or Decrease Item Count - Value sets count added
-480:	 *Reloads this Crossbow - See "Loadables" list below for use of Value key
-481:	 *Reloads all Crossbows on Hotbar and Offhand - See "Loadables" list below for use of Value key
+450:	 *Reloads this Crossbow - See "Loadables" list below for use of Value key
+451:	 *Reloads all Crossbows on Hotbar and Offhand - See "Loadables" list below for use of Value key
+480:	 *Item Breaks
+481:	 *Item Falls Out
+482:	 *Item is Removed from Slot
 
 Special Attacks
 --------------
@@ -96,6 +99,7 @@ Special Attacks
 502:	 *Lightning Strike
 503:	 *Explosion - Value sets radius (max 5)
 520:	*#Launch Upwards - Value sets launch force
+580:	 *Kills you
 
 Logic
 --------------
@@ -125,10 +129,6 @@ Misc
 --------------
 900:	  Sound and Particle Effect - See "Sounds and Particles" list below for use of Value key
 901:	 *Chat Message - Use the Text key to set message
-910:	 *Kills you
-920:	 *Item Breaks
-921:	 *Item Falls out of Player's Hand
-922:	 *Item is Removed from Armor Slot
 
 User-Defined
 --------------
