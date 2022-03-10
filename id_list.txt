@@ -113,15 +113,15 @@ Logic
 826:	 *Increase TempCounter2 by Value
 830:	 *Set TempCounter3 equal to Value
 831:	 *Increase TempCounter3 by Value
-840:	 *Set FrameCounter1 equal to Value
-841:	 *Increase FrameCounter1 by Value
-845:	 *Set FrameCounter2 equal to Value
-846:	 *Increase FrameCounter2 by Value
-850:	 *Set FrameCounter3 equal to Value
-851:	 *Increase FrameCounter3 by Value
+840:	  Set FrameCounter1 equal to Value
+841:	  Increase FrameCounter1 by Value
+845:	  Set FrameCounter2 equal to Value
+846:	  Increase FrameCounter2 by Value
+850:	  Set FrameCounter3 equal to Value
+851:	  Increase FrameCounter3 by Value
 860:	  Roll random number [0 <= n < Value] (Number only survives for one frame)
-870:	  Prime Item for n ticks (See Condition #870)
-875:	  Activate Item (See Condition #875)
+870:	 *Prime Item for Value ticks (See Condition #870)
+875:	 *Activate Item (See Condition #875)
 
 Misc
 --------------
@@ -148,8 +148,8 @@ Utility
 Combat
 --------------
 100:	 *Dealt Damage With a Melee Attack - Value is optional and sets minimum damage that must be dealt
-101:	 *Deal Damage With an Arrow or Spectral Arrow
-102:	 *Deal Damage With a Firework Rocket
+101:	 *Dealt Damage With an Arrow or Spectral Arrow
+102:	 *Dealt Damage With a Firework Rocket
 110:	 *Took Damage - Value is optional and sets minimum damage that must be taken by the hit to trigger this condition
 111:	 *Took Damage From a Monster
 112:	 *Took Blast Damage
@@ -160,27 +160,27 @@ Combat
 
 Actions
 --------------
-200:	  Bow is being drawn back
-201:	 *Fire Bow
-205:	  Crossbow is being loaded
-206:	 *Loads crossbow
+200:	  Drawing Bow
+201:	 *Fired Bow
+205:	  Loading Crossbow
+206:	 *Loaded crossbow
 207:	  Crossbow is Loaded
-208:	 *Fire Crossbow
-210:	  Trident is being drawn back
-215:	  Shield is being held up
+208:	 *Fired Crossbow
+210:	  Readying Trident
+215:	  Holding Shield Up
 216:	 *Blocked Damage with Shield - Value is optional and sets minimum damage that must be blocked
 220:	  Eating food
 221:	 *Ate Food
 222:	 *Ate a slice of cake
-225:	  Drinking a potion
+225:	  Drinking potion
 226:	 *Drank Potion
-230:	  Spyglass is being looked through
+230:	  Looking Through Spyglass
 231:	  Gliding with Elytra
 250:	  On Ground
 251:	  Sprinting while on Ground - (Note: Attacking causes you to stop sprinting, but there is a bug with the game that makes it look like you are still sprinting)
 252:	  Sneaking/Crouching
-260:	 *Fall Certain Distance - Value sets distance in cm. (Notes: This trigger activates when the player hits the ground from their fall. It only triggers if the player fell more than one block. It will not trigger if the player is in Creative Mode.)
-261:	 *Jump
+260:	 *Fell Certain Distance - Value sets distance in cm. (Notes: This trigger activates when the player hits the ground from their fall. It only triggers if the player fell more than one block. It will not trigger if the player is in Creative Mode.)
+261:	 *Jumped
 270:	  Riding a mob
 271:	  Riding a Pig
 272:	  Riding a Strider
@@ -189,13 +189,12 @@ Actions
 275:	  Riding a Boat
 280:	 *Broke Monster Spawner
  
-Player Data
+Entity Data
 --------------
 300:	  Has a certain amount of health - Value sets minimum health
 301:	  Has a certain amount of armor - Value sets minimum armor
 302:	  Has a certain number of experience levels - Value determines required level
 310:	  Has Resource Item - See "Resources" list below for use of Value key; Value2 determines the amount they must have
-320:	  Item is specific type - See "Equipment" list for use of Value key
 380:	  On Fire
 381:	  In Water
 382:	  In Lava
@@ -206,6 +205,7 @@ Item Data
 --------------
 400:	  Item is enchanted
 420:	  Item has a certain amount of durability damage - Value sets minimum damage
+430:	  Item is specific type - See "Equipment" list for use of Value key
 
 Logic
 --------------
@@ -230,13 +230,13 @@ Logic
 860:	  Rolled random number equals Value
 861:	  Rolled random number is greater than or equal to Value
 870:	  Item is Primed
-871:	 *Item becomes Unprimed
-875:	  Item has been Activated
+871:	 *Item became Unprimed
+875:	  Item is Activated
 
 Misc
 --------------
 900:	 *Timer - Value determines time in ticks between each trigger; Value2 sets offset in ticks
-901:	  Percentage Random Chance - Value sets percent chance
+901:	 *Percentage Random Chance - Value sets percent chance
 902:	 *Used Carrot on a Stick - Value sets cooldown in ticks before it can be used again
 
 User-Defined
@@ -269,7 +269,7 @@ Contextual
 
 Misc
 --------------
-900:	  Executed on item slot - See "Slots" list below for use of the Value key
+900:	  Executed on item equip slot - See "Slots" list below for use of the Value key
 
 User-Defined
 --------------
@@ -339,13 +339,13 @@ Note: Value key determines which item on this list should be used; Value2 key se
 3:		 3 Blocks
 4:		 4 Blocks
 5:		 5 Blocks
-6:		 7 Blocks
-7:		 10 Blocks
-8:		 15 Blocks
-9:		 20 Blocks
-10:		 30 Blocks
-11:		 50 Blocks
-12:		 100 Blocks
+7:		 7 Blocks
+10:		 10 Blocks
+15:		 15 Blocks
+20:		 20 Blocks
+30:		 30 Blocks
+50:		 50 Blocks
+100:	 100 Blocks
 
 =================
   Monster Types
