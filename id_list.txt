@@ -196,7 +196,7 @@ Entity Data
 380:	  On Fire
 381:	  In Water
 382:	  In Lava
-383:	  Standing in Light Level 8 or Greater
+383:	  In Light Level - Value sets minimum light level
 390:	 #Monster Type - See "Monster Types" list below for use of Value key
 
 Item Data
@@ -308,12 +308,6 @@ User-Defined
 91:		 Regeneration II
 94:		 Regeneration V
 100:	 Fire Resistance
-110:	 Instant Damage I
-111:	 Instant Damage II
-119:	 Instant Damage X
-120:	 Instant Health I
-121:	 Instant Health II
-129:	 Instant Health X
 
 =============
   Durations
@@ -388,12 +382,12 @@ User-Defined
 =========
   Slots
 =========
-1:		 Mainhand
-2:		 Offhand
-3:		 Head
-4:		 Chest
-5:		 Legs
-6:		 Feet
+1:	 Mainhand
+2:	 Offhand
+3:	 Head
+4:	 Chest
+5:	 Legs
+6:	 Feet
 
 =============
   Resources

@@ -5,8 +5,8 @@
 		"location": {
 			"light": {
 				"light": {
-					"min": 0,
-					"max": 7
+					"min": 7,
+					"max": 100
 				}
 			}
 		}
