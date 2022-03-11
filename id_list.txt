@@ -411,39 +411,40 @@ User-Defined
 =============
   Equipment
 =============
+0:	 Empty Slot
 1:	 Sword
 2:	 Axe
 3:	 Pickaxe
 4:	 Shovel
 5:	 Hoe
-6:	 Helmet
-7:	 Chestplate
-8:	 Leggings
-9:	 Boots
-10:	 Wooden Equipment (Tools, Melee Weapons, Armor)
-11:	 Leather Equipment
-12:	 Stone Equipment
-13:	 Chainmail Equipment
-14:	 Iron Equipment
-15:	 Diamond Equipment
-16:	 Netherite Equipment
-17:	 Golden Equipment
-18:	 Bow
-19:	 Crossbow
-20:	 Trident
-21:	 Shield
-22:	 Potion or Water Bottle
-23:	 Totem of Undying
-24:	 Golden Apple or Enchanted Golden Apple
-25:	 Fishing Rod
-26:	 Flint and Steel
-27:	 Empty Bucket
-28:	 Water Bucket (Includes fish buckets)
-29:	 Lava Bucket
-30:	 Milk Bucket
-31:	 Torch or Lantern
-32:	 Elytra
-33:	 Arrow, Spectral Arrow or Tipped Arrow
+10:	 Helmet
+11:	 Chestplate
+12:	 Leggings
+13:	 Boots
+20:	 Wooden Equipment (Tools, Melee Weapons, Armor)
+21:	 Leather Equipment
+22:	 Stone Equipment
+23:	 Chainmail Equipment
+24:	 Iron Equipment
+25:	 Diamond Equipment
+26:	 Netherite Equipment
+27:	 Golden Equipment
+40:	 Bow
+41:	 Crossbow
+42:	 Trident
+43:	 Shield
+44:	 Potion or Water Bottle
+45:	 Totem of Undying
+46:	 Golden Apple or Enchanted Golden Apple
+47:	 Fishing Rod
+48:	 Flint and Steel
+49:	 Torch or Lantern
+50:	 Elytra
+51:	 Arrow, Spectral Arrow or Tipped Arrow
+70:	 Empty Bucket
+71:	 Water Bucket (Includes fish buckets)
+72:	 Lava Bucket
+73:	 Milk Bucket
 
 ========================
   Sounds and Particles
