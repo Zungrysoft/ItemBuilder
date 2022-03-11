@@ -16,6 +16,7 @@ execute if score @s itbc_poison matches 1.. run effect clear @s minecraft:poison
 execute if score @s itbc_regeneratio matches 1.. run effect clear @s minecraft:regeneration
 execute if score @s itbc_resistance matches 1.. run effect clear @s minecraft:resistance
 execute if score @s itbc_slow_fallin matches 1.. run effect clear @s minecraft:slow_falling
+execute if score @s itbc_slowness matches 1.. run effect clear @s minecraft:slowness
 execute if score @s itbc_speed matches 1.. run effect clear @s minecraft:speed
 execute if score @s itbc_strength matches 1.. run effect clear @s minecraft:strength
 execute if score @s itbc_water_breat matches 1.. run effect clear @s minecraft:water_breathing
@@ -40,6 +41,7 @@ scoreboard players reset @s itbc_poison
 scoreboard players reset @s itbc_regeneratio
 scoreboard players reset @s itbc_resistance
 scoreboard players reset @s itbc_slow_fallin
+scoreboard players reset @s itbc_slowness
 scoreboard players reset @s itbc_speed
 scoreboard players reset @s itbc_strength
 scoreboard players reset @s itbc_water_breat

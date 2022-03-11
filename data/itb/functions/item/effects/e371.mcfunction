@@ -1,1 +1,1 @@
-scoreboard players set @s itbc_absorption 1
+scoreboard players set @s itbc_wither 1

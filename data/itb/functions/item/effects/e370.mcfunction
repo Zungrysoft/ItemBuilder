@@ -1,1 +1,1 @@
-scoreboard players set @s itbc_wither 1
+scoreboard players set @s itbc_weakness 1

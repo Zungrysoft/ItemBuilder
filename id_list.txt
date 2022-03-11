@@ -52,11 +52,12 @@ Passive Potion Effects
 313:	  Passive Regeneration - Value sets amplifier (max 4)
 314:	  Passive Resistance - Value sets amplifier (max 4)
 315:	  Passive Slow-Falling
-316:	  Passive Speed - Value sets amplifier (max 9)
-317:	  Passive Strength - Value sets amplifier (max 9)
-318:	  Passive Water-Breathing
-319:	  Passive Weakness - Value sets amplifier (max 9)
-320:	  Passive Wither - Value sets amplifier (max 4)
+316:	  Passive Slowness - Value sets amplifier (max 9)
+317:	  Passive Speed - Value sets amplifier (max 9)
+318:	  Passive Strength - Value sets amplifier (max 9)
+319:	  Passive Water-Breathing
+320:	  Passive Weakness - Value sets amplifier (max 9)
+321:	  Passive Wither - Value sets amplifier (max 4)
 350:	  Cleanse Blindness
 351:	  Cleanse Dolphin's Grace
 352:	  Cleanse Fire Resistance
@@ -73,12 +74,13 @@ Passive Potion Effects
 363:	  Cleanse Regeneration
 364:	  Cleanse Resistance
 365:	  Cleanse Slow-Falling
-366:	  Cleanse Speed
-367:	  Cleanse Strength
-368:	  Cleanse Water-Breathing
-369:	  Cleanse Weakness
-370:	  Cleanse Wither
-371:	  Cleanse Absorption
+366:	  Cleanse Slowness
+367:	  Cleanse Speed
+368:	  Cleanse Strength
+369:	  Cleanse Water-Breathing
+370:	  Cleanse Weakness
+371:	  Cleanse Wither
+372:	  Cleanse Absorption
 
 Item Modification
 --------------
@@ -213,12 +215,6 @@ Logic
 806:	  SavedCounter2 is greater than or equal to Value
 810:	  SavedCounter3 equals Value
 811:	  SavedCounter3 is greater than or equal to Value
-820:	  TempCounter1 equals Value
-821:	  TempCounter1 is greater than or equal to Value
-825:	  TempCounter2 equals Value
-826:	  TempCounter2 is greater than or equal to Value
-830:	  TempCounter3 equals Value
-831:	  TempCounter3 is greater than or equal to Value
 840:	  FrameCounter1 equals Value
 841:	  FrameCounter1 is greater than or equal to Value
 845:	  FrameCounter2 equals Value

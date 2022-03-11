@@ -1,1 +1,1 @@
-scoreboard players set @s itbc_speed 1
+scoreboard players set @s itbc_slowness 1

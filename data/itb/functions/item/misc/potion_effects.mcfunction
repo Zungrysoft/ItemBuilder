@@ -19,6 +19,7 @@ execute if score @s itbg_poison matches 0 run effect clear @s minecraft:poison
 execute if score @s itbg_regeneratio matches 0 run effect clear @s minecraft:regeneration
 execute if score @s itbg_resistance matches 0 run effect clear @s minecraft:resistance
 execute if score @s itbg_slow_fallin matches 0 run effect clear @s minecraft:slow_falling
+execute if score @s itbg_slowness matches 0 run effect clear @s minecraft:slowness
 execute if score @s itbg_speed matches 0 run effect clear @s minecraft:speed
 execute if score @s itbg_strength matches 0 run effect clear @s minecraft:strength
 execute if score @s itbg_water_breat matches 0 run effect clear @s minecraft:water_breathing
@@ -42,6 +43,7 @@ scoreboard players remove @s itbg_poison 1
 scoreboard players remove @s itbg_regeneratio 1
 scoreboard players remove @s itbg_resistance 1
 scoreboard players remove @s itbg_slow_fallin 1
+scoreboard players remove @s itbg_slowness 1
 scoreboard players remove @s itbg_speed 1
 scoreboard players remove @s itbg_strength 1
 scoreboard players remove @s itbg_water_breat 1

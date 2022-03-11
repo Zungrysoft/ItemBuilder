@@ -1,1 +1,1 @@
-scoreboard players set @s itbc_water_breat 1
+scoreboard players set @s itbc_strength 1

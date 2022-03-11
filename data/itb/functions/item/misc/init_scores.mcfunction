@@ -28,6 +28,7 @@ scoreboard objectives add itbg_poison dummy
 scoreboard objectives add itbg_regeneratio dummy
 scoreboard objectives add itbg_resistance dummy
 scoreboard objectives add itbg_slow_fallin dummy
+scoreboard objectives add itbg_slowness dummy
 scoreboard objectives add itbg_speed dummy
 scoreboard objectives add itbg_strength dummy
 scoreboard objectives add itbg_water_breat dummy
@@ -51,6 +52,7 @@ scoreboard objectives add itbc_poison dummy
 scoreboard objectives add itbc_regeneratio dummy
 scoreboard objectives add itbc_resistance dummy
 scoreboard objectives add itbc_slow_fallin dummy
+scoreboard objectives add itbc_slowness dummy
 scoreboard objectives add itbc_speed dummy
 scoreboard objectives add itbc_strength dummy
 scoreboard objectives add itbc_water_breat dummy
