@@ -1,64 +1,22 @@
-# Retrieve existing value
-scoreboard players set damage value 0
+# Retrieve unbreaking amount
+scoreboard players set unbreaking value 0
 # Mainhand
-execute if score cur_slot value matches 1 store result score damage value run data get entity @s SelectedItem.tag.Damage
+execute unless score effect_value2 value matches 1.. if score effect_value value matches 1.. if score cur_slot value matches 1 store result score unbreaking value run data get entity @s SelectedItem.tag.Enchantments[{id:"minecraft:unbreaking"}].lvl
 # Offhand
-execute if score cur_slot value matches 2 store result score damage value run data get entity @s Inventory[{Slot:-106b}].tag.Damage
+execute unless score effect_value2 value matches 1.. if score effect_value value matches 1.. if score cur_slot value matches 2 store result score unbreaking value run data get entity @s Inventory[{Slot:-106b}].tag.Enchantments[{id:"minecraft:unbreaking"}].lvl
 # Head
-execute if score cur_slot value matches 3 store result score damage value run data get entity @s Inventory[{Slot:103b}].tag.Damage
+execute unless score effect_value2 value matches 1.. if score effect_value value matches 1.. if score cur_slot value matches 3 store result score unbreaking value run data get entity @s Inventory[{Slot:103b}].tag.Enchantments[{id:"minecraft:unbreaking"}].lvl
 # Chest
-execute if score cur_slot value matches 4 store result score damage value run data get entity @s Inventory[{Slot:102b}].tag.Damage
+execute unless score effect_value2 value matches 1.. if score effect_value value matches 1.. if score cur_slot value matches 4 store result score unbreaking value run data get entity @s Inventory[{Slot:102b}].tag.Enchantments[{id:"minecraft:unbreaking"}].lvl
 # Legs
-execute if score cur_slot value matches 5 store result score damage value run data get entity @s Inventory[{Slot:101b}].tag.Damage
+execute unless score effect_value2 value matches 1.. if score effect_value value matches 1.. if score cur_slot value matches 5 store result score unbreaking value run data get entity @s Inventory[{Slot:101b}].tag.Enchantments[{id:"minecraft:unbreaking"}].lvl
 # Feet
-execute if score cur_slot value matches 6 store result score damage value run data get entity @s Inventory[{Slot:100b}].tag.Damage
+execute unless score effect_value2 value matches 1.. if score effect_value value matches 1.. if score cur_slot value matches 6 store result score unbreaking value run data get entity @s Inventory[{Slot:100b}].tag.Enchantments[{id:"minecraft:unbreaking"}].lvl
 
-# Don't play a repair sound if the item is already at 0 damage
-scoreboard players set cancel_sound value 0
-execute if score effect_value value matches ..-1 if score damage value matches ..0 run scoreboard players set cancel_sound value 1
+# Do random chance calculation
+function itb:item/helpers/random_number
+scoreboard players add unbreaking value 1
+scoreboard players operation roll_result value %= unbreaking value
 
-# Add specified amount
-scoreboard players operation damage value += effect_value value
-
-# Bind the value so the item can't have negative damage
-execute if score damage value matches ..-1 run scoreboard players set damage value 0
-
-# Write to storage
-execute store result storage itb:temp Damage long 1 run scoreboard players get damage value
-
-# Store it back in
-# Mainhand
-execute if score cur_slot value matches 1 run item modify entity @s weapon.mainhand itb:set_damage
-# Offhand
-execute if score cur_slot value matches 2 run item modify entity @s weapon.offhand itb:set_damage
-# Head
-execute if score cur_slot value matches 3 run item modify entity @s armor.head itb:set_damage
-# Chest
-execute if score cur_slot value matches 4 run item modify entity @s armor.chest itb:set_damage
-# Legs
-execute if score cur_slot value matches 5 run item modify entity @s armor.legs itb:set_damage
-# Feet
-execute if score cur_slot value matches 6 run item modify entity @s armor.feet itb:set_damage
-
-# Check for if the item broke
-scoreboard players set broken value 0
-# Mainhand
-execute if score cur_slot value matches 1 if predicate itb:broken_mainhand run scoreboard players set broken value 1
-# Offhand
-execute if score cur_slot value matches 2 if predicate itb:broken_offhand run scoreboard players set broken value 1
-# Head
-execute if score cur_slot value matches 3 if predicate itb:broken_head run scoreboard players set broken value 1
-# Chest
-execute if score cur_slot value matches 4 if predicate itb:broken_chest run scoreboard players set broken value 1
-# Legs
-execute if score cur_slot value matches 5 if predicate itb:broken_legs run scoreboard players set broken value 1
-# Feet
-execute if score cur_slot value matches 6 if predicate itb:broken_feet run scoreboard players set broken value 1
-
-# If the item was broken, destroy it and don't play the damage sound
-execute if score broken value matches 1 run scoreboard players set cancel_sound value 1
-execute if score broken value matches 1 run function itb:item/helpers/break
-
-# Sound Effect
-execute unless score effect_nosound value matches 1 unless score cancel_sound value matches 1 if score effect_value value matches 1.. run playsound minecraft:block.anvil.land player @a ~ ~ ~ 0.2 1.8
-execute unless score effect_nosound value matches 1 unless score cancel_sound value matches 1 if score effect_value value matches ..-1 run playsound minecraft:block.amethyst_block.step ambient @a ~ ~ ~ 1 1.5
+# If the random chance was a success, do the damage
+execute if score roll_result value matches 0 run function itb:item/helpers/damage
