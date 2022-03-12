@@ -16,9 +16,9 @@ attribute = "generic.armor"
 
 def build_line(val, bound=None):
 	ret = ""
-	ret += "execute if score "
+	ret += "execute if score @s "
 	ret += scoreboard
-	ret += " value matches "
+	ret += " matches "
 	if bound == "lower":
 		ret += ".."
 	ret += str(val)

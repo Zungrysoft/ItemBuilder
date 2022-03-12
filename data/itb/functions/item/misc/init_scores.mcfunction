@@ -10,6 +10,13 @@ scoreboard objectives add att_armor dummy
 scoreboard objectives add att_kbr dummy
 scoreboard objectives add att_haste dummy
 scoreboard objectives add att_toughness dummy
+scoreboard objectives add cur_damage dummy
+scoreboard objectives add cur_speed dummy
+scoreboard objectives add cur_health dummy
+scoreboard objectives add cur_armor dummy
+scoreboard objectives add cur_kbr dummy
+scoreboard objectives add cur_haste dummy
+scoreboard objectives add cur_toughness dummy
 
 # Potion Effects
 scoreboard objectives add itbg_blindness dummy

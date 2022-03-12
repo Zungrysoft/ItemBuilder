@@ -2,14 +2,15 @@
 # used in running custom items
 
 # How large of steps should it make
-jump = 0.04
+jump = 0.03
+jump_neg = 0.05
 
 # The min and max values to calculate to
-maximum = 5
+maximum = 10
 minimum = 0.05
 
 # Factor used in mcfunction code
-factor = 1000000
+factor = 1000
 
 # UUID to use
 uuid = "540c57fd-e530-48d7-bac2-7fedba625137"
@@ -22,9 +23,9 @@ attribute = "generic.attack_speed"
 
 def build_line(min, max, val):
 	ret = ""
-	ret += "execute if score "
+	ret += "execute if score @s "
 	ret += scoreboard
-	ret += " value matches "
+	ret += " matches "
 	if min is not None:
 		ret += str(min)
 	ret += ".."
@@ -65,7 +66,7 @@ def main():
 	cur = 1
 	while cur > minimum:
 		# Find the bounds of this step
-		next = cur * (1 - jump)
+		next = cur * (1 - jump_neg)
 		cur_p = int(cur * factor) - 1
 		next_p = int(next * factor)
 		

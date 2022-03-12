@@ -93,6 +93,7 @@ Item Modification
 480:	 *Item Breaks
 481:	 *Item Falls Out
 482:	 *Item is Removed from Slot
+490:	 *Set CustomModelData - Value sets value written
 
 Special Attacks
 --------------
@@ -205,7 +206,9 @@ Item Data
 --------------
 400:	  Item is enchanted
 420:	  Item has a certain amount of durability damage - Value sets minimum damage
-430:	  Item is specific type - See "Equipment" list for use of Value key
+430:	  Item Count - Value sets required count
+431:	  Item Minimum Count - Value sets minimum count
+480:	  Item is specific type - See "Equipment" list for use of Value key
 
 Logic
 --------------

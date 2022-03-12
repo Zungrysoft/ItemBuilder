@@ -13,3 +13,6 @@ execute if score @s itbg_wither matches 0.. run scoreboard players set effect_gi
 
 # If the effect was successfully given, set the passive potion effect flag
 execute unless score effect_given value matches 0 run scoreboard players set @s itbg_regeneratio 1
+
+# If this is not a player, give them a tag so ItemBuilder knows to run potion upkeep on them
+execute unless entity @s[type=minecraft:player] run tag @s add itb_run_potions

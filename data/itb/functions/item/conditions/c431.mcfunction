@@ -14,4 +14,4 @@ execute if score cur_slot value matches 5 store result score count value run dat
 execute if score cur_slot value matches 6 store result score count value run data get entity @s Inventory[{Slot:100b}].Count
 
 # Check it against value
-execute if score count value = condition_value value run scoreboard players set condition_result value 1
+execute if score count value >= condition_value value run scoreboard players set condition_result value 1
