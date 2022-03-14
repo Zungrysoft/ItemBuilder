@@ -1,3 +1,4 @@
+execute if score condition_value value matches 0 if predicate itb:type_offhand_empty run scoreboard players set condition_result value 1
 execute if score condition_value value matches 1 if predicate itb:type_offhand_equipment_sword run scoreboard players set condition_result value 1
 execute if score condition_value value matches 2 if predicate itb:type_offhand_equipment_axe run scoreboard players set condition_result value 1
 execute if score condition_value value matches 3 if predicate itb:type_offhand_equipment_pickaxe run scoreboard players set condition_result value 1
