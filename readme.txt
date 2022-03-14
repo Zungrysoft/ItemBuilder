@@ -1,7 +1,7 @@
 Datapack for designing custom items using a system of conditions and effects
 
 A User-Interface for generating /give commands for this datapack is hosted here:
-https://zungrysoft.github.io/ItemBuilderGui-Build/#/
+https://zungrysoft.github.io/ItemBuilderGUIv2/
 
 See examples.txt for example item syntax
 
