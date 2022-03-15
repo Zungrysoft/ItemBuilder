@@ -163,8 +163,8 @@ Actions
 200:	  Drawing Bow
 201:	 *Fired Bow
 205:	  Loading Crossbow
-206:	 *Loaded crossbow
-207:	  Crossbow is Loaded
+206:	 *Loaded crossbow - Set Value to 1 to only check this slot
+207:	  Crossbow is Loaded - Set Value to 1 to only check this slot
 208:	 *Fired Crossbow
 210:	  Readying Trident
 215:	  Holding Shield Up
