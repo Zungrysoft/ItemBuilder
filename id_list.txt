@@ -27,7 +27,6 @@ Bonuses
 --------------
 200:	 *Gain Potion Effect for Certain Duration - See "Potion Effects" list below for use of Value key; See "Durations" list below for use of Value2 key.
 201:	 *Heal 4 Health - Value determines healing. (Healing = Value * 4)
-202:	 *Take 6 Damage - Value determines damage. (Damage = Value * 6)
 203:	 *Regain Hunger - Value sets number of hunger points gained
 210:	 *Player gains a certain number of experience points - Value sets points (max 256)
 211:	 *Player gains a certain number of experience levels - Value sets levels gained (max 256)
@@ -135,7 +134,7 @@ Misc
 
 User-Defined
 --------------
-1001 to 1020: User Defined (See user_defined.txt for more information)
+1001 to 1040: User Defined (See user_defined.txt for more information)
 
 
 ==============
@@ -238,7 +237,7 @@ Misc
 
 User-Defined
 --------------
-1001 to 1020: User Defined (See user_defined.txt for more information)
+1001 to 1040: User Defined (See user_defined.txt for more information)
 
 
 ===========
@@ -270,7 +269,7 @@ Misc
 
 User-Defined
 --------------
-1001 to 1020: User Defined (See user_defined.txt for more information)
+1001 to 1040: User Defined (See user_defined.txt for more information)
 
 
 ==================

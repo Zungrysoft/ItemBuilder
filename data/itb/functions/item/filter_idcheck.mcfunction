@@ -1,5 +1,9 @@
 # Use Id to determine which Filter function to run
 
+# To make sure only one filter gets run, this variable tracks filter scope
+# Without this, nested filters can cause weird behavior
+scoreboard players set filter_ran value 0
+
 # filters are broken into hundreds for performance
 execute if score filter_id value matches 0..99 run function itb:item/filters/f_000
 execute if score filter_id value matches 100..199 run function itb:item/filters/f_100
