@@ -13,7 +13,7 @@ Sword That Grants +15% Speed When Held
 # Inline
 /give @s stone_sword{ItemBuilderMainhand: {Effects: [{Id: 101, Value: 15}]}}
 
-# Notes: The Id key determines which effect you will get. (See id_list.txt for a list of available ids). The Value key determines certain qualities of the effect. For this effect, it sets the percent increase of the player's speed. The base-level keys for the different slots are ItemBuilderMainhand, ItemBuilderOffhand, ItemBuilderEitherHand, ItemBuilderArmor, ItemBuilderArmor, ItemBuilderArmor, and ItemBuilderArmor.
+# Notes: The Id key determines which effect you will get. (See id_list.txt for a list of available ids). The Value key determines certain qualities of the effect. For this effect, it sets the percent increase of the player's speed. The base-level keys for the different slots are ItemBuilderMainhand, ItemBuilderOffhand, ItemBuilderEitherHand, and ItemBuilderArmor.
 
 
 =========================================================
