@@ -9,7 +9,7 @@ execute unless score @s cur_haste = @s att_haste run function itb:item/attribute
 execute unless score @s cur_health = @s att_health run function itb:item/attributes/update_health
 execute unless score @s cur_armor = @s att_armor run function itb:item/attributes/update_armor
 execute unless score @s cur_kbr = @s att_kbr run function itb:item/attributes/update_kbr
-execute unless score @s cur_toughness = @s cur_toughness run function itb:item/attributes/update_toughness
+execute unless score @s cur_toughness = @s att_toughness run function itb:item/attributes/update_toughness
 
 # Reset all values for the next tick
 scoreboard players set @s att_damage 0

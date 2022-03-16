@@ -275,37 +275,37 @@ User-Defined
 ==================
   Potion Effects
 ==================
-0:		 Speed I
-1:		 Speed II
-4:		 Speed V
-10:		 Strength I
-11:		 Strength II
-19:		 Strength X
-20:		 Resistance I
-21:		 Resistance II
-24:		 Resistance V
-30:		 Haste I
-31:		 Haste II
-39:		 Haste X
-40:		 Slowness I
-41:		 Slowness II
-49:		 Slowness X
-50:		 Weakness I
-51:		 Weakness II
-59:		 Weakness X
-60:		 Wither I
-61:		 Wither II
-64:		 Wither V
-70:		 Levitation I
-72:		 Levitation III
-74:		 Levitation V
-80:		 Absorption I
-81:		 Absorption II
-84:		 Absorption V
-90:		 Regeneration I
-91:		 Regeneration II
-94:		 Regeneration V
-100:	 Fire Resistance
+20:		 Fire Resistance
+40:		 Haste I
+41:		 Haste II
+49:		 Haste X
+80:		 Levitation I
+82:		 Levitation III
+84:		 Levitation V
+130:	 Regeneration I
+131:	 Regeneration II
+134:	 Regeneration V
+140:	 Resistance I
+141:	 Resistance II
+144:	 Resistance V
+160:	 Slowness I
+161:	 Slowness II
+169:	 Slowness X
+170:	 Speed I
+171:	 Speed II
+174:	 Speed V
+180:	 Strength I
+181:	 Strength II
+189:	 Strength X
+200:	 Weakness I
+201:	 Weakness II
+209:	 Weakness X
+210:	 Wither I
+211:	 Wither II
+214:	 Wither V
+220:	 Absorption I
+221:	 Absorption II
+224:	 Absorption V
 
 =============
   Durations

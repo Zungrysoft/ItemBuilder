@@ -1,5 +1,5 @@
 # Sound effect
-execute unless score effect_nosound value matches 1 run function itb:av/boost_resistance
+execute unless score effect_nosound value matches 1 run function itb:av/boost_haste
 
 # Give effect with specific duration
 execute if score effect_value2 value matches 1 run effect give @s minecraft:haste 1 1 false
