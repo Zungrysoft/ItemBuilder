@@ -156,7 +156,7 @@
 				"condition": "minecraft:entity_scores",
 				"entity": "this",
 				"scores": {
-					"item_mod_track": 30
+					"item_mod_track": 37
 				}
 			}
 		]

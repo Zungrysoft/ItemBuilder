@@ -374,7 +374,7 @@ User-Defined
 13:	 Arrow of Healing
 14:	 Arrow of Poison
 15:	 Arrow of Levitation
-30:	 Firework Rocket
+37:	 Firework Rocket
 50:	 Arrow from Inventory
 
 =========
