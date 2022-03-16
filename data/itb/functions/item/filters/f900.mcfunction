@@ -6,7 +6,7 @@ data modify storage itb:working slot_stack prepend from storage itb:working slot
 execute if score filter_value value matches 1..6 run scoreboard players operation cur_slot value = filter_value value
 
 # Execute
-function itb:item/filter_run
+execute if score filter_ran value matches 0 run function itb:item/filter_run
 
 # Pop from slot stack
 execute store result score cur_slot value run data get storage itb:working slot_stack[0]
