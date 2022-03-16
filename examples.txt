@@ -271,30 +271,6 @@ Staff That Kills Monsters That Have 5 Health or Less
 
 # Notes: Filters allow you to affect and make checks against monsters, among other things. First, the item (a Carrot on a Stick) checks if you've used it. If so, then run a filter that affects all monsters within a radius of 5 blocks. For each of those monsters, it will check the condition that tests how much health it has. It doesn't check against the player's health, it checks against the monster's health because the condition falls inside the filter. Each monster for whom the condition is true will execute the effect, which also is on the monster instead of the player. Thus, the monster is killed if it has five health or less.
 
-
-=================================
-Bow Whose Arrows Inflict Weakness
-=================================
-# Formatted
-/give @s bow{
-	ItemBuilderMainhand: {
-		Conditions: [
-			{
-				Id: 38,
-				Effects: [
-					{Id: 48, Value:13, Value2: 3}
-				]
-			}
-		]
-	}
-}
-
-# Inline
-/give @s bow{ItemBuilderMainhand: {Conditions: [{Id: 101, Filters: [{Id: 125,Effects: [{Id: 200, Value:51, Value2: 3}]}]}]}}
-
-# Notes: This uses a filter "Executed as nearby monsters that just took damage" and the instantaneous effect "Gain Potion Effect for Certain Duration". Combined together, this causes the mob you just hit with the arrow to be inflicted with slowness. This can result in other mobs sometimes receiving the effect because they happened to take damage at the same time as you landing the arrow, but that doesn't happen very often.
-
-
 =========================================================================
 Leggings that Grant +60% Speed if There Are Three Burning Monsters Nearby
 =========================================================================
