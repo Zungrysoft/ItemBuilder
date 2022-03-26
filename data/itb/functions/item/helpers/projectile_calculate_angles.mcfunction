@@ -11,6 +11,9 @@ scoreboard players operation x value -= x2 value
 scoreboard players operation y value -= y2 value
 scoreboard players operation z value -= z2 value
 
+# Calculate power data for if the projectile needs it
+function itb:item/helpers/projectile_calculate_power
+
 # Scale the velocity
 execute if score velocity_multiplier value matches 0 run scoreboard players set velocity_multiplier value 100
 scoreboard players set calc value 100
