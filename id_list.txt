@@ -265,6 +265,10 @@ Contextual
 125:	  Executed as nearby monsters that just took damage
 180:	  Executed as mount
 
+Directional
+--------------
+500:	  Triple Volley - See "Angles" list below for use of Value key
+
 Misc
 --------------
 900:	  Executed on item equip slot - See "Slots" list below for use of the Value key
@@ -340,6 +344,17 @@ User-Defined
 30:		 30 Blocks
 50:		 50 Blocks
 100:	 100 Blocks
+
+==========
+  Angles
+==========
+1:		 1 Degree
+5:		 5 Degrees
+10:		 10 Degrees
+15:		 15 Degrees
+30:		 30 Degrees
+45:		 45 Degrees
+90:		 90 Degrees
 
 =================
   Monster Types
