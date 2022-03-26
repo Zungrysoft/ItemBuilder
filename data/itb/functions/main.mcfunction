@@ -2,7 +2,7 @@
 execute as @a at @s run function itb:item/misc/global_resets
 
 # Handle items
-execute as @a at @s run function itb:item/run
+execute as @a at @s rotated as @s run function itb:item/run
 
 # Handle monster stuff
 execute as @e[type=!minecraft:player] at @s run function itb:item/mob

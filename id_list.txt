@@ -100,7 +100,8 @@ Special Attacks
 501:	 *Set Fire to Ground - Value sets radius (max 5)
 502:	 *Lightning Strike
 503:	 *Explosion - Value sets radius (max 5)
-520:	*#Launch Upwards - Value sets launch force
+520:	*#Launch into the Air - Value sets launch force
+550:	 *Shoot Arrow - Value sets percent power, Value2 sets percent velocity
 580:	 *Die Instantly
 581:	 *Kill Launched Projectile
 
