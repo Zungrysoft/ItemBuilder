@@ -104,6 +104,9 @@ Special Attacks
 550:	 *Shoot Arrow - Value sets percent velocity, Value2 sets percent power
 560:	 *Shoot Small Fireball - Value sets percent velocity
 561:	 *Shoot Large Fireball - Value sets percent velocity, Value2 sets explosion power
+562:	 *Shoot Ignited TNT - Value sets percent velocity, Value2 sets fuse time
+564:	 *Shoot Trident - Value sets percent velocity
+565:	 *Shoot Shulker Bullet - Value sets percent velocity, Set Value2 to 1 to disable homing
 580:	 *Die Instantly
 581:	 *Kill Launched Projectile
 

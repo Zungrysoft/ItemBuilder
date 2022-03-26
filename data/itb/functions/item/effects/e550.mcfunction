@@ -1,8 +1,8 @@
-# Calculate the motion data for the arrow
+# Calculate the motion data for the projectile
 scoreboard players operation velocity_multiplier value = effect_value value
 function itb:item/helpers/projectile_calculate_angles
 
-# Summon the arrow
+# Summon the projectile
 execute anchored eyes run summon minecraft:arrow ^ ^ ^-0.3 {LeftOwner:0b,crit:1b,Tags:["projectile"]}
 
 # Set arrow damage
@@ -11,7 +11,7 @@ execute if score damage_multiplier value matches 0 run scoreboard players set da
 execute store result entity @e[limit=1,tag=projectile] damage double 0.02 run scoreboard players get damage_multiplier value
 
 
-# Write the data to the arrow
+# Write the data to the projectile
 tag @s add self
 execute as @e[type=minecraft:arrow,limit=1,tag=projectile] at @s run function itb:item/helpers/projectile_set_data
 tag @s remove self
