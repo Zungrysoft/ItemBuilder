@@ -101,7 +101,8 @@ Special Attacks
 502:	 *Lightning Strike
 503:	 *Explosion - Value sets radius (max 5)
 520:	*#Launch Upwards - Value sets launch force
-580:	 *Kills you
+580:	 *Die Instantly
+581:	 *Kill Launched Projectile
 
 Logic
 --------------
