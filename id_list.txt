@@ -267,11 +267,14 @@ Contextual
 
 Directional
 --------------
-500:	  Triple Volley - See "Angles" list below for use of Value key
+500:	  Horizontal Triple Volley - See "Angles" list below for use of Value key
+501:	  Vertical Triple Volley - See "Angles" list below for use of Value key
+502:	  In Cardinal Directions
 
 Misc
 --------------
 900:	  Executed on item equip slot - See "Slots" list below for use of the Value key
+901:	  Executed multiple times - Value sets how many times
 
 User-Defined
 --------------
