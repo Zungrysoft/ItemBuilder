@@ -69,3 +69,4 @@ execute if score @s kill_blaze matches 1.. run scoreboard players remove @s kill
 execute if score @s kill_dragon matches 1.. run scoreboard players remove @s kill_dragon 1
 execute if score @s kill_enderman matches 1.. run scoreboard players remove @s kill_enderman 1
 execute if score @s kill_shulker matches 1.. run scoreboard players remove @s kill_shulker 1
+execute if score @s kill_slime matches 1.. run scoreboard players remove @s kill_slime 1

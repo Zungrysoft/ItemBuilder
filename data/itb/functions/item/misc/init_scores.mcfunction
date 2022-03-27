@@ -141,3 +141,4 @@ scoreboard objectives add kill_blaze minecraft.killed:minecraft.blaze
 scoreboard objectives add kill_dragon minecraft.killed:minecraft.ender_dragon
 scoreboard objectives add kill_enderman minecraft.killed:minecraft.enderman
 scoreboard objectives add kill_shulker minecraft.killed:minecraft.shulker
+scoreboard objectives add kill_slime minecraft.killed:minecraft.slime

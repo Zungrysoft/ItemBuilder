@@ -15,6 +15,7 @@ execute if score condition_value value matches 53 run function itb:item/helpers/
 execute if score condition_value value matches 54 run function itb:item/helpers/killed_type_arthropod
 execute if score condition_value value matches 55 run function itb:item/helpers/killed_type_illager
 execute if score condition_value value matches 56 run function itb:item/helpers/killed_type_flying
+execute if score condition_value value matches 57 run function itb:item/helpers/killed_type_slime
 
 execute if score condition_value value matches 70 run function itb:item/helpers/killed_env_undead
 execute if score condition_value value matches 71 run function itb:item/helpers/killed_env_nether

@@ -383,6 +383,7 @@ User-Defined
 54:	 Arthropod
 55:	 Illager
 56:	 Flying Monster
+57:	 Slime or Magma Cube
 70:	 Undead Monster
 71:	 Nether Monster
 72:	 Ender Monster
