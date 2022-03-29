@@ -4,7 +4,7 @@ function itb:item/helpers/projectile_calculate_angles
 
 # Summon the projectile
 # The itb_fireball marks the fireball for the fireball fix that's run from main
-execute anchored eyes run summon minecraft:small_fireball ^ ^ ^-0.3 {LeftOwner:0b,Tags:["projectile","itb_fireball"]}
+execute anchored eyes run summon minecraft:small_fireball ^ ^ ^-0.3 {LeftOwner:0b,Tags:["projectile","projectile_fix"]}
 
 # Write the data to the projectile
 tag @s add self

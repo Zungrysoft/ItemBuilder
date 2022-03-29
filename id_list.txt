@@ -103,15 +103,14 @@ Special Attacks
 520:	*#Launch into the Air - Value sets launch force
 550:	 *Shoot Arrow - Value sets percent velocity, Value2 sets percent power
 551:	 *Shoot Spectral Arrow - Value sets percent velocity, Value2 sets percent power
-552:	 *Shoot Potion Arrow - Value sets percent velocity, Value2 sets percent power, Value3 sets color (uses the same format as leather armor color)
+552:	 *Shoot Potion Arrow - Value sets percent velocity, Value2 sets percent power, Value3 sets potion effect (See "Potion Effects" list below), Value4 sets Duration
 553:	 *Shoot Color Arrow - Value sets percent velocity, Value2 sets percent power, Value3 sets color (uses the same format as leather armor color)
 560:	 *Shoot Small Fireball - Value sets percent velocity
 561:	 *Shoot Large Fireball - Value sets percent velocity, Value2 sets explosion power
 562:	 *Shoot Ignited TNT - Value sets percent velocity, Value2 sets fuse time
 564:	 *Shoot Trident - Value sets percent velocity
 565:	 *Shoot Shulker Bullet - Value sets percent velocity, Set Value2 to 1 to disable homing
-570:	 *Shoot Custom Splash Potion - Value sets percent velocity, Value2 sets percent power, Value3 sets potion effect (See "Potion Effects" list below), Value4 sets 
-571:	 *Shoot Color Splash Potion - Value sets percent velocity, Value2 sets percent power, Value3 sets color (uses the same format as leather armor color)
+566:	 *Shoot Splash Potion - Value sets percent velocity, Value3 sets potion effect (See "Potion Effects" list below), Value4 sets Duration, Text sets item id
 580:	 *Die Instantly
 581:	 *Kill Launched Projectile
 

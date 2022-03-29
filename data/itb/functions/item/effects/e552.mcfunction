@@ -14,7 +14,7 @@ execute if score damage_multiplier value matches 0 run scoreboard players set da
 execute store result entity @e[limit=1,tag=projectile] damage double 0.02 run scoreboard players get damage_multiplier value
 
 # Set arrow potion data
-execute as @e[type=minecraft:arrow,limit=1,tag=projectile] run function itb:item/helpers/potion_arrow_set_data
+execute as @e[type=minecraft:arrow,limit=1,tag=projectile] run function itb:item/helpers/potion_projectile_arrow
 
 # Write the data to the projectile
 tag @s add self
