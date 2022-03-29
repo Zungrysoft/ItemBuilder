@@ -1,0 +1,24 @@
+{
+	"rewards": {
+		"function": "itb:advancements/land_lingering_potion"
+	},
+	"criteria": {
+		"lingering_potion": {
+			"trigger": "minecraft:player_hurt_entity",
+			"conditions": {
+				"damage": {
+					"type": {
+						"direct_entity": {
+							"type": "minecraft:area_effect_cloud"
+						}
+					}
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"lingering_potion"
+		]
+	]
+}

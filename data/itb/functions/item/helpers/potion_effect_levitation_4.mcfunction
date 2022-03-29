@@ -1,5 +1,5 @@
 # Sounds and Particles
-execute unless score effect_nosound value matches 1 run function itb:av/inflict_levitation
+execute unless score effect_nosound value matches 1 run function itb:av/potion_levitation
 
 # Inflict
 execute if score effect_value2 value matches 1 run effect give @s minecraft:levitation 1 4 false

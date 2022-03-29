@@ -1,0 +1,24 @@
+{
+	"rewards": {
+		"function": "itb:advancements/land_potion"
+	},
+	"criteria": {
+		"potion": {
+			"trigger": "minecraft:player_hurt_entity",
+			"conditions": {
+				"damage": {
+					"type": {
+						"direct_entity": {
+							"type": "minecraft:potion"
+						}
+					}
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"potion"
+		]
+	]
+}

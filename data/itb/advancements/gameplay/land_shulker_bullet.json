@@ -1,0 +1,24 @@
+{
+	"rewards": {
+		"function": "itb:advancements/land_shulker_bullet"
+	},
+	"criteria": {
+		"bullet": {
+			"trigger": "minecraft:player_hurt_entity",
+			"conditions": {
+				"damage": {
+					"type": {
+						"direct_entity": {
+							"type": "minecraft:shulker_bullet"
+						}
+					}
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"bullet"
+		]
+	]
+}

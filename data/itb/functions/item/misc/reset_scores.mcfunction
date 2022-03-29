@@ -8,6 +8,11 @@ scoreboard players reset @s take_damage_proj
 scoreboard players reset @s break_spawner
 scoreboard players reset @s land_arrow
 scoreboard players reset @s land_rocket
+scoreboard players reset @s land_fireball
+scoreboard players reset @s land_trident
+scoreboard players reset @s land_shulker_bullet
+scoreboard players reset @s land_potion
+scoreboard players reset @s land_lingering_potion
 scoreboard players reset @s consume_food
 scoreboard players reset @s consume_potion
 scoreboard players reset @s consume_water

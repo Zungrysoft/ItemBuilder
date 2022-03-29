@@ -78,6 +78,11 @@ scoreboard objectives add take_damage_proj dummy
 scoreboard objectives add break_spawner minecraft.mined:minecraft.spawner
 scoreboard objectives add land_arrow dummy
 scoreboard objectives add land_rocket dummy
+scoreboard objectives add land_fireball dummy
+scoreboard objectives add land_trident dummy
+scoreboard objectives add land_shulker_bullet dummy
+scoreboard objectives add land_potion dummy
+scoreboard objectives add land_lingering_potion dummy
 scoreboard objectives add consume_food dummy
 scoreboard objectives add consume_potion dummy
 scoreboard objectives add consume_water dummy

@@ -1,5 +1,5 @@
 # Sound effect
-execute unless score effect_nosound value matches 1 run function itb:av/boost_absorption
+execute unless score effect_nosound value matches 1 run function itb:av/potion_absorption
 
 # Give effect with specific duration
 execute if score effect_value2 value matches 1 run effect give @s minecraft:absorption 1 4 false

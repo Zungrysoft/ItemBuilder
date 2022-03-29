@@ -1,0 +1,24 @@
+{
+	"rewards": {
+		"function": "itb:advancements/land_trident"
+	},
+	"criteria": {
+		"trident": {
+			"trigger": "minecraft:player_hurt_entity",
+			"conditions": {
+				"damage": {
+					"type": {
+						"direct_entity": {
+							"type": "minecraft:trident"
+						}
+					}
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"trident"
+		]
+	]
+}

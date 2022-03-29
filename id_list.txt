@@ -102,11 +102,16 @@ Special Attacks
 503:	 *Explosion - Value sets radius (max 5)
 520:	*#Launch into the Air - Value sets launch force
 550:	 *Shoot Arrow - Value sets percent velocity, Value2 sets percent power
+551:	 *Shoot Spectral Arrow - Value sets percent velocity, Value2 sets percent power
+552:	 *Shoot Potion Arrow - Value sets percent velocity, Value2 sets percent power, Value3 sets color (uses the same format as leather armor color)
+553:	 *Shoot Color Arrow - Value sets percent velocity, Value2 sets percent power, Value3 sets color (uses the same format as leather armor color)
 560:	 *Shoot Small Fireball - Value sets percent velocity
 561:	 *Shoot Large Fireball - Value sets percent velocity, Value2 sets explosion power
 562:	 *Shoot Ignited TNT - Value sets percent velocity, Value2 sets fuse time
 564:	 *Shoot Trident - Value sets percent velocity
 565:	 *Shoot Shulker Bullet - Value sets percent velocity, Set Value2 to 1 to disable homing
+570:	 *Shoot Custom Splash Potion - Value sets percent velocity, Value2 sets percent power, Value3 sets potion effect (See "Potion Effects" list below), Value4 sets 
+571:	 *Shoot Color Splash Potion - Value sets percent velocity, Value2 sets percent power, Value3 sets color (uses the same format as leather armor color)
 580:	 *Die Instantly
 581:	 *Kill Launched Projectile
 
@@ -157,6 +162,10 @@ Combat
 100:	 *Dealt Damage With a Melee Attack - Value is optional and sets minimum damage that must be dealt
 101:	 *Dealt Damage With an Arrow or Spectral Arrow
 102:	 *Dealt Damage With a Firework Rocket
+103:	 *Dealt Damage With a Fireball
+104:	 *Dealt Damage With a Trident
+105:	 *Dealt Damage With a Shulker Bullet
+106:	 *Dealt Damage With a Harming Potion
 110:	 *Took Damage - Value is optional and sets minimum damage that must be taken by the hit to trigger this condition
 111:	 *Took Damage From a Monster
 112:	 *Took Blast Damage
@@ -289,13 +298,20 @@ User-Defined
 ==================
   Potion Effects
 ==================
+0:		 Blindness
 20:		 Fire Resistance
 40:		 Haste I
 41:		 Haste II
 49:		 Haste X
+50:		 Hunger I
+51:		 Hunger II
+59:		 Hunger X
 80:		 Levitation I
 82:		 Levitation III
 84:		 Levitation V
+120:	 Poison I
+121:	 Poison II
+124:	 Poison V
 130:	 Regeneration I
 131:	 Regeneration II
 134:	 Regeneration V

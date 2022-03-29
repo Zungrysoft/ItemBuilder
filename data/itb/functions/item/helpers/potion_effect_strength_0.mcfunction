@@ -1,5 +1,5 @@
 # Sound effect
-execute unless score effect_nosound value matches 1 run function itb:av/boost_strength
+execute unless score effect_nosound value matches 1 run function itb:av/potion_strength
 
 # Give effect with specific duration
 execute if score effect_value2 value matches 1 run effect give @s minecraft:strength 1 0 false
