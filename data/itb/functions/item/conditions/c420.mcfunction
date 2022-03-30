@@ -12,6 +12,8 @@ execute if score cur_slot value matches 4 store result score damage value run da
 execute if score cur_slot value matches 5 store result score damage value run data get entity @s Inventory[{Slot:101b}].tag.Damage
 # Feet
 execute if score cur_slot value matches 6 store result score damage value run data get entity @s Inventory[{Slot:100b}].tag.Damage
+# Trident
+execute if score cur_slot value matches 7 store result score damage value run data get entity @s Trident.tag.Damage
 
 # Check it against value
 execute if score damage value >= condition_value value run scoreboard players set condition_result value 1

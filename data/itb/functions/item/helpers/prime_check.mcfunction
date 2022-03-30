@@ -13,6 +13,8 @@ execute if score cur_slot value matches 4 store result score prime_end value run
 execute if score cur_slot value matches 5 store result score prime_end value run data get entity @s Inventory[{Slot:101b}].tag.ItemBuilderPrimeEnd
 # Feet
 execute if score cur_slot value matches 6 store result score prime_end value run data get entity @s Inventory[{Slot:100b}].tag.ItemBuilderPrimeEnd
+# Feet
+execute if score cur_slot value matches 7 store result score prime_end value run data get entity @s Trident.tag.ItemBuilderPrimeEnd
 
 # Check if the global timer still hasn't reached the prime end time
 execute unless score global_timer value > prime_end value run scoreboard players set condition_result value 1

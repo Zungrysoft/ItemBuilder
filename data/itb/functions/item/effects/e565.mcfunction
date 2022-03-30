@@ -3,7 +3,7 @@ scoreboard players operation velocity_multiplier value = effect_value value
 function itb:item/helpers/projectile_calculate_angles
 
 # Summon the projectile
-execute anchored eyes positioned ~ ~1.3 ~ run summon minecraft:shulker_bullet ^ ^ ^-0.3 {LeftOwner:0b,Tags:["projectile"],Steps:10,TXD:0d,TYD:0d,TZD:0d}
+execute anchored eyes run summon minecraft:shulker_bullet ^ ^ ^-0.3 {LeftOwner:0b,Tags:["projectile"],Steps:10,TXD:0d,TYD:0d,TZD:0d}
 
 # Write the target
 execute unless score effect_value2 value matches 1 run data modify entity @e[type=minecraft:shulker_bullet,limit=1,tag=projectile] Target set from entity @e[type=#itb:monster,sort=nearest,distance=0..20,limit=1] UUID

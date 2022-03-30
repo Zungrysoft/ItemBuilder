@@ -203,7 +203,7 @@ Actions
 274:	  Riding a Minecart
 275:	  Riding a Boat
 280:	 *Broke Monster Spawner
- 
+
 Entity Data
 --------------
 300:	  Has a certain amount of health - Value sets minimum health
@@ -215,6 +215,7 @@ Entity Data
 382:	  In Lava
 383:	  In Light Level - Value sets minimum light level
 390:	 #Monster Type - See "Monster Types" list below for use of Value key
+391:	  Trident is in Ground
 
 Item Data
 --------------
@@ -288,6 +289,7 @@ Misc
 --------------
 900:	  Executed on item equip slot - See "Slots" list below for use of the Value key
 901:	  Executed multiple times - Value sets how many times
+990:	  Executed player that threw this trident
 
 User-Defined
 --------------

@@ -13,4 +13,6 @@ execute if score cur_slot value matches 4 run item modify entity @s armor.chest 
 execute if score cur_slot value matches 5 run item modify entity @s armor.legs itb:set_counter1
 # Feet
 execute if score cur_slot value matches 6 run item modify entity @s armor.feet itb:set_counter1
+# Trident
+execute if score cur_slot value matches 7 store result entity @s Trident.tag.ItemBuilderCounter1 int 1 run scoreboard players get effect_value value
 

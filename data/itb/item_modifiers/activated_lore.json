@@ -6,8 +6,8 @@
 			{
 				"text": "Activated!",
 				"color": "green",
-				"bold": true,
-				"italic": false
+				"bold": false,
+				"italic": true
 			}
 		],
 		"replace": false

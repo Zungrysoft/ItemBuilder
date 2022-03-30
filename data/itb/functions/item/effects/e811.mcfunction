@@ -12,6 +12,8 @@ execute if score cur_slot value matches 4 store result score counter value run d
 execute if score cur_slot value matches 5 store result score counter value run data get entity @s Inventory[{Slot:101b}].tag.ItemBuilderCounter3
 # Feet
 execute if score cur_slot value matches 6 store result score counter value run data get entity @s Inventory[{Slot:100b}].tag.ItemBuilderCounter3
+# Feet
+execute if score cur_slot value matches 7 store result score counter value run data get entity @s Trident.tag.ItemBuilderCounter3
 
 # Add specified amount
 scoreboard players operation counter value += effect_value value
@@ -32,3 +34,5 @@ execute if score cur_slot value matches 4 run item modify entity @s armor.chest 
 execute if score cur_slot value matches 5 run item modify entity @s armor.legs itb:set_counter3
 # Feet
 execute if score cur_slot value matches 6 run item modify entity @s armor.feet itb:set_counter3
+# Trident
+execute if score cur_slot value matches 7 store result entity @s Trident.tag.ItemBuilderCounter3 int 1 run scoreboard players get counter value

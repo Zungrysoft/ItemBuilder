@@ -11,3 +11,5 @@ execute if score cur_slot value matches 4 if predicate itb:primed_chest run func
 execute if score cur_slot value matches 5 if predicate itb:primed_legs run function itb:item/helpers/prime_check_edge
 # Feet
 execute if score cur_slot value matches 6 if predicate itb:primed_feet run function itb:item/helpers/prime_check_edge
+# Trident
+execute if score cur_slot value matches 7 if predicate itb:primed_trident run function itb:item/helpers/prime_check_edge

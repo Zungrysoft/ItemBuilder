@@ -10,3 +10,5 @@ execute if score cur_slot value matches 4 if predicate itb:enchanted_chest run s
 execute if score cur_slot value matches 5 if predicate itb:enchanted_legs run scoreboard players set condition_result value 1
 # Feet
 execute if score cur_slot value matches 6 if predicate itb:enchanted_feet run scoreboard players set condition_result value 1
+# Feet
+execute if score cur_slot value matches 7 if predicate itb:enchanted_trident run scoreboard players set condition_result value 1

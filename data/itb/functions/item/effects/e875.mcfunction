@@ -17,3 +17,6 @@ execute if score cur_slot value matches 5 unless predicate itb:activated_legs ru
 
 # Feet
 execute if score cur_slot value matches 6 unless predicate itb:activated_feet run function itb:item/helpers/activate_feet
+
+# Trident
+execute if score cur_slot value matches 7 unless predicate itb:activated_trident run function itb:item/helpers/activate_trident

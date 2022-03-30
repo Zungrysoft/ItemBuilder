@@ -22,6 +22,9 @@ execute if score cur_slot value matches 4 run item modify entity @s armor.chest 
 execute if score cur_slot value matches 5 run item modify entity @s armor.legs itb:set_prime_end
 # Feet
 execute if score cur_slot value matches 6 run item modify entity @s armor.feet itb:set_prime_end
+# Trident
+execute if score cur_slot value matches 7 run data modify entity @s Trident.tag.ItemBuilderPrimed set value 1
+execute if score cur_slot value matches 7 store result entity @s Trident.tag.ItemBuilderPrimeEnd int 1 run scoreboard players get prime_end value
 
 # Cleanup
 data remove storage itb:temp PrimeEnd

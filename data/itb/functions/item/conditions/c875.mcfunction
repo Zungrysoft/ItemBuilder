@@ -17,3 +17,6 @@ execute if score cur_slot value matches 5 if predicate itb:activated_legs run sc
 
 # Feet
 execute if score cur_slot value matches 6 if predicate itb:activated_feet run scoreboard players set condition_result value 1
+
+# Trident
+execute if score cur_slot value matches 7 if predicate itb:activated_trident run scoreboard players set condition_result value 1
