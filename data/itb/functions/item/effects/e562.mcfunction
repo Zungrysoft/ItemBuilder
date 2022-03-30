@@ -9,7 +9,7 @@ execute anchored eyes positioned ~ ~1.3 ~ run summon minecraft:tnt ^ ^ ^-0.3 {Ta
 execute store result entity @e[type=minecraft:tnt,tag=projectile,limit=1] Fuse short 1 run scoreboard players get effect_value2 value
 
 # Write the data to the projectile
-tag @s add self
+function itb:item/helpers/projectile_owner
 execute as @e[type=minecraft:tnt,limit=1,tag=projectile] at @s run function itb:item/helpers/projectile_set_data
 tag @s remove self
 

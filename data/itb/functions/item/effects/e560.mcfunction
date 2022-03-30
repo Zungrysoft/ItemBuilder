@@ -7,7 +7,7 @@ function itb:item/helpers/projectile_calculate_angles
 execute anchored eyes run summon minecraft:small_fireball ^ ^ ^-0.3 {LeftOwner:0b,Tags:["projectile","projectile_fix"]}
 
 # Write the data to the projectile
-tag @s add self
+function itb:item/helpers/projectile_owner
 execute as @e[type=minecraft:small_fireball,limit=1,tag=projectile] at @s run function itb:item/helpers/projectile_set_data
 tag @s remove self
 

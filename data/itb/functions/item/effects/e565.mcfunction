@@ -9,7 +9,7 @@ execute anchored eyes run summon minecraft:shulker_bullet ^ ^ ^-0.3 {LeftOwner:0
 execute unless score effect_value2 value matches 1 run data modify entity @e[type=minecraft:shulker_bullet,limit=1,tag=projectile] Target set from entity @e[type=#itb:monster,sort=nearest,distance=0..20,limit=1] UUID
 
 # Write the data to the projectile
-tag @s add self
+function itb:item/helpers/projectile_owner
 execute as @e[type=minecraft:shulker_bullet,limit=1,tag=projectile] at @s run function itb:item/helpers/projectile_set_data
 tag @s remove self
 

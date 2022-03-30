@@ -9,7 +9,7 @@ execute anchored eyes run summon minecraft:fireball ^ ^ ^-0.3 {LeftOwner:0b,Tags
 execute store result entity @e[type=minecraft:fireball,tag=projectile,limit=1] ExplosionPower byte 1 run scoreboard players get effect_value2 value
 
 # Write the data to the projectile
-tag @s add self
+function itb:item/helpers/projectile_owner
 execute as @e[type=minecraft:fireball,limit=1,tag=projectile] at @s run function itb:item/helpers/projectile_set_data
 tag @s remove self
 

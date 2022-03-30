@@ -12,7 +12,7 @@ execute anchored eyes run summon minecraft:potion ^ ^ ^-0.3 {LeftOwner:0b,crit:1
 execute as @e[type=minecraft:potion,limit=1,tag=projectile] run function itb:item/helpers/potion_projectile_potion
 
 # Write the data to the projectile
-tag @s add self
+function itb:item/helpers/projectile_owner
 execute as @e[type=minecraft:potion,limit=1,tag=projectile] at @s run function itb:item/helpers/projectile_set_data
 tag @s remove self
 
