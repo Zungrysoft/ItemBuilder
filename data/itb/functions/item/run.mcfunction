@@ -17,24 +17,3 @@ execute if predicate itb:item_builder_chest run function itb:item/run_chest
 execute if predicate itb:item_builder_legs run function itb:item/run_legs
 # Feet
 execute if predicate itb:item_builder_feet run function itb:item/run_feet
-
-# Apply attributes calculated from these items
-function itb:item/attributes/check
-
-# Handle passive potion effects
-function itb:item/misc/potion_effects
-
-# Handle cleansing potion effects
-function itb:item/misc/potion_cleansing
-
-# Hunger Restoration
-function itb:item/misc/hunger_pending
-
-# Healing
-function itb:item/misc/health_pending
-
-# Damaging
-function itb:item/misc/damage_pending
-
-# Reset per-frame scores
-function itb:item/misc/reset_scores
