@@ -9,6 +9,3 @@ execute if entity @s[tag=itb_run_cleanse] run function itb:item/misc/potion_clea
 
 # Healing
 execute if entity @s[tag=itb_run_heal] run function itb:item/misc/health_pending
-
-# Damaging
-execute if entity @s[tag=itb_run_damage] run function itb:item/misc/damage_pending
