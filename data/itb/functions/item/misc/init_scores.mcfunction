@@ -107,6 +107,7 @@ scoreboard objectives add eat_cake minecraft.custom:minecraft.eat_cake_slice
 # Other Stuff
 scoreboard objectives add pending_hunger dummy
 scoreboard objectives add pending_health dummy
+scoreboard objectives add projectile_life dummy
 
 # Mob Kills
 scoreboard objectives add kill_mob totalKillCount
