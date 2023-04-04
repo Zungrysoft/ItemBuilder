@@ -1,0 +1,29 @@
+[
+	{
+		"function": "minecraft:set_name",
+		"name": {
+			"text": "Summoned Potion",
+			"italic": false
+		}
+	},
+	{
+		"function": "minecraft:copy_nbt",
+		"source": {
+			"type": "minecraft:storage",
+			"source": "itb:temp"
+		},
+		"ops": [
+			{
+				"source": "PotionEffects",
+				"target": "CustomPotionEffects",
+				"op": "replace"
+			},
+			{
+				"source": "PotionColor",
+				"target": "CustomPotionColor",
+				"op": "replace"
+			}
+		]
+	}
+	]
+	
