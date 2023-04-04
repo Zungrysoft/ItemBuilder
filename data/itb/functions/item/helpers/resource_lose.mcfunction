@@ -11,6 +11,7 @@ execute if score effect_value value matches 21 run clear @s minecraft:bone 1
 execute if score effect_value value matches 22 run clear @s minecraft:rotten_flesh 1
 execute if score effect_value value matches 23 run clear @s minecraft:string 1
 execute if score effect_value value matches 24 run clear @s minecraft:spider_eye 1
+execute if score effect_value value matches 40 run clear @s minecraft:glass_bottle 1
 execute if score effect_value value matches 50 run clear @s minecraft:arrow 1
 execute if score effect_value value matches 51 run clear @s minecraft:fire_charge 1
 execute if score effect_value value matches 80 run clear @s mojang_banner_pattern{MagicScroll:1} 1

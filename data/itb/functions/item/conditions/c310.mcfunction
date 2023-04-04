@@ -14,6 +14,7 @@ execute if score condition_value value matches 21 store result score items_found
 execute if score condition_value value matches 22 store result score items_found value run clear @s minecraft:rotten_flesh 0
 execute if score condition_value value matches 23 store result score items_found value run clear @s minecraft:string 0
 execute if score condition_value value matches 24 store result score items_found value run clear @s minecraft:spider_eye 0
+execute if score condition_value value matches 40 store result score items_found value run clear @s minecraft:glass_bottle 0
 execute if score condition_value value matches 50 store result score items_found value run clear @s minecraft:arrow 0
 execute if score condition_value value matches 51 store result score items_found value run clear @s minecraft:fire_charge 0
 execute if score condition_value value matches 80 store result score items_found value run clear @s mojang_banner_pattern{MagicScroll:1} 0
