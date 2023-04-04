@@ -15,7 +15,7 @@ execute if data entity @s Inventory[{Slot:0b,id:"minecraft:glass_bottle"}] run s
 execute if data entity @s Inventory[{Slot:-106b,id:"minecraft:glass_bottle"}] run scoreboard players set chosen_slot value -1
 
 # Play a sound effect if a slot was filled
-execute if score chosen_slot value matches -1..8 run function itb:av/fill_potion
+execute unless score effect_nosound value matches 1 if score chosen_slot value matches -1..8 run function itb:av/fill_potion
 
 # Set up data for item mod
 execute if score chosen_slot value matches -1..8 run function itb:item/helpers/fill_potion_data
