@@ -14,6 +14,11 @@ execute if score effect_value value matches 50 run function itb:item/helpers/pot
 execute if score effect_value value matches 51 run function itb:item/helpers/potion_effect_hunger_1
 execute if score effect_value value matches 59 run function itb:item/helpers/potion_effect_hunger_9
 
+# Jump Boost
+execute if score effect_value value matches 70 run function itb:item/helpers/potion_effect_jump_boost_0
+execute if score effect_value value matches 71 run function itb:item/helpers/potion_effect_jump_boost_2
+execute if score effect_value value matches 74 run function itb:item/helpers/potion_effect_jump_boost_4
+
 # Levitation
 execute if score effect_value value matches 80 run function itb:item/helpers/potion_effect_levitation_0
 execute if score effect_value value matches 82 run function itb:item/helpers/potion_effect_levitation_2
