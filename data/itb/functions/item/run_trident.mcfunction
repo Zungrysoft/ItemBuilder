@@ -16,5 +16,10 @@ data modify entity 21-0-0-0-21 Rotation set from entity @s Rotation
 execute store result entity 21-0-0-0-21 Rotation[0] float 0.001 run data get entity @s Rotation[0] -1000
 execute store result entity 21-0-0-0-21 Rotation[1] float 0.001 run data get entity @s Rotation[1] -1000
 
+# Set active player
+tag @a remove active_player
+execute store result score owner value run data get entity @s Owner[0]
+execute as @a run function itb:item/helpers/trident_active_player
+
 # Handle first condition
 execute rotated as 21-0-0-0-21 rotated ~ ~180 positioned ^ ^ ^1 run function itb:item/condition_run
