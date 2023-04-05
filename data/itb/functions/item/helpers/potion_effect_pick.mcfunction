@@ -42,6 +42,9 @@ execute if score effect_value value matches 140 run function itb:item/helpers/po
 execute if score effect_value value matches 141 run function itb:item/helpers/potion_effect_resistance_1
 execute if score effect_value value matches 144 run function itb:item/helpers/potion_effect_resistance_4
 
+# Slow Falling
+execute if score effect_value value matches 150 run function itb:item/helpers/potion_effect_slow_falling_0
+
 # Slowness
 execute if score effect_value value matches 160 run function itb:item/helpers/potion_effect_slowness_0
 execute if score effect_value value matches 161 run function itb:item/helpers/potion_effect_slowness_1
