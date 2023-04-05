@@ -30,6 +30,17 @@ execute if score effect_value value matches 80 run function itb:item/helpers/pot
 execute if score effect_value value matches 82 run function itb:item/helpers/potion_effect_levitation_2
 execute if score effect_value value matches 84 run function itb:item/helpers/potion_effect_levitation_4
 
+# Mining Fatigue
+execute if score effect_value value matches 90 run function itb:item/helpers/potion_effect_mining_fatigue_0
+execute if score effect_value value matches 91 run function itb:item/helpers/potion_effect_mining_fatigue_1
+execute if score effect_value value matches 92 run function itb:item/helpers/potion_effect_mining_fatigue_2
+
+# Nausea
+execute if score effect_value value matches 100 run function itb:item/helpers/potion_effect_nausea_0
+
+# Night Vision
+execute if score effect_value value matches 110 run function itb:item/helpers/potion_effect_night_vision_0
+
 # Poison
 execute if score effect_value value matches 120 run function itb:item/helpers/potion_effect_poison_0
 execute if score effect_value value matches 121 run function itb:item/helpers/potion_effect_poison_1
