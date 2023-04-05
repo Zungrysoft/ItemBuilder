@@ -1,6 +1,9 @@
 # Blindness
 execute if score effect_value value matches 0 run function itb:item/helpers/potion_effect_blindness_0
 
+# Dolphin's Grace
+execute if score effect_value value matches 10 run function itb:item/helpers/potion_effect_dolphins_grace_0
+
 # Fire Resistance
 execute if score effect_value value matches 20 run function itb:item/helpers/potion_effect_fire_resistance_0
 
@@ -68,3 +71,8 @@ execute if score effect_value value matches 214 run function itb:item/helpers/po
 execute if score effect_value value matches 220 run function itb:item/helpers/potion_effect_absorption_0
 execute if score effect_value value matches 221 run function itb:item/helpers/potion_effect_absorption_1
 execute if score effect_value value matches 224 run function itb:item/helpers/potion_effect_absorption_4
+
+# Health Boost
+execute if score effect_value value matches 230 run function itb:item/helpers/potion_effect_health_boost_0
+execute if score effect_value value matches 231 run function itb:item/helpers/potion_effect_health_boost_1
+execute if score effect_value value matches 239 run function itb:item/helpers/potion_effect_health_boost_4
