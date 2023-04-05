@@ -60,6 +60,9 @@ execute if score effect_value value matches 180 run function itb:item/helpers/po
 execute if score effect_value value matches 181 run function itb:item/helpers/potion_effect_strength_1
 execute if score effect_value value matches 189 run function itb:item/helpers/potion_effect_strength_9
 
+# Strength
+execute if score effect_value value matches 190 run function itb:item/helpers/potion_effect_water_breathing_0
+
 # Weakness
 execute if score effect_value value matches 200 run function itb:item/helpers/potion_effect_weakness_0
 execute if score effect_value value matches 201 run function itb:item/helpers/potion_effect_weakness_1
