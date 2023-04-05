@@ -7,6 +7,9 @@ execute if score effect_value value matches 10 run function itb:item/helpers/pot
 # Fire Resistance
 execute if score effect_value value matches 20 run function itb:item/helpers/potion_effect_fire_resistance_0
 
+# Glowing
+execute if score effect_value value matches 30 run function itb:item/helpers/potion_effect_glowing_0
+
 # Haste
 execute if score effect_value value matches 40 run function itb:item/helpers/potion_effect_haste_0
 execute if score effect_value value matches 41 run function itb:item/helpers/potion_effect_haste_1
@@ -82,3 +85,6 @@ execute if score effect_value value matches 224 run function itb:item/helpers/po
 execute if score effect_value value matches 230 run function itb:item/helpers/potion_effect_health_boost_0
 execute if score effect_value value matches 231 run function itb:item/helpers/potion_effect_health_boost_1
 execute if score effect_value value matches 239 run function itb:item/helpers/potion_effect_health_boost_4
+
+# Darkness
+execute if score effect_value value matches 250 run function itb:item/helpers/potion_effect_darkness_0
