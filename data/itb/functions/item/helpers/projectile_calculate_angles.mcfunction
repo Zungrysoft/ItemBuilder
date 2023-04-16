@@ -26,9 +26,9 @@ scoreboard players operation z value /= calc value
 
 # Store deltas into storage
 data modify storage itb:temp ProjectileMotion set value [0d,0d,0d]
-execute store result storage itb:temp ProjectileMotion[0] double 0.002 run scoreboard players get x value
-execute store result storage itb:temp ProjectileMotion[1] double 0.002 run scoreboard players get y value
-execute store result storage itb:temp ProjectileMotion[2] double 0.002 run scoreboard players get z value
+execute store result storage itb:temp ProjectileMotion[0] double 0.0027 run scoreboard players get x value
+execute store result storage itb:temp ProjectileMotion[1] double 0.0027 run scoreboard players get y value
+execute store result storage itb:temp ProjectileMotion[2] double 0.0027 run scoreboard players get z value
 
 # Kill the targeting markers
 kill @e[type=marker,tag=marker1,limit=1]
