@@ -103,6 +103,7 @@ scoreboard objectives add jump minecraft.custom:minecraft.jump
 scoreboard objectives add fire_bow minecraft.used:minecraft.bow
 scoreboard objectives add fire_crossbow minecraft.used:minecraft.crossbow
 scoreboard objectives add eat_cake minecraft.custom:minecraft.eat_cake_slice
+scoreboard objectives add sprint_carry dummy
 
 # Other Stuff
 scoreboard objectives add pending_hunger dummy
