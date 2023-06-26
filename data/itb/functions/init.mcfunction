@@ -1,5 +1,5 @@
 # Splash message
-tellraw @a[gamemode=creative] "[ItemBuilder v2.1.2 is Installed]"
+tellraw @a[gamemode=creative] "[ItemBuilder v2.1.3 is Installed]"
 
 # Scoreboard
 function itb:item/misc/init_scores
