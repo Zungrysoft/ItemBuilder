@@ -8,7 +8,12 @@
 			"conditions": {
 				"damage": {
 					"type": {
-						"is_explosion": true
+						"tags": [
+							{
+							  	"id": "minecraft:is_explosion",
+							 	"expected": true
+							}
+						]
 					}
 				}
 			}
